@@ -98,7 +98,7 @@ prose:
           value: "Title"
       - name: published
         field:
-          element: "multiselect"
+          element: "select"
           label: "Status"
           placeholder: "Choose Tags"
           options:
