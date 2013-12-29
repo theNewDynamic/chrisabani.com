@@ -76,6 +76,17 @@ prose:
               value: "poetry"
             - name: "Screenplay"
               value: "screenplay"
+      - name: "published"
+        field:
+          element: "multiselect"
+          label: "Status"
+          help: "change to false if you do not want the post to show on the site"
+          placeholder: "Published"
+          options:
+            - name: "Published"
+              value: "true"
+            - name: "Draft"
+              value: "false"
       - name: "layout"
         field:
           element: "hidden"

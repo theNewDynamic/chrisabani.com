@@ -1,7 +1,7 @@
 ---
 layout: book
 category: book
-published: false
+published: true
 title: Untitled
 name: graceland
 permalink: /book/graceland
