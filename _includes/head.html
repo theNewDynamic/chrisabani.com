@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="alternate" type="application/rss+xml" href="/rss" title="RSS Feed">
+        <title>{% if page.title %} {{page.title}} - {% endif %} {{site.sitename}}</title>
+
+        <link rel="icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
+        
+        <link href='{{site.baseurl}}/assets/css/app.css' rel='stylesheet' />
+        <link href='{{site.baseurl}}/assets/webfonts/ss-symbolicons-block.css' rel='stylesheet' />
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="canonical" href="{{site.baseurl}}/{{ page.url }}" />
+
+
+    
+
+
+        <meta name="description" content="{% if page.tagline %}{{page.tagline}}{% endif %}">
+
+        <!-- TODO: add og, twitter card -->
+       {% comment %}
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7044452/637322/css/fonts.css" />
+
+              <!-- (1) Moot look and feel -->
+      <link rel="stylesheet" href="https://cdn.moot.it/1/moot.css">
+      {% endcomment %}
+
+
+{% if page.url == "/contact/" or page.url == '/book-clubs/' %}
+{% include forms-emailvalidation.html %}
+{% endif %}
+    </head>

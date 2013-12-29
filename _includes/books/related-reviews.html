@@ -1,0 +1,18 @@
+  {% for review in site.data.reviews offset:1 %}  
+    {% if page.name == review.book %}
+	    {% if  review.featured == true %}
+        {% include format-reviews.html %}
+    	{% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% for review in site.data.reviews %}  
+    {% if page.name == review.book %}
+	    {% if  review.featured != true %}
+        {% include format-reviews.html %}
+    	{% endif %}
+    {% endif %}
+  {% endfor %}
+
+
+

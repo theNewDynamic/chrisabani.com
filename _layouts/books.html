@@ -1,0 +1,26 @@
+---
+layout: default
+section: book
+---
+<article>
+    <header>
+        <h1 class="page-title">
+            {% if page.title %} {{page.title}}  {% endif %}
+        </h1>
+    </header>
+    {% for page in site.categories.book %} 
+    <div class="row" style="margin-bottom:8rem;">
+        <div class="large-11 large-centered columns">
+            <div class="large-12">
+                {% include books/related-review.html show="1" %}
+            </div>
+            <div class="large-4 columns">
+                {% include books/cover-meta.html %}
+            </div>
+            <div class="large-8 columns">
+                {% include books/title.html %}
+            </div>
+        </div>
+    </div>
+     {% endfor %}
+</article>

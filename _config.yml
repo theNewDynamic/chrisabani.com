@@ -1,0 +1,118 @@
+baseurl: "http://budparr.github.io/abani/"
+sitename: Chris Abani
+# source: ./content
+permalink: pretty
+future: true   # This will tell jekyll to not display future posts
+markdown: redcarpet
+redcarpet:
+  extensions: ['autolink', 'smart']
+exclude: ['README.md','Gemfile','links.jsonp', 'assets/scss', 'assets/sass', 'CNAME', 'assets/css/bower_components']
+include: ['_pages']
+relative_permalinks: false
+prose:
+  siteurl: 'http://budparr.github.io/abani/'
+  site: 
+  media: 'assets/img'
+  metadata:
+    books:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "name"
+        field:
+          element: "text"
+          label: "Name/Slug"
+          help: "lowercase title with dashes between words"
+          placeholder: "the-title-of-the-book"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          help: "/book/name-from-above"
+          placeholder: "/book/name-from-above"
+      - name: "pub_date"
+        field:
+          element: "text"
+          label: "Publication Date"
+          help: "format: YYYY-MM-DD"
+          placeholder: "2014-01-01"
+      - name: "isbn"
+        field:
+          element: "text"
+          label: "ISBN"
+          help: "13 Digit with no spaces"
+          placeholder: "978xxxxxxxxxx"
+      - name: "isbn_digital"
+        field:
+          element: "text"
+          label: "ISBN Digital"
+          help: "13 Digit with no spaces"
+          placeholder: "978xxxxxxxxxx"
+      - name: "cover_image"
+        field:
+          element: "text"
+          label: "Cover Image"
+          help: "13 Digit with no spaces"
+          placeholder: "name.jpg"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "book"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Fiction"
+              value: "fiction"
+            - name: "Poetry"
+              value: "poetry"
+            - name: "Screenplay"
+              value: "screenplay"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "book"
+    _posts:
+      - name: "category"
+        field:
+          element: "multiselect"
+          placeholder: "Choose a Page Type"
+          options:
+            - name: "Nature Journal"
+              value: "nature-journal"
+            - name: "Reviews"
+              value: "reviews"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"

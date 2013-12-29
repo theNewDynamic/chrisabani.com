@@ -1,0 +1,2 @@
+{% include head.html %}
+<body class="{{page.category | replace: ' ','-' | downcase}}"><header class="row"><div class="large-12 columns"><h1><a href="/">{{site.sitename}}</a></h1></div></header>{% include nav-top.html %}<section class="main-section row">{{content}}</section>{% include footer.html %}</body></html>

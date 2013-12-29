@@ -1,0 +1,49 @@
+nav, .navbar-default {
+	background: none !important;
+	border-color:none;
+	border-color:transparent;
+}
+
+blockquote {
+	border-left-style: none;
+//	.quote;
+}
+
+p, nav {
+	font-family: @font-family-base;
+}
+
+nav, nav ul li a {
+	font-family: @font-family-base;
+	text-transform: uppercase;
+}
+.pure-menu-horizontal ul li {
+	margin-right: .5em;
+}
+.pure-menu ul{
+	background: none;
+	margin-left: 2em;
+}
+
+.pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
+background: none;
+
+}
+
+.pure-menu ul li a:hover {
+text-decoration: none;
+//background-color: darken(@brand-highlight, 7%);
+color: #F6f6f6;
+
+}
+
+.wrapper {
+  .make-row();
+}
+.content-main {
+  .make-lg-column(8);
+}
+.content-secondary {
+  .make-lg-column(3);
+  .make-lg-column-offset(1);
+}

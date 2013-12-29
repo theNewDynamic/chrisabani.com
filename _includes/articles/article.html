@@ -1,0 +1,20 @@
+<article>
+  <header>
+    <h1 class="entry-title">    
+      {% if post.title %}
+        <a href="{{post.url}}">{{post.title}}</a>
+      {% endif %}
+    </h1>
+    {% if post.date %}
+      <span class='date'>
+        <small>
+          {{ post.date | date:'%B, %Y'}}
+        </small>
+      </span>
+    {% endif %}
+  </header>
+{{post.content}}
+{% comment %}
+  <time class="text-center">{{ post.date | date:'%A %b %d, %Y' }}</time>
+{% endcomment %}
+</article>

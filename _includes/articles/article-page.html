@@ -1,0 +1,53 @@
+<article class="hentry">
+  
+  <header>
+    {% if page.title %}
+    <h1 class="page-title">    
+      
+        {{page.title}}
+      
+    </h1>
+    {% endif %}
+    {% if page.date %}
+    <span class='date'>
+      <small>
+        {{ page.date | date:'%B, %Y' }}
+      </small>
+    </span>
+    {% endif %}
+    {% if page.summary %}
+    <div class="entry-summary">
+      <p>{{page.summary}}</p>
+    </div>
+    {% endif %}
+  
+  </header>
+  
+  <div class="entry-content prose">
+    {{ content }}
+
+    
+    {% if page.related_include %}
+  {% include {{page.related_include}} %}
+  {% endif %}
+
+
+
+
+{% if page.url contains 'reviews' %}
+    &mdash; {{ page.attribution}}
+on 
+  {% for post in site.pages %}
+    {% if post.name == page.related_book %}
+      <a href="{{post.url}}">{{post.title}} </a>
+    {% endif %}
+  {% endfor %}
+
+{% endif %}
+
+
+
+
+  </div>
+
+</article>

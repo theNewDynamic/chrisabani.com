@@ -1,0 +1,52 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{site.baseurl}}/assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="{{site.baseurl}}/assets/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+
+  <script src="{{site.baseurl}}/assets/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+        
+  $.backstretchTK(
+    
+        'http://563f8e56373163a3565b-ff036a63fe4db1f0ce81564f86905acf.r71.cf1.rackcdn.com/springmorning_2100x.jpg'
+    
+  );
+
+
+
+{% if page.url == "/writing/" %}
+var options = {
+  valueNames: ['category', 'title', 'date', 'publication']
+};
+
+var entryList = new List('entry-list', options);
+
+  {% for link in site.data.writingCats %}
+    $('#filter-{{link.catName}}').click(function() {
+        entryList.filter(function(item) {
+           if (item.values().category == "{{link.name}}" ) {
+               return true;
+           } else {
+               return false;
+           }
+        });
+      });
+  {% endfor %}
+
+
+$('#filter-none').click(function() {
+  entryList.filter();
+  return false;
+});
+
+{% endif %}
+
+  
+});
+</script>

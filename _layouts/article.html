@@ -1,0 +1,12 @@
+---
+layout: default
+section: article
+---
+<div class="large-8 large-centered columns event-layout">
+	{% include articles/article.html %}
+
+	{% if post.url == /events/ %}
+	{% include event-detail.html %}
+{% endif %}
+</div>
+
