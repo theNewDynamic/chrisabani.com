@@ -54,6 +54,10 @@ prose:
           label: "ISBN Digital"
           help: "13 Digit with no spaces"
           placeholder: "978xxxxxxxxxx"
+      - name: "publisher"
+        field:
+          element: "text"
+          label: "Publisher"
       - name: "cover_image"
         field:
           element: "text"
