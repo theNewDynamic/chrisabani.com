@@ -1,8 +1,8 @@
 ---
 layout: book
 category: book
-published: false
-title: "2007-01-30-the-virgin-of-flames.md"
+published: true
+title: The Virgin of Flames
 name: "the-virgin-of-flames"
 permalink: "/book/the-virgin-of-flames"
 pub_date: "2007-01-30"
