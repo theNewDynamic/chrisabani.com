@@ -2,7 +2,7 @@
 layout: book
 category: book
 published: true
-title: Untitled
+title: Graceland
 name: graceland
 permalink: /book/graceland
 pub_date: "2005-01-26"

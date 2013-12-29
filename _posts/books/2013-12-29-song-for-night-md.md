@@ -1,9 +1,7 @@
 ---
 layout: book
 category: book
-published: 
-  - true
-  - "true"
+published: true
 title: "Song for Night"
 subtitle: A Novella
 name: "song-for-night"
