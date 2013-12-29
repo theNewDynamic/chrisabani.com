@@ -20,6 +20,7 @@ prose:
           element: "text"
           label: "Title"
           placeholder: "Book Title"
+          value: "Book Title"
       - name: "subtitle"
         field:
           element: "text"
