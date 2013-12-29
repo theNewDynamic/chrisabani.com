@@ -90,6 +90,23 @@ prose:
         field:
           element: "hidden"
           value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Title"
+          value: "Title"
+      - name: published
+        field:
+          element: "multiselect"
+          label: "Status"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Published"
+              value: "true"
+            - name: "Unpublished"
+              value: "false"
+
       - name: "tags"
         field:
           element: "multiselect"
