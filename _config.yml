@@ -63,7 +63,7 @@ prose:
         field:
           element: "text"
           label: "Cover Image"
-          help: "13 Digit with no spaces"
+          help: "if different than isbn.jpg"
           placeholder: "name.jpg"
       - name: "category"
         field:

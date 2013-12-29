@@ -17,7 +17,7 @@ A self-described “zealot of optimism,” poet and novelist Chris Abani bravely
 
 Sanctificum, Abani’s fifth collection of poetry, is his most personal and ambitious book. Utilizing religious ritual, the Nigerian Igbo language, and reggae rhythms, Abani creates a post-racial, liturgical love song that covers the globe from Abuja to Los Angeles.
 
-I say hibiscus and mean innocence.  
+> I say hibiscus and mean innocence.  
 I say guava and mean childhood.  
 I say mosquito netting and mean loss.  
 I say father and it means only that.  
