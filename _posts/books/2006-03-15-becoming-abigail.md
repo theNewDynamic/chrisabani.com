@@ -4,7 +4,7 @@ category: book
 published: 
   - true
   - "true"
-title: "2006-03-15-becoming-abigail.md"
+title: Becoming Abigail
 subtitle: A Novella
 name: "becoming-abigail"
 permalink: "/book/becoming-abigail"
