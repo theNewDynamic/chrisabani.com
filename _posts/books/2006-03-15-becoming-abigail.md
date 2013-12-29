@@ -6,7 +6,7 @@ published:
   - "true"
 title: Becoming Abigail
 subtitle: A Novella
-name: "becoming-abigail"
+name: becoming-abigail
 permalink: "/book/becoming-abigail"
 pub_date: "2006-03-15"
 isbn: "9781888451948"

@@ -3,10 +3,11 @@ layout: book
 category: book
 publisher: Penguin
 title: The Virgin of Flames
-name: "the-virgin-of-flames"
+name: the-virgin-of-flames
 permalink: "/book/the-virgin-of-flames"
 pub_date: "2007-01-30"
-isbn: "9780143038771"
+isbn: 9780143038771
+isbn_digital: 9781440627415
 cover_image: VirginFlamesMedium.jpg
 tags: 
   - fiction

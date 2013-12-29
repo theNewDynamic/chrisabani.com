@@ -11,7 +11,7 @@ cover_image: 9780143124955_SecretHistor_CVF-300x459.jpg
 sm_show_books_buy_button:
   - 0
 isbn_digital:
-  - 0374267707
+  - 9780698140189
 isbn_kindle:
   - 
 meta_data:
@@ -22,6 +22,6 @@ short_description:
   - Suspenseful through the last page, <em>The Secret History of Las Vegas</em> is Chris Abani’s most accomplished work to date, with his trademark visionary prose and a striking compassion for the inner lives of outsiders.
 tags:
   - Fiction 
-categories: book fiction
+category: book
 ---
 Before he can retire, Las Vegas detective Salazar is determined to solve a recent spate of murders. When he encounters a pair of conjoined twins with a container of blood near their car, he’s sure he has apprehended the killers, and enlists the help of Dr. Sunil Singh, a South African transplant who specializes in the study of psychopaths. As Sunil tries to crack the twins, the implications of his research grow darker. Haunted by his betrayal of loved ones back home during apartheid, he seeks solace in the love of Asia, a prostitute with hopes of escaping that life. But Sunil’s own troubled past is fast on his heels in the form of a would-be assassin.
