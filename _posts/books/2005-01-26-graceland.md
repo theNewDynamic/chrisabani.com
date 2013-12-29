@@ -4,6 +4,7 @@ category: book
 published: true
 title: Graceland
 name: graceland
+publisher: Picador
 permalink: /book/graceland
 pub_date: "2005-01-26"
 isbn: "9780312425289"

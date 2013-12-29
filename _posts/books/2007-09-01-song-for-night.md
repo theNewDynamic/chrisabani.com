@@ -1,7 +1,7 @@
 ---
 layout: book
 category: book
-published: true
+publisher: Akashic Books
 title: "Song for Night"
 subtitle: A Novella
 name: "song-for-night"

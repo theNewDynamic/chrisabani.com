@@ -1,7 +1,7 @@
 ---
 layout: book
 category: book
-published: true
+publisher: Penguin
 title: The Virgin of Flames
 name: "the-virgin-of-flames"
 permalink: "/book/the-virgin-of-flames"
