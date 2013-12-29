@@ -103,10 +103,8 @@ prose:
           placeholder: "Choose Tags"
           value: true
           options:
-            - name: "Published"
-              value: "true"
-            - name: "Unpublished"
-              value: "false"
+              value: true
+              value: false
       - name: "tags"
         field:
           element: "multiselect"
