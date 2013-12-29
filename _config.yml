@@ -72,7 +72,7 @@ prose:
       - name: "tags"
         field:
           element: "multiselect"
-          label: "Add Tags"
+          label: "Book Category"
           placeholder: "Choose Tags"
           options:
             - name: "Fiction"
