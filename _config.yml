@@ -98,13 +98,10 @@ prose:
           value: "Title"
       - name: published
         field:
-          element: "select"
+          element: "test"
           label: "Status"
-          placeholder: "Choose Tags"
+          help: "Change to false if you don't want the post to be published"
           value: true
-          options:
-              value: true
-              value: false
       - name: "tags"
         field:
           element: "multiselect"
