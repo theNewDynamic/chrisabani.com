@@ -1,0 +1,9 @@
+---
+layout: page
+published: false
+tags: 
+  - video
+  - Test Tag
+---
+
+<iframe src="http://embed.ted.com/talks/chris_abani_on_the_stories_of_africa.html" width="853" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
