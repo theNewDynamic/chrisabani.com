@@ -1,7 +1,7 @@
 ---
 layout: book
 category: book
-published: false
+published: true
 title: There Are No Names for Red
 name: "there-are-no-names-for-red"
 permalink: "/book/there-are-no-names-for-red/"
