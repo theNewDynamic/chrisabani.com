@@ -101,12 +101,12 @@ prose:
           element: "select"
           label: "Status"
           placeholder: "Choose Tags"
+          value: true
           options:
             - name: "Published"
               value: "true"
             - name: "Unpublished"
               value: "false"
-
       - name: "tags"
         field:
           element: "multiselect"
