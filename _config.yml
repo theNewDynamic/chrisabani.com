@@ -98,7 +98,7 @@ prose:
           value: "Title"
       - name: published
         field:
-          element: "test"
+          element: "text"
           label: "Status"
           help: "Change to false if you don't want the post to be published"
           value: true
