@@ -86,39 +86,20 @@ prose:
           element: "hidden"
           value: "book"
     _posts:
-      - name: "category"
-        field:
-          element: "multiselect"
-          placeholder: "Choose a Page Type"
-          options:
-            - name: "Nature Journal"
-              value: "nature-journal"
-            - name: "Reviews"
-              value: "reviews"
-            - name: "Pears"
-              value: "pears"
-            - name: "Mangos"
-              value: "mangos"
       - name: "layout"
         field:
           element: "hidden"
           value: "page"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
       - name: "tags"
         field:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
+          alterable: true
           options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-            - name: "Pears"
-              value: "pears"
-            - name: "Mangos"
-              value: "mangos"
+            - name: "Video"
+              value: "video"
+            - name: "News"
+              value: "news"
+            - name: "Books"
+              value: "books"
