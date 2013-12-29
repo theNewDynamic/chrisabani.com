@@ -14,7 +14,7 @@ prose:
   site: 
   media: 'assets/img'
   metadata:
-    books:
+    _posts/books:
       - name: "title"
         field:
           element: "text"
