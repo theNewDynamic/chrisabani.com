@@ -1,7 +1,7 @@
 ---
 layout: book
 category: book
-published: false
+published: true
 title: Feed Me the Sun
 subtitle: Collected Long Poems
 name: "feed-me-the-sun"
