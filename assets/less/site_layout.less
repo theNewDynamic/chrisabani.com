@@ -1,63 +1,29 @@
 #menu a:hover {
     text-decoration: none;
 }
-.pure-menu-open ul li {
-    max-width:90%;
-}
-#menu li {
+#menu li{
     font-family: @font-family-sans-serif;
 	font-size: @font-size-base * .8;
-    line-height:1.1;
-    
+    line-height:1.1;    
 }
-
-//this is not doing anything
-.pure-u-3-5 > .centered {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    float: none !important;
+footer {
+    font-family: @font-family-sans-serif;
+	font-size: @font-size-base * .72;
+    line-height:1;    
+    margin-left: @layout-sidebar-width; /* left col width "#menu" */
 }
-
-///
 .content {
-    min-height:900px;
-    padding: 1em 0 3em 0;
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 900px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
 }
- .main-section {
-    margin: 4em auto;
-    padding: 2em 2em 0 2em;
-    max-width: 1200px;
-}
+
 .content img:first-child {
   float: left;
   margin: .5rem 1rem 0 0; 
   @include image-shadow;
-}
-
-.header {
-     margin: 0;
-     color: #333;
-     text-align: center;
-     padding: 2.5em 2em 0;
-     border-bottom: 1px solid #eee;
- }
-    .header h1 {
-        margin: 0.2em 0;
-        font-size: 3em;
-        font-weight: 300;
-    }
-     .header h2 {
-        font-weight: 300;
-        color: #ccc;
-        padding: 0;
-        margin-top: 0;
-    }
-
-.content-subhead {
-    margin: 50px 0 20px 0;
-    font-weight: 300;
-    color: #888;
 }
 
 blockquote {
@@ -69,6 +35,38 @@ blockquote {
     font-size: @font-size-base * 2.6;
 }
 
-footer {
-    font-size: @font-size-small;
+.pure-menu.pure-menu-open,
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background: #000; /* Old browsers */
+    border: none;
 }
+
+.splash {
+    //margin: 2em auto 0;
+    padding: 3em 2em;
+    background: #eee;
+}
+
+.splash .content {
+    max-width: 1400px;
+}
+    .splash .splash-head {
+        font-size: 300%;
+        margin: 0em 0;
+        line-height: 1.2em;
+    }
+    .splash .splash-subhead {
+        color: #999;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+    .splash .primary-button {
+        font-size: 150%;
+    }
+
+
+
+
+
+
+

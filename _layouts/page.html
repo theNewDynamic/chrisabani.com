@@ -2,8 +2,10 @@
 layout: default
 section: page
 ---
-
+<div class="content">
 {% include articles/article-page.html %}
 	{% if page.form %}
+	
 		{% include {{page.form}} %}
 	{% endif %}
+	</div>

@@ -9,23 +9,23 @@
 {% endfor %}
 
 
-<li class="pure-menu-selected menu-item-divided">
+<li class="section-heading menu-item-divided">
   <a href="{{site.baseurl}}/books/fiction/">Fiction</a>
 </li>
 
 
 {% for link in site.tags.fiction %}
-	<li class="menu-item{% if page.url == {{link.link}} %} active{% endif %}">
+	<li class="menu-item{% if page.url == {{link.url}} %} active{% endif %}">
 		<a href="{{site.baseurl}}{{link.url}}">{{link.title}}</a>
 	</li>
 {% endfor %}
 
-<li class="pure-menu-selected menu-item-divided">
+<li class="section-heading menu-item-divided">
   <a href="{{site.baseurl}}/books/poetry/">Poetry</a>
 </li>
 
 {% for link in site.tags.poetry %}
-	<li class="menu-item{% if page.url == {{link.link}} %} active{% endif %}">
+	<li class="menu-item{% if page.url == {{link.url}} %} active{% endif %}">
 		<a href="{{site.baseurl}}{{link.url}}">{{link.title}}</a>
 	</li>
 {% endfor %}
