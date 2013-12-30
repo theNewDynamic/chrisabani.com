@@ -1,9 +1,25 @@
 #menu a:hover {
     text-decoration: none;
 }
+.pure-menu-open ul li {
+    max-width:90%;
+}
+#menu li {
+    font-family: @font-family-sans-serif;
+	font-size: @font-size-base * .8;
+    line-height:1.1;
+    
+}
+
+//this is not doing anything
+.pure-u-3-5 > .centered {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+}
 
 ///
-
 .content {
     min-height:900px;
     padding: 1em 0 3em 0;
@@ -12,6 +28,11 @@
     margin: 4em auto;
     padding: 2em 2em 0 2em;
     max-width: 1200px;
+}
+.content img:first-child {
+  float: left;
+  margin: .5rem 1rem 0 0; 
+  @include image-shadow;
 }
 
 .header {

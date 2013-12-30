@@ -1,7 +1,15 @@
 -
- name: Books
- link: /books/
-
--
  name: About Chris
  link: /about-chris/
+
+-
+ name: Contact
+ link: /contact/
+
+- 
+ name: News
+ link: /news/
+
+- 
+ name: Video
+ link: /video/
