@@ -1,50 +1,11 @@
 {% include head.html %}
 <body class="{{page.category | replace: ' ','-' | downcase}}">
-	
-
-
-
-
-
-
-
-<div id="layout">
-    
-    {% include nav-side.html %}
-
-    <div id="main" class="main-section">
-
-
-
-{{content}}
-
-
-
-
-{% include footer.html %}
-
-    </div>
-</div>
-
-
-
-
-
-
-
-
-            
-
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-	</body>
+	<div id="layout">  
+		{% include nav-side.html %}
+		<div id="main" class="main-section">
+			{{content}}
+			{% include footer.html %}
+		</div><!--  /#main -->
+	</div><!--  /#layoutf  -->
+</body>
 </html>

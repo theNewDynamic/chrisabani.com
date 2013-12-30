@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
+<div class="pure-1-5">
+{% include articles/article-page.html %}
+	{% if page.form %}
+		{% include {{page.form}} %}
+	{% endif %}
 </div>

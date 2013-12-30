@@ -2,17 +2,8 @@
 layout: default
 section: page
 ---
-<div class="large-8 large-centered columns page-layout">
-  {% include articles/article-page.html %}
+
+{% include articles/article-page.html %}
 	{% if page.form %}
 		{% include {{page.form}} %}
 	{% endif %}
-    
-    {% if page.event-start  %}
-        
-    	{% include event-detail.html %}
-{% endif  %}    
-    
-    
-</div>
-
