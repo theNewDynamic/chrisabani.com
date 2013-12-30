@@ -3,6 +3,7 @@ layout: default
 title: Your New Jekyll Site
 ---
 
+<<<<<<< HEAD:index.html
 <div class="content quote">
 
 
@@ -10,4 +11,13 @@ title: Your New Jekyll Site
 <br />&mdash; Dave Eggers, author of <em>The Circle</em>
 
 
+=======
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+>>>>>>> 576884ca35a061dd73a030ad2da251e70c492658:_index.html
 </div>
