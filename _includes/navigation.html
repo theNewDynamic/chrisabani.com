@@ -1,9 +1,7 @@
-<nav>
-	<ul class="navigation">
+<ul class="navigation">
 		{% for link in site.data.navigation %}
 				<li class="menu-item{% if page.url == {{link.link}} %} active{% endif %}">
 					<a href="{{site.baseurl}}{{link.link}}">{{link.name}}</a>
 				</li>
 		{% endfor %}
 	</ul>
-</nav>

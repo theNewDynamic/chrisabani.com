@@ -1,49 +1,46 @@
-nav, .navbar-default {
-	background: none !important;
-	border-color:none;
-	border-color:transparent;
+// COLORS //
+
+
+
+
+///
+
+.content {
+    min-height:900px;
+    padding: 1em 0 3em 0;
+}
+ .main-section {
+    margin: 4em auto;
+    padding: 2em 2em 0 2em;
+    max-width: 1200px;
 }
 
-blockquote {
-	border-left-style: none;
-//	.quote;
+.header {
+     margin: 0;
+     color: #333;
+     text-align: center;
+     padding: 2.5em 2em 0;
+     border-bottom: 1px solid #eee;
+ }
+    .header h1 {
+        margin: 0.2em 0;
+        font-size: 3em;
+        font-weight: 300;
+    }
+     .header h2 {
+        font-weight: 300;
+        color: #ccc;
+        padding: 0;
+        margin-top: 0;
+    }
+
+.content-subhead {
+    margin: 50px 0 20px 0;
+    font-weight: 300;
+    color: #888;
 }
 
-p, nav {
-	font-family: @font-family-base;
-}
-
-nav, nav ul li a {
-	font-family: @font-family-base;
-	text-transform: uppercase;
-}
-.pure-menu-horizontal ul li {
-	margin-right: .5em;
-}
-.pure-menu ul{
-	background: none;
-	margin-left: 2em;
-}
-
-.pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
-background: none;
-
-}
-
-.pure-menu ul li a:hover {
-text-decoration: none;
-//background-color: darken(@brand-highlight, 7%);
-color: #F6f6f6;
-
-}
-
-.wrapper {
-  .make-row();
-}
-.content-main {
-  .make-lg-column(8);
-}
-.content-secondary {
-  .make-lg-column(3);
-  .make-lg-column-offset(1);
+.quote, .quote p {
+    font-family: @font-family-quote;
+    font-size: @font-size-base * 2.6;
 }

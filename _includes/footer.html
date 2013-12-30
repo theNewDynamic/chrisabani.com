@@ -1,21 +1,24 @@
-<footer class="row">
-  <div class="large-7 columns">
+<footer class="pure-g-r">
+  <div class="pure-u-1-2">
     <ul class="no-bullet">
       <li class="source-org vcarfd copyright"><a href="/">&copy; {{ site.time | date: '%Y' }} <span class="fn">{{site.sitename}}</span></a></li>
     </ul>  
   </div>
-  <div class="large-5 columns">
+  <div class="pure-u-1-2">
     <ul class="no-bullet right">
       <li><a href="http://sonnetmedia.net">site by sonnet media</a></li>
     </ul>
   </div>
 </footer>
-
+{% if page.url == "/writing/" or page.url == '/media/' %}
     <script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
     <script src="{{site.baseurl}}/assets/js/underscore-min.js"></script>
   <script src="{{site.baseurl}}/assets/js/moment.min.js"></script>
 {% include scripts/events-list.js.html  %}
 
-{% if page.url == "/writing/" or page.url == '/media/' %}
+
   {% include scripts/list.js.html  %}
 {% endif %}
+
+
+{% include scripts/layout.js.html %}

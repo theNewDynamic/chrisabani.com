@@ -1,4 +1,4 @@
-<article>
+<article class="hentry">
   <header>
     <h1 class="entry-title">    
       {% if post.title %}
@@ -13,7 +13,9 @@
       </span>
     {% endif %}
   </header>
+<div class="content">
 {{post.content}}
+</div>
 {% comment %}
   <time class="text-center">{{ post.date | date:'%A %b %d, %Y' }}</time>
 {% endcomment %}
