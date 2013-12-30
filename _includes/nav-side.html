@@ -1,14 +1,11 @@
 <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
-        <span></span>
-    </a>
-
+<a href="#menu" id="menuLink" class="menu-link">
+    <!-- Hamburger icon -->
+    <span></span>
+</a>
 <nav id="menu">
-        <div class="pure-menu pure-menu-open">
-            <!-- <a class="pure-menu-heading" href="http://purecss.io/">Pure</a> -->
-
-            
-            {% include navigation.html %}
-        </div>
-    </nav>
+  <div class="pure-menu pure-menu-open">
+    <a class="pure-menu-heading" href="{{site.baseurl}}">{{site.sitename}}</a>
+    {% include navigation.html %}
+  </div>
+</nav>
