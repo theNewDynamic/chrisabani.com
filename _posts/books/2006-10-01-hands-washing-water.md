@@ -11,7 +11,9 @@ publisher: Copper Canyon Press
 isbn_digital: "9781619320703"
 tags: 
   - poetry
-cover_image: hands-washing-water_300x455.jpg
+cover_image: "hands-washing-water_300x455.jpg"
+asin_kindle: B00APD9VRU
+asin: "1556592477"
 ---
 
 Hands Washing Water is Chris Abani's fourth poetry collection—a mischievous book of displacement, exile, ancestry, and subversive humor. The central section, “Buffalo Women,” is a Civil War correspondence between lovers that plays on our assumptions about war, gender, morality, and politics.
