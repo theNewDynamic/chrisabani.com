@@ -149,6 +149,6 @@ prose:
           value: false
           options:
             - name: "True"
-              value: true
+              value: 'true'
             - name: "False"
-              value: false
+              value: 'false'
