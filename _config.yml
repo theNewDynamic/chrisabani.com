@@ -142,9 +142,3 @@ prose:
           element: "text"
           label: "Link"
           help: "/page-name/"
-      - name: show_in_menu
-        field:
-          element: "button"
-          label: "Show in Menu?"
-          on: 'true'
-          off: 'false'
