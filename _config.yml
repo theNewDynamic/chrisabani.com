@@ -144,7 +144,11 @@ prose:
           help: "/page-name/"
       - name: show_in_menu
         field:
-          element: "button"
+          element: button
           label: "Show in Menu?"
-            on: 'true'
-            off: 'false'
+          selected: 'true'
+          options:
+            - name: "True"
+              value: 'true'
+            - name: "False"
+              value: 'false'
