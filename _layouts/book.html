@@ -9,21 +9,23 @@ section: book
 	   	{{page.title}}
 	  </h1>
 	</header>
-	<div class="row" style="margin-bottom:8rem;">
-		<div class="large-11 large-centered columns">
-			<div class="large-12">
+	<div class="pure-g" style="margin-bottom:8rem;">
+		
+			<div class="pure-u-1">
         {% include books/related-review.html show="1" %}
       </div>
-			<div class="large-4 columns">
+			<div class="pure-u-3-8">
 				{% include books/cover-meta.html %}
 			</div>
-			<div class="large-8 columns">
-				{{ content }}
+			<div class="pure-u-5-8">
+				<div class="content-inner">
+					{{ content }}
+				</div>
 			</div>
-			<div class="large-12 columns" id="reviews">
+			<div class="pure-u-1" id="reviews">
 				{% include books/related-reviews.html show="100" offset="1" %}
 			</div>
-		</div>
+		
 	</div>
 </article>
 </div>

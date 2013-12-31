@@ -10,7 +10,7 @@ pub_date: "2005-01-26"
 isbn: "9780312425289"
 isbn_digital: 9781429929820
 meta_data: "Available as an audiobook"
-cover_image: GracelandCVR.gif
+cover_image: graceland_300x463.jpg
 tags: 
   - fiction
 ---

@@ -9,7 +9,7 @@ permalink: "/book/song-for-night"
 pub_date: "2007-09-01"
 isbn: "9781933354316"
 isbn_digital: 9781936070466
-cover_image: SongForNight_CVR.jpg
+cover_image: song-for-night_300x440.jpg
 tags: 
   - fiction
 ---

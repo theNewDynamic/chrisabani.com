@@ -10,7 +10,7 @@ name: becoming-abigail
 permalink: "/book/becoming-abigail"
 pub_date: "2006-03-15"
 isbn: "9781888451948"
-cover_image: 9781888451948.jpg
+cover_image: becoming-abigail_300x440.jpg
 tags: 
   - fiction
 publisher: Akashic Books

@@ -9,7 +9,7 @@ permalink: "/book/feed-me-the-sun/"
 pub_date: "2010-04-01"
 isbn: "9781845231569"
 publisher: Peepal Tree Press Ltd.
-cover_image: 9781845231569.jpg
+cover_image: feed-me-the-sun_300x471.jpg
 tags: 
   - poetry
 ---
