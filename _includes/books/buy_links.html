@@ -5,16 +5,27 @@
 
 <ul class="buy-retailers small">
 
+{% if page.asin %}
+
   <li>
     <a href="http://www.amazon.com/dp/{{ page.isbn }}" title="Amazon" target="_blank" >
       Amazon.com
     </a>
   </li>
+{% endif %}
+
   <li>
     <a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ page.isbn }}" target="_blank" >
       Barnes &amp; Noble
     </a>
   </li>
+
+<li>
+    <a href="http://www.powells.com/biblio?isbn={{ page.isbn }}" target="_blank" >
+      Powells
+    </a>
+  </li>  
+
   <li>
     <a href="http://www.indiebound.org/product/info.jsp?isbn={{ page.isbn }}" target="_blank" >
         Your Local Bookstore
@@ -22,11 +33,6 @@
   </li>  
 
 
-<li>
-    <a href="http://www.powells.com/biblio?isbn={{ isbn }}" target="_blank" >
-      Powells
-    </a>
-  </li>  
 
 
 
@@ -35,30 +41,35 @@
 {% endif %}
 
 
-
+{% if page.isbn_digital or page.asin_kindle %}
 
 <ul class="buy-retailers small">
   <li>Digital Editions</li>
+
+{% if page.asin_kindle %}
 
   <li>
     <a href="http://www.amazon.com/dp/{{ isbn }}" target="_blank" >
       Amazon Kindle
     </a>
   </li>
+{% endif %}
 
-
+{% if page.isbn_digital %}
   <li>
-    <a href="http://itunes.apple.com/us/book/isbn{{ isbn }}" target="_blank" >
+    <a href="http://itunes.apple.com/us/book/isbn{{ page.isbn_digital }}" target="_blank" >
       Apple iBooks
     </a>
   </li>
 
 
   <li>
-    <a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ isbn }}" target="_blank" >
+    <a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ page.isbn_digital }}" target="_blank" >
       Barnes &amp; Noble Nook
     </a>
   </li>
 </ul>
+{% endif %}
+{% endif %}
 
 </div>
