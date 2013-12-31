@@ -11,6 +11,8 @@ isbn_digital: "9781619320710"
 cover_image: sanctificum_300x449.jpg
 tags: 
   - poetry
+asin_kindle: B00B6UB6BU
+asin: "1556593163"
 ---
 
 A self-described “zealot of optimism,” poet and novelist Chris Abani bravely travels into the charged intersections of atrocity and love, politics and religion, loss and renewal. In poems of devastating beauty, he investigates complex personal history, family, and romantic love.
