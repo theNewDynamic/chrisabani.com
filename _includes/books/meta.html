@@ -1,6 +1,6 @@
 <ul class="no-bullet">
 	{% if page.publisher %}
-		<li>
+		<li class="publisher">
 			<small>
 			 Publisher: {{page.publisher}}
 			</small>
@@ -14,17 +14,27 @@
     </li>
   {% endif %}
 	{% if page.isbn %}
-		<li>
+		<li class="isbn">
 			<small>
 			ISBN: {{page.isbn}}
 			</small>
 		</li>
 	{% endif %}
 	{% if page.isbn_digital %}
-		<li>
+		<li class="isbn_digital">
 			<small>
 				ISBN Digital: {{page.isbn_digital}}
 			</small>
 		<li>
 	{% endif %}
+
+{% if page.meta_data %}
+<li class="meta_data">
+			<small>
+				{{page.meta_data}}
+			</small>
+		<li>
+
+{% endif %}
+
 </ul>

@@ -1,6 +1,29 @@
+<script type="text/javascript">
+
+function toggleShowHide()
+   {
+       var theDiv = document.getElementById('buy-buttons');
+       
+        if(theDiv.style.display == 'none') {
+            theDiv.style.display = "block";
+        }
+
+        else{
+              theDiv.style.display = "none";
+        }
+
+   }
+
+</script>
+
 
 {% if page.isbn %}
-<div id="buy-buttons" class="list-block">
+
+
+<button class="pure-button" onclick="toggleShowHide()">Buy <em>{{page.title}}</em></button>
+
+
+<div id="buy-buttons" class="list-block hidden" style="display:none;">
 
 
 <ul class="buy-retailers small">

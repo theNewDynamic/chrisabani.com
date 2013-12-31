@@ -5,6 +5,9 @@ permalink: /books/poetry/
 ---
 <div class="pure-u-1">
 {% for page in site.tags.poetry %} 
-{% include books/cover.html styles="max-height:220px;float:left;margin-right:2em;margin-bottom:3em;" %}
+        <div style="width:165px;float:left;margin-right:2em;margin-bottom:3em;">
+            {% include books/cover.html styles="max-height:220px;" %}
+                <br />{{ page.date | date:'%Y' }}
+        </div>
 {% endfor %}
 </div>
