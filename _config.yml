@@ -11,7 +11,7 @@ include: ['_pages']
 relative_permalinks: false
 prose:
   siteurl: 'http://abani.pubspringdev1.com'
-  rooturl: '_posts'
+  #rooturl: '_posts'
   site: 
   media: 'assets/img'
   metadata:
@@ -126,7 +126,6 @@ prose:
               value: "news"
             - name: "Books"
               value: "books"
-              ---
     _pages:
       - name: "layout"
         field:
