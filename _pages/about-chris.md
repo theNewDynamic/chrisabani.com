@@ -4,7 +4,7 @@ title: About Chris
 permalink: "/about-chris/"
 summary: "&ldquo;Imprisoned three times by the Nigerian government, Chris Abani turned his experience into poems that Harold Pinter called &lsquo;the most naked, harrowing expression of prison life and political torture imaginable.&rsquo;&rdquo;\n"
 published: true
-show_in_menu: true
+show_in_menu: 'true'
 ---
 
 ![Chris Headshot](/assets/img/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani's first novel, published when he was 16, was *[Masters of the Board](http://www.chrisabani.com/Abani_Fiction/MastersOfTheBoard.htm)*, a political thriller about a foiled Nigerian coup. The story was convincing enough that the Nigerian government threw him in jail for inciting a coincidentally timed real-life coup. Imprisoned and tortured twice more, he channeled the experience into searing poetry. 

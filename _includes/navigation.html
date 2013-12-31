@@ -4,7 +4,7 @@
 	</li> -->
 
 {% for link in site.pages %}
-{% if link.show_in_menu == 'true' %}
+{% if link.show_in_menu == 'true' or link.show_in_menu == true %}
 	<li class="menu-item{% if page.url == {{link.link}} %} active{% endif %}">
 		<a href="{{site.baseurl}}{{link.url}}">{{link.title}}</a>
 	</li>
