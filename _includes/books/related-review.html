@@ -5,7 +5,7 @@
     {% if  review.featured == true %}
       {% capture count %}{{ count | plus: '1' }}{% endcapture %}
       <div {% if count > show_count %}style="display:none;"{% endif %}>
-        {% include format-reviews.html %}
+        {% include books/format-reviews.html %}
       </div>
     {% endif %}
     {% endif %}

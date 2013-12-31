@@ -5,7 +5,5 @@ layout: page
 ---
 
  {% for review in site.data.reviews %}
-      <blockquote>&ldquo; {{ review.quote }} &rdquo;</blockquote>
-      &mdash; {{ review.source }} on {{ review.book }}
-      <hr />
+      {% include books/format-reviews.html %}
 {% endfor %}
