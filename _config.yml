@@ -146,7 +146,6 @@ prose:
         field:
           element: "select"
           label: "Show in Menu?"
-          selected: 'true'
           options:
             - name: "True"
               value: 'true'
