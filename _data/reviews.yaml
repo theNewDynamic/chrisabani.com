@@ -29,6 +29,7 @@
  book: the-virgin-of-flames
  quote: "Chris Abani is a force of nature. In the world of letters he is a luminous shattering talent, and The Virgin of Flames is his strangest and wildest trip yet. I don't think there's ever been a protagonist quite like Black, or an LA quite like this one."
  source: Junot Diaz
+ featured: true
 
 - 
  book: the-virgin-of-flames
@@ -115,6 +116,7 @@
  book: song-for-night
  quote: "Like the protagonists {of} Flaubert's Simple Heart and J. M. Coetzee's Waiting for the Barbarians, My Luck is both archetypal and utterly himself. Song for Night contains, at once, an extraordinary ferocity and a vulnerable beauty all its own."
  source: New York Times
+ featured: true
 
 -
  book: song-for-night
@@ -185,8 +187,9 @@
 
 -
  book: becoming-abigail
- quote: "Abani's writing never becomes didactic—<em>Becoming Abigail</em> has the elegance and lyricism of a prose poem but doesn't soft-pedal the abuse it chronicles."
+ quote: "<em>Becoming Abigail</em> has the elegance and lyricism of a prose poem but doesn't soft-pedal the abuse it chronicles."
  source: Chicago Reader
+ featured: true
 
 -
  book: becoming-abigail
@@ -212,6 +215,7 @@
  book: graceland
  quote: "…one of the most astonishing metropolitan novels of our time!"
  source: The New York Times Book Review
+ featured: true
 
 -
  book: graceland
@@ -346,6 +350,7 @@
   book: masters-of-the-board
   quote: "The plot to blow up Nigeria."
   source: Nigerian Vanguard
+  featured: true
 
 -
  book: there-are-no-names-for-red
@@ -361,11 +366,13 @@
  book: there-are-no-names-for-red
  quote: "…the most naked…expression of prison life and political torture imaginable."
  source: "Harold Pinter, on Kalakuta Republic"
+ featured: true
 
 -
  book: sanctificum
  quote: "Abani…explores place and humor, exile and freedom with poems of experience and imagination…[he] enters the wound with a boldness that avoids nothing. Highly recommended." 
  source: Library Journal
+ featured: true
 
 -
  book: sanctificum
@@ -390,6 +397,7 @@ time, language, matter, history and consciousness. From suffering to
 desire, from war to love. Each one a hinge toward enlightenment. Each
 one a tender mirror that turns into liquid sunlight in your hands."
  source: "Juan Felipe Herrera, author of <em>Giraffe On Fire</em> and <em>Crash Boom Love</em>"
+ featured: true
 
 -
  book: hands-washing-water
@@ -425,11 +433,6 @@ one a tender mirror that turns into liquid sunlight in your hands."
  source: "Ronald Gottesman, Professor Emeritus, University of Southern California and Editor of the Norton Anthology of American Literature"
 
 -
- book: daphnes-lot
- quote: "The masterful wedding of the narrative and the lyric in these poems (whose subject is the maturation of a sensibility, the coming-of-age of a young Englishwoman - the power of her ties to family, husband and her 'adopted' country, Nigeria - as well as the illumination of her own soul and that of the narrator's) fills the reader with both sorrow and wonder. It is an instructive tale for our age - its vision of the individual will and imagination resisting the madness of politics and the destruction of war is singular and profound."
- source: Carol Muske Dukes
-
--
  book: kalakuta-republic
  quote: "A beautiful work of art…elevates art and humanity above meanness and inhumanity."
  source: World Literature Today
@@ -453,6 +456,7 @@ one a tender mirror that turns into liquid sunlight in your hands."
  book: kalakuta-republic
  quote: "Abani's poems are the most naked, harrowing expression of prison life and political torture imaginable. Reading them is like being singed by a red hot iron."
  source: Harold Pinter
+ featured: true
 
 -
  book: kalakuta-republic

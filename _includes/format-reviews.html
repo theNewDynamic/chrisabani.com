@@ -1,11 +1,11 @@
 <blockquote {% if post.link_to_original %}cite='{{ review.link_to_original }}'{% endif %}>
 	&ldquo;{{ review.quote }}&rdquo;
-  <footer>{{ review.source}}{% if review.link_to_original %} <a href="{{ review.link_to_original }}" class="ss-redirect"></a>{% endif %} on 
+  <small>{{ review.source}}{% if review.link_to_original %} <a href="{{ review.link_to_original }}" class="ss-redirect"></a>{% endif %} on 
  
   {% for page in site.categories.book %} 
     {% if review.book == page.name %}
       <a href="{{page.url}}"><em>{{page.title}}</em></a>
     {% endif %}
   {% endfor %}
-	<footer>
+	</small>
 </blockquote>

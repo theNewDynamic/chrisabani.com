@@ -13,4 +13,4 @@ tags:
   - poetry
 ---
 
-There Are No Names for Red is a collaborative work featuring the poetry of Chris Abani and the paintings of Percival Everett.
+*There Are No Names for Red* is a collaborative work featuring the poetry of Chris Abani and the paintings of Percival Everett.

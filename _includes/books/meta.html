@@ -1,0 +1,30 @@
+<ul class="no-bullet">
+	{% if page.publisher %}
+		<li>
+			<small>
+			 Publisher: {{page.publisher}}
+			</small>
+		</li>
+	{% endif %}
+	{% if page.date %}
+    <li class='date'>
+      <small>
+        Publication Date: {{ page.date | date:'%b %d, %Y' }}
+      </small>
+    </li>
+  {% endif %}
+	{% if page.isbn %}
+		<li>
+			<small>
+			ISBN: {{page.isbn}}
+			</small>
+		</li>
+	{% endif %}
+	{% if page.isbn_digital %}
+		<li>
+			<small>
+				ISBN Digital: {{page.isbn_digital}}
+			</small>
+		<li>
+	{% endif %}
+</ul>
