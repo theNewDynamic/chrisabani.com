@@ -1,0 +1,64 @@
+
+{% if page.isbn %}
+<div id="buy-buttons" class="list-block">
+
+
+<ul class="buy-retailers small">
+
+  <li>
+    <a href="http://www.amazon.com/dp/{{ page.isbn }}" title="Amazon" target="_blank" >
+      Amazon.com
+    </a>
+  </li>
+  <li>
+    <a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ page.isbn }}" target="_blank" >
+      Barnes &amp; Noble
+    </a>
+  </li>
+  <li>
+    <a href="http://www.indiebound.org/product/info.jsp?isbn={{ page.isbn }}" target="_blank" >
+        Your Local Bookstore
+    </a>
+  </li>  
+
+
+<li>
+    <a href="http://www.powells.com/biblio?isbn={{ isbn }}" target="_blank" >
+      Powells
+    </a>
+  </li>  
+
+
+
+</ul>
+
+{% endif %}
+
+
+
+
+<ul class="buy-retailers small">
+  <li>Digital Editions</li>
+
+  <li>
+    <a href="http://www.amazon.com/dp/{{ isbn }}" target="_blank" >
+      Amazon Kindle
+    </a>
+  </li>
+
+
+  <li>
+    <a href="http://itunes.apple.com/us/book/isbn{{ isbn }}" target="_blank" >
+      Apple iBooks
+    </a>
+  </li>
+
+
+  <li>
+    <a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ isbn }}" target="_blank" >
+      Barnes &amp; Noble Nook
+    </a>
+  </li>
+</ul>
+
+</div>

@@ -10,7 +10,8 @@ exclude: ['README.md','Gemfile','links.jsonp', 'assets/scss', 'assets/sass', 'CN
 include: ['_pages']
 relative_permalinks: false
 prose:
-  siteurl: 'http://budparr.github.io/abani/'
+  siteurl: 'http://abani.pubspringdev1.com'
+  rooturl: '_posts'
   site: 
   media: 'assets/img'
   metadata:
@@ -55,6 +56,16 @@ prose:
           label: "ISBN Digital"
           help: "13 Digit with no spaces"
           placeholder: "978xxxxxxxxxx"
+      - name: "asin"
+        field:
+          element: "text"
+          label: "Amazon ASIN"
+          help: "10 Digit with no spaces"
+      - name: "asin_kindle"
+        field:
+          element: "text"
+          label: "Amazon Kindle ASIN"
+          help: "10 Digit with no spaces"
       - name: "publisher"
         field:
           element: "text"
