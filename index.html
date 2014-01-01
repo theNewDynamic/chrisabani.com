@@ -1,14 +1,37 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Home
 ---
 <div class="splash">
+
+	<h1>Chris Abani</h1>
 <div class="content quote">
 
-<a href="/book/the-secret-history-of-las-vegas/"><img src="/assets/img/the-secret-history-of-las-vegas_500x760.jpg" style="float:left;margin-right:28px;max-height:300px;">	</a>
+<a href="/book/the-secret-history-of-las-vegas/"><img src="/assets/img/the-secret-history-of-las-vegas_500x760.jpg" class="skew image-shadow" style="float:left;margin-right:28px;max-height:300px;">	</a>
 &ldquo;Chris Abani might be the most courageous writer working right now. There is no subject matter he finds daunting, no challenge he fears. Aside from that, he's stunningly prolific and writes like an angel. If you want to get at the molten heart of contemporary fiction, Abani is the starting point.&rdquo;
 <br />&mdash; Dave Eggers, author of <em>The Circle</em>
 
 </div></div>
-</div><div class="frame-image"></div>
-<div class="frame-color"></div>
+<hr />
+<div class="pure-g-r">
+	
+<div class="pure-u-1-2">
+<div class="content-inner">
+	
+	<iframe src="http://embed.ted.com/talks/chris_abani_muses_on_humanity.html" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+	<h2>Ted Talk: "On Humanity"</h2>
+	</div>
+</div>
+
+<div class="pure-u-1-2">
+<div class="content-inner">
+
+	{% for post in site.categories.posts limit:1 %}
+	<h2 class="post-titlfe"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<p class="post-meta">{{ post.date | date_to_string }}</p>
+	<p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; <small>(<a href="{{ post.url }}">Read More</a>)</small></p>
+	<hr />
+{% endfor %}
+	</div>
+	</div>
+</div>

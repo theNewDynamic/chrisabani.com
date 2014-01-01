@@ -6,7 +6,7 @@ future: true   # This will tell jekyll to not display future posts
 markdown: redcarpet
 redcarpet:
   extensions: ['autolink', 'smart']
-exclude: ['README.md','Gemfile','links.jsonp', 'assets/scss', 'assets/sass', 'CNAME', 'assets/css/bower_components']
+exclude: ['README.md','Gemfile','links.jsonp', 'assets/scss', '/assets/less/', 'CNAME', 'assets/css/bower_components']
 include: ['_pages']
 relative_permalinks: false
 prose:

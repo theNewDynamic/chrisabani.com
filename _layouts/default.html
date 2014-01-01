@@ -1,5 +1,5 @@
 {% include head.html %}
-<body class="{{page.category | replace: ' ','-' | downcase}}">
+<body class="{% if page.title %}{{page.title | replace: ' ','-' | downcase}}{% endif %}{{page.category | replace: ' ','-' | downcase}}">
 	<div id="layout">  
 		{% include nav-side.html %}
 		<div id="main" class="main-section">
