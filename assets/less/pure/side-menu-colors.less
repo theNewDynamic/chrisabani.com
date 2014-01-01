@@ -21,7 +21,7 @@ border-top: 1px solid lighten(@sidebar-bg-color, 8%);
 
 
 #menu a {
-color: lighten(@sidebar-bg-color, 37%);
+color: lighten(@sidebar-bg-color, 47%);
 }
 
 /*
@@ -29,8 +29,9 @@ Change color of the anchor links on hover/focus.
 */
 #menu .pure-menu li a:hover,
 #menu .pure-menu li a:focus {
-background: lighten(@sidebar-bg-color, 0%);
-color: lighten(@sidebar-bg-color, 60%);
+background: lighten(@sidebar-bg-color, 25%);
+    background:@brand-primary;
+color: lighten(@sidebar-bg-color, 80%);
 }
 
 /*
@@ -44,7 +45,7 @@ background: @sidebar-bg-color;
 This styles a link within a selected menu item `<li>`.
 */
 #menu .pure-menu-selected a, #menu .active a {
-color: lighten(@sidebar-bg-color, 67%);
+color: @brand-primary;//lighten(@sidebar-bg-color, 67%);
 }
 
 /*

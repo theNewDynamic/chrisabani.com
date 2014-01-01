@@ -6,7 +6,7 @@
 {% assign sorted_pages = site.pages | sort:"name" %}
 {% for link in sorted_pages %}
 {% if link.show_in_menu == 'true' or link.show_in_menu == true %}
-	<li class="menu-item{% if page.url == {{link.link}} %} active{% endif %}">
+	<li class="menu-item{% if page.url == {{link.url}} %} active{% endif %}">
 		<a href="{{site.baseurl}}{{link.url}}">{{link.title}}</a>
 	</li>
 	{% endif %}
