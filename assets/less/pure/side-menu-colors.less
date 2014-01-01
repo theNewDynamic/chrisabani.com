@@ -1,7 +1,14 @@
-@sidebar-bg-color:darken(@body-bg, 3%); 
+//@sidebar-bg-color:darken(@body-bg, 3%); 
+@sidebar-bg-color:rgba(0,0,0, .9); 
 
 #menu {
-background:@sidebar-bg-color;
+    background: #111;
+    background-color:@sidebar-bg-color;
+    background: rgba(0,0,0, .4);
+}
+#menu:hover  {
+    background:#111;
+    color: #FFF;
 }
 
 /*
@@ -9,7 +16,7 @@ Add that light border to separate items into groups.
 */
 #menu .pure-menu ul,
 #menu .pure-menu .menu-item-divided {
-border-top: 1px solid lighten(@sidebar-bg-color, 12%);
+border-top: 1px solid lighten(@sidebar-bg-color, 8%);
 }
 
 
