@@ -8,7 +8,7 @@ tags:
   - books
 ---
 
-![](/assets/img/akbooks.gif)
+![](/assets/img/akbooks.gif)![](/assets/img/akbooks.gif)
 ## Test
 
 ![ChrisAbaniBytClausG_THUM.jpg](/assets/img/ChrisAbaniBytClausG_THUM.jpg)
