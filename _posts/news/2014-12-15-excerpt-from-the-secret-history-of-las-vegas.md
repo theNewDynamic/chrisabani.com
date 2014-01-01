@@ -6,8 +6,6 @@ category: posts
 
 **This excerpt is from an advance uncorrected proof.**
 
-Copyright &copy; 2014 &nbsp;by Chris Abani
-
 ###Four
 
 The dying sun burnished the copper ingot of the Mandalay Bay. Next to it was the pyramid of the Luxor and, reclining in front, the light catching the gold paint of its headdress, the Sphinx. Farther to Sunil’s left, the Bellagio and the tip of the Eiffel Tower rose above Paris Las Vegas. The Venetian, his favorite, was obscured.
@@ -63,3 +61,6 @@ He’d learned from his years working undercover for the African National Congre
 What he’d come for would be easier than he thought, but no less fun. He was here to kill Sunil.
 
 He leaned back to wait. He was good at that.
+
+
+*Copyright &copy; 2014 &nbsp;by Chris Abani*
