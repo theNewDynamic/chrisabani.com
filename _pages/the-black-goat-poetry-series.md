@@ -15,4 +15,5 @@ The series, established in 2004, will begin by publishing two to four books of p
 
 The press is interested both in encouraging emerging talent and in helping to maintain poets in mid-career internationally, and as such, collected or selected Bilingual Poems will also be considered. Each new poet will be introduced by a more established American writer.
 
-<a href="http://www.akashicbooks.com/blackgoat.htm" target="_blank"><img src="images_BlackGoat/akbooks.gif" alt="akashic books web link" width="407" height="79" class="floatLeft"></a>
+[![Akashic Books](/assets/img/akbooks.gif)](http://www.akashicbooks.com/author/chris-abani/)
+
