@@ -2,8 +2,8 @@
 category: posts
 layout: page
 published: 
-  - false
-  - "true"
+  - true
+  - "false"
 title: "TED Video: Telling Stories from Africa"
 tags: 
   - video
