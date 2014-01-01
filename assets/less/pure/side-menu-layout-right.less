@@ -1,0 +1,95 @@
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+#layout {
+    padding-right: @layout-sidebar-width; /* left col width "#menu" */
+    right: 0;
+    top:0;
+}
+
+/*
+By using the combination of `position: fixed; top: 0; bottom:0;`, we can make
+the menu have 100% height and be fixed on the page as the rest of it scrolls.
+*/
+#menu {
+    margin-right: -@layout-sidebar-width; /* this should be "#menu" width */
+    width: @layout-sidebar-width;
+    position: fixed;
+    top: 0;
+    right: @layout-sidebar-width; /* this should be "#menu" width */
+    bottom: 0;
+    z-index: 1; /* so the menu or its navicon stays above all content */
+    overflow-y: auto;
+    -webkit-overflow-scroll: touch; /* for smooth scrolling on mobile */
+}
+    /*
+    All anchors inside the menu should be styled like this.
+    */
+    #menu a {
+        border: none;
+        padding: 0.6em 0 0.6em 0.6em;
+        	padding: 0.2em 0 0.2em 0.6em;
+    }
+
+    /*
+    Remove all background/borders, since we are applying them to #menu.
+    */
+     #menu .pure-menu,
+     #menu .pure-menu ul {
+        border: none;
+        background: transparent;
+    }
+
+.pure-menu-heading {
+    font-family: @headings-font-family;
+    
+}
+
+// Dynamic Button For Responsive Menu ----------------------------
+//The button to open/close the Menu is custom-made and not part of Pure. Here's how it works:
+//`.menu-link` represents the responsive menu toggle that shows/hides on small screens.
+.menu-link {
+    display: none; /* show this only on small screens */
+    top: 0;
+    right: @layout-sidebar-width; /* `#menu`'s width */
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.2em 1.6em;
+    background:#000;
+}
+
+    .menu-link span {
+        position: relative;
+        display: block;
+    }
+
+    .menu-link span,
+    .menu-link span:before,
+    .menu-link span:after {
+        background-color: #FFF;
+        width: 100%;
+        height: 0.2em;
+    }
+
+        .menu-link span:before,
+        .menu-link span:after {
+            position: absolute;
+            margin-top: -0.6em;
+            content: " ";
+        }
+
+        .menu-link span:after {
+            margin-top: 0.6em;
+        }
