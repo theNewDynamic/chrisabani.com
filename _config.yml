@@ -111,6 +111,12 @@ prose:
           label: "Title"
           placeholder: "Title"
           value: "Title"
+      - name: published
+        field:
+          element: "text"
+          label: "Status"
+          help: "Change to false if you don't want the post to be published"
+          value: true
       - name: "tags"
         field:
           element: "multiselect"
