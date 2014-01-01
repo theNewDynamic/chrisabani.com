@@ -101,6 +101,10 @@ prose:
         field:
           element: "hidden"
           value: "page"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "posts"
       - name: "title"
         field:
           element: "text"

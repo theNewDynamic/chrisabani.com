@@ -4,7 +4,7 @@ category: book
 published: true
 title: Sanctificum
 name: sanctificum
-permalink: /book/sanctificum
+permalink: /book/sanctificum/
 isbn: "9781556593161"
 publisher: Copper Canyon Press
 isbn_digital: "9781619320710"

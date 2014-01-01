@@ -5,7 +5,7 @@ published: true
 title: Graceland
 name: graceland
 publisher: Picador
-permalink: /book/graceland
+permalink: /book/graceland/
 pub_date: "2005-01-26"
 isbn: "9780312425289"
 isbn_digital: "9781429929820"

@@ -6,6 +6,10 @@
 	font-size: @font-size-base * .8;
     line-height:1.1;    
 }
+
+.pure-menu-heading {
+    font-family: @font-family-serif;
+}
 footer {
     font-family: @font-family-sans-serif;
 	font-size: @font-size-base * .72;
@@ -29,6 +33,10 @@ footer {
 blockquote {
     .quote;
     border-left: none;
+}
+blockquote small {
+    font-family:@font-family-sans-serif;
+    font-size: @font-size-base * 1;
 }
 .quote, .quote p {
     font-family: @font-family-quote;
@@ -65,10 +73,21 @@ blockquote {
     }
 
 .backstretch {
-    opacity:0.23 !important;
+    opacity:0.12 !important;
 }
 .content-inner {
     padding:0 2em;
+}
+
+hr {
+    border-top-color: lighten(@body-bg, 25%);
+}
+
+.entry-title {
+    color: @brand-primary;
+}
+p{
+    font-weight:300;
 }
 //
 //

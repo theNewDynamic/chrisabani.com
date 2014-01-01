@@ -5,7 +5,7 @@ publisher: Akashic Books
 title: Song for Night
 subtitle: A Novella
 name: "song-for-night"
-permalink: "/book/song-for-night"
+permalink: "/book/song-for-night/"
 pub_date: "2007-09-01"
 isbn: "9781933354316"
 isbn_digital: 

@@ -1,6 +1,7 @@
 ---
 title: Excerpt from <em>The Secret History of Las Vegas</em>
 layout: page
+category: posts
 ---
 
 **This excerpt is from an advance uncorrected proof.**

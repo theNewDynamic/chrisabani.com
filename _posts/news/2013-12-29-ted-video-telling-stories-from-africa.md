@@ -4,6 +4,7 @@ published:
   - true
   - "true"
 title: "TED Video: Telling Stories from Africa"
+category: posts
 tags: 
   - video
 ---
