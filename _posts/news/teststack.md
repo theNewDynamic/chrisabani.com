@@ -1,7 +1,10 @@
 ---
-title: This is a test
+category: posts
 layout: page
+title: This is a test
+published: true
 ---
+
 ## To all men whom it may concern. 
 ----------
 
