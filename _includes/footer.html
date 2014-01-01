@@ -11,16 +11,21 @@
     </ul>
   </div>
 </footer>
+
+
+<!-- scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{site.baseurl}}/assets/js/jquery.min.js" }}"><\/script>')</script>
+
+
 {% if page.url == "/writing/" or page.url == '/media/' %}
-    <script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
-    <script src="{{site.baseurl}}/assets/js/underscore-min.js"></script>
+  <script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
+  <script src="{{site.baseurl}}/assets/js/underscore-min.js"></script>
   <script src="{{site.baseurl}}/assets/js/moment.min.js"></script>
-{% include scripts/events-list.js.html  %}
-
-
+  {% include scripts/events-list.js.html  %}
   {% include scripts/list.js.html  %}
 {% endif %}
-<script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
 
 {% include scripts/backstretch.js.html %}
+
 {% include scripts/layout.js.html %}
