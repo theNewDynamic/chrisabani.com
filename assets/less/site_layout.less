@@ -1,3 +1,9 @@
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: @font-family-base;
+}
 #menu a:hover {
     text-decoration: none;
 }
@@ -7,14 +13,15 @@
     line-height:1.1;    
 }
 
-.pure-menu-heading {
-    font-family: @font-family-serif;
-}
 footer {
     font-family: @font-family-sans-serif;
 	font-size: @font-size-base * .72;
     line-height:1;    
+    background:none;
     margin-left: @layout-sidebar-width; /* left col width "#menu" */
+}
+.pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background:none;
 }
 .content {
     margin: 0 auto;
@@ -30,29 +37,30 @@ footer {
   @include image-shadow;
 }
 
-blockquote {
+.quote, .quote p {
+    font-family: @headings-font-family;
+    font-size: @font-size-base * 2.3;
+}
+
+blockquote.review {
     .quote;
     border-left: none;
+    font-family: @headings-font-family;
 }
 blockquote small {
     font-family:@font-family-sans-serif;
-    font-size: @font-size-base * 1;
-}
-.quote, .quote p {
-    font-family: @font-family-quote;
-    font-size: @font-size-base * 1.6;
+    font-size: @font-size-base * .85;
+    //font-weight:300;
 }
 
 .pure-menu.pure-menu-open,
 .pure-menu.pure-menu-horizontal li .pure-menu-children {
-    background: #000; /* Old browsers */
+//    background: #000; /* Old browsers */
     border: none;
 }
 
 .splash {
-    //margin: 2em auto 0;
     padding: 3em 2em;
-    //background: #eee;
 }
 
 .splash .content {
@@ -75,62 +83,17 @@ blockquote small {
 .backstretch {
     opacity:0.12 !important;
 }
+
 .content-inner {
     padding:0 2em;
 }
 
-hr {
-    border-top-color: lighten(@body-bg, 25%);
-}
 
 .entry-title {
     color: @brand-primary;
 }
 p{
-    font-weight:300;
-}
-//
-//
-//.frame {
-//    -webkit-box-sizing:border-box;
-//    box-sizing:border-box;
-//    min-height:100%;
-//    position:absolute;
-//    overflow-x:hidden;
-//    overflow-y:auto;
-//    top: 0;
-//    //width:12.5%; //??
-//    
-//}
-//
-//.frame-image {
-//    background-image: url(/assets/img/ChrisAbaniBytClausGretter1896x1462.jpg);
-//    opacity:.4;
-//}
-//
-//.frame-image, .frame-color {
-//    min-height:1150px;
-//}
-//
-//.frame-color {
-//    background-color:red;// #d1c1a7;
-//}
-//
-//
-#buy-buttons {
-     position: absolute;
-  background-color:lighten(@body-bg, 5%);
-  z-index: @zindex-popover;
-    padding: 1em .5em;
-    border:1px solid lighten(@body-bg, 25%);
-    
-}
-
-
-ul.no-bullet, ul.buy-retailers {
-    list-style-type:none;
-    //margin-left:0;
-    padding-left:0;
+    font-weight:@paragraph-font-weight;
 }
 
 #reviews {
@@ -142,8 +105,8 @@ article header {
      //color: #333;
      text-align: center;
      padding: 2.5em 2em 0;
-     border-bottom: 1px solid lighten(@body-bg, 16%);
-    margin-bottom:2em;
+     border-bottom: 1px solid @page-header-border-color;
+    margin-bottom:1em;
  }
     article header h1 {
         margin: 0.2em 0;
@@ -152,21 +115,21 @@ article header {
     }
      article header h2 {
         font-weight: 300;
-        color: #ccc;
         padding: 0;
         margin-top: 0;
     }
 
-
-
-body.home h1 {
-    font-family: "Amatic SC" , @headings-font-family;
+h1 {
+    font-size:120px;
     text-align:center;
-    font-weight:400;
-    font-size:96px;
     margin-bottom:.75em;
-    color:#FFF;
+    //color:#FFF;
     text-shadow:2px 1px 1px #000;
+    font-weight:300;
+}
+
+ .pure-menu-heading {
+    font-size:140px;
 }
 .image-shadow {
   -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.51);
@@ -174,10 +137,18 @@ body.home h1 {
   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.51);
 }
 //
-.skew {
+.skew-l-3 {
     -moz-transform: scale(1) rotate(-3deg);
 -webkit-transform: scale(1) rotate(-3deg);
 -o-transform: scale(1) rotate(-3deg);
 -ms-transform: scale(1) rotate(-3deg);
 transform: scale(1) rotate(-3deg);
+}
+
+.skew-r-3 {
+    -moz-transform: scale(1) rotate(3deg);
+-webkit-transform: scale(1) rotate(3deg);
+-o-transform: scale(1) rotate(3deg);
+-ms-transform: scale(1) rotate(3deg);
+transform: scale(1) rotate(3deg);
 }

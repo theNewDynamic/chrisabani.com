@@ -1,4 +1,4 @@
-<blockquote {% if post.link_to_original %}cite='{{ review.link_to_original }}'{% endif %}>
+<blockquote class="review" {% if post.link_to_original %}cite='{{ review.link_to_original }}'{% endif %}>
 	&ldquo;{{ review.quote }}&rdquo;
   <small>{{ review.source}}{% if review.link_to_original %} <a href="{{ review.link_to_original }}" class="ss-redirect"></a>{% endif %} 
  {% if page.url == "/reviews/" or page.url == '' %}

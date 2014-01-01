@@ -51,26 +51,36 @@
 @font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Cardo, Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+@font-family-base:        @font-family-serif;
 
 @font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+
+//increase=15%
+//2.6 + (2.6 × increase) 2.99
+//2.15 + (2.15 × increase)2.4725
+//1.7 + (1.7 × increase)1.955
+//1.25 + (1.25 × increase)1.4375
+
+@font-size-h1:            floor((@font-size-base * 3.25)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.4725)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.95)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.4375)); // ~18px
 @font-size-h5:            @font-size-base;
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
-@headings-font-family:    @font-family-serif;//inherit;
+@headings-font-family:    "Amatic SC", @font-family-serif;//inherit;
 @headings-font-weight:    700;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
+
+//BP
+@paragraph-font-weight:   300;
 
 
 // Iconography
@@ -652,14 +662,14 @@
 @abbr-border-color:           @gray-light;
 @headings-small-color:        @gray-light;
 @blockquote-small-color:      @gray-light;
-@blockquote-border-color:     @gray-lighter;
-@page-header-border-color:    @gray-lighter;
+@blockquote-border-color:     @gray;
+@page-header-border-color:   lighten(@body-bg, 22%);// @gray-lighter;
 
 // Miscellaneous
 // -------------------------
 
 // Hr border color
-@hr-border:                   @gray-lighter;
+@hr-border:                   @page-header-border-color;
 
 // Horizontal forms & lists
 @component-offset-horizontal: 180px;
