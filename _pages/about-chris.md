@@ -7,11 +7,11 @@ published: true
 show_in_menu: 'true'
 ---
 
-![Chris Headshot](/assets/img/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani's first novel, published when he was 16, was *[Masters of the Board](http://www.chrisabani.com/Abani_Fiction/MastersOfTheBoard.htm)*, a political thriller about a foiled Nigerian coup. The story was convincing enough that the Nigerian government threw him in jail for inciting a coincidentally timed real-life coup. Imprisoned and tortured twice more, he channeled the experience into searing poetry. 
+![Chris Headshot](/assets/img/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani's first novel, published when he was 16, was *[Masters of the Board](/book/masters-of-the-board/)*, a political thriller about a foiled Nigerian coup. The story was convincing enough that the Nigerian government threw him in jail for inciting a coincidentally timed real-life coup. Imprisoned and tortured twice more, he channeled the experience into searing poetry. 
 
-Abani's best-selling 2004 novel [*GraceLand*](href="http://www.chrisabani.com/Abani_Fiction/Graceland.htm) is a searing and funny tale of a young Nigerian boy, an Elvis impersonator who moves through the wide, wild world of Lagos, slipping between pop and traditional cultures, art and crime. It's a perennial book-club pick, a story that brings the postcolonial African experience to vivid life.
+Abani's best-selling 2004 novel [*GraceLand*](/book/graceland/) is a searing and funny tale of a young Nigerian boy, an Elvis impersonator who moves through the wide, wild world of Lagos, slipping between pop and traditional cultures, art and crime. It's a perennial book-club pick, a story that brings the postcolonial African experience to vivid life.
 
-Now based in Los Angeles, Abani published [*The Virgin of Flames*](http://www.amazon.com/Virgin-Flames-Chris-Abani/dp/014303877X/ref=pd_bbs_2/104-2095816-3374369?ie=UTF8&s=books&qid=1186091362&sr=8-2) in 2007. He is also a publisher, running the poetry imprint [Black Goat Press](http://www.chrisabani.com/Black_Goat/Black_Goat.htm)
+Now based in Los Angeles, Abani published [*The Virgin of Flames*](/book/the-virgin-of-flames/) in 2007. He is also a publisher, running the poetry imprint [Black Goat Press](/black-goat-poetry-series/)
 
 Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html)
 

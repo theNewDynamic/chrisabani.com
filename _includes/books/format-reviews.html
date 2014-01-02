@@ -1,7 +1,8 @@
 <blockquote class="review" {% if post.link_to_original %}cite='{{ review.link_to_original }}'{% endif %}>
 	&ldquo;{{ review.quote }}&rdquo;
-  <small>{{ review.source}}{% if review.link_to_original %} <a href="{{ review.link_to_original }}" class="ss-redirect"></a>{% endif %} 
- {% if page.url == "/reviews/" or page.url == '' %}
+
+{% if review.source %}<small>{{review.source}}{% if review.link_to_original %} <a href="{{ review.link_to_original }}" class="ss-redirect"></a>{% endif %}{% endif %}
+{% if page.url == "/reviews/" or page.url == '' %}
   on
   {% for page in site.categories.book %} 
     {% if review.book == page.name %}
