@@ -12,10 +12,20 @@
   </div>
 </footer>
 
+{% if page.background_image %}
+<img src="{{site.baseurl}}/assets/img/{{page.background_image}}" class="bg">
+{% endif %}
 
+
+{% if page.title == 'HomeTK' %}
 <!-- scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{site.baseurl}}/assets/js/jquery.min.js" }}"><\/script>')</script>
+
+{% include scripts/backstretch.js.html %}
+{% endif %}
+
+
 
 
 {% if page.url == "/writing/" or page.url == '/media/' %}
@@ -26,9 +36,9 @@
   {% include scripts/list.js.html  %}
 {% endif %}
 
-{% if page.title == 'Home' %}
-{% include scripts/backstretch.js.html %}
-{% endif %}
+
+
+
 
 {% include scripts/layout.js.html %}
 {% include sharing/addthis-follow.html %}
