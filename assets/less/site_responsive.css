@@ -1,0 +1,82 @@
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+/* iPads (portrait and landscape) ----------- */
+@media (max-width: 1024px) {
+  /* Styles */
+  .sidebar h1 {
+    font-size: 22px;
+    text-align: right;
+  }
+  ul.nav,
+  ul.nav li {
+    font-size: 98%;
+    text-align: right;
+    margin: 0;
+  }
+  .pure-button {
+    max-width: 100%;
+    font-size: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    font-size: 90%;
+  }
+  .header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+    position: static;
+  }
+  #layout {
+    padding: 0;
+  }
+  .sidebar h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  ul.nav,
+  ul.nav li {
+    font-size: 98%;
+    display: inline;
+    text-align: center;
+    margin-right: .5em;
+  }
+}
+@media (max-width: 480px) {
+  .content {
+    padding: 2em .5em 0;
+  }
+  .sidebar {
+    text-align: left;
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+  body.home .sidebar {
+    display: inline-block;
+    position: relative;
+  }
+  .sidebar img {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .sidebar h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  ul.nav,
+  ul.nav li {
+    font-size: 98%;
+    display: inline-block;
+    margin-right: .5em;
+  }
+}
