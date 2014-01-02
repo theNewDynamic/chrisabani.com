@@ -19,17 +19,24 @@ title: Home
 <div class="pure-u-1-2">
 <div class="content-inner">
 	
-	<iframe src="http://embed.ted.com/talks/chris_abani_muses_on_humanity.html" style="max-width:100%;" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-	<h2>Ted Talk: "On Humanity"</h2>
+	{% for post in site.tags.video limit:1 %}
+	<h2 class="post-titlfe"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	{{ post.content }}
+{% endfor %}
+
+
 	</div>
 </div>
 
 <div class="pure-u-1-2">
 <div class="content-inner">
 
-	{% for post in site.categories.posts limit:2 %}
+	{% for post in site.categories.posts limit:13 %}
+	 {% if post.tags contains 'video' %}
+	 {% else %}
 	<h2 class="post-titlfe"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	<p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; <small>(<a href="{{ post.url }}">Read More</a>)</small></p>
+	{% endif %}
 {% endfor %}
 	</div>
 	</div>
