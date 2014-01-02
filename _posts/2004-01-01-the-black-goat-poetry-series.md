@@ -1,9 +1,10 @@
 ---
 layout: page
-published: false
+published: true
 title: Black Goat Poetry Series
-show_in_menu: "true"
+show_in_menu: false
 permalink: "/black-goat-poetry-series/"
+tags: poetry
 ---
 
 ### POETRY SERIES
