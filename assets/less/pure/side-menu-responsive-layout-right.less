@@ -1,0 +1,41 @@
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `767px`, but modify this based on your app's needs.
+*/
+@media (max-width: 767px) {
+
+    .header {
+        text-align: left;
+    }
+
+    /*
+    Navigation Push styles.
+    */
+    #layout {
+        position: relative;
+        padding-right: 0;
+    }
+        #layout.active {
+            position: relative;
+            right: @layout-sidebar-width;
+        }
+            #layout.active #menu {
+                right: @layout-sidebar-width;
+                width: @layout-sidebar-width;
+            }
+
+    #menu {
+        right: 0;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 0;
+        display: block; /* show the button on small screens */
+    }
+
+    #layout.active .menu-link {
+        right: @layout-sidebar-width;
+    }
+}
