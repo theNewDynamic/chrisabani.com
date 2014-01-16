@@ -169,3 +169,26 @@ transform: scale(1) rotate(-3deg);
 -ms-transform: scale(1) rotate(3deg);
 transform: scale(1) rotate(3deg);
 }
+
+
+
+
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+@-moz-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+@-o-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+.main-section,footer {
+  -webkit-animation:fade-in 0.33s ease-in;
+  -moz-animation:fade-in 0.33s ease-in;
+  animation:fade-in 0.33s ease-in;
+  -webkit-animation-iteration-count:1;
+  -moz-animation-iteration-count:1;
+  animation-iteration-count:1
+}
+
+
+
+
+
+
