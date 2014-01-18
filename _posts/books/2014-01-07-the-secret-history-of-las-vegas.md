@@ -27,8 +27,6 @@ short_description:
   - "Suspenseful through the last page, <em>The Secret History of Las Vegas</em> is Chris Abani’s most accomplished work to date, with his trademark visionary prose and a striking compassion for the inner lives of outsiders."
 tags: 
   - fiction
-  - poetry
-  - screenplay
 published: true
 asin_kindle: B00DMCPOJK
 asin: 0143124951
