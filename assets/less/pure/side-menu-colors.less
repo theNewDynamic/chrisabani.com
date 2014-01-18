@@ -69,9 +69,17 @@ color: lighten(@sidebar-bg-color, 90%);
 .menu-link {
 background:#000;
 }
+.menu-link span,
+    .menu-link span:before,
+    .menu-link span:after {
+        background-color: #FFF;
+        border-top:2px solid #FFF;
+    }
 
 .menu-link:hover,
 .menu-link:focus {
-background: #000;
+background:#333;
+color: #FFF;
+text-decoration: none;
 }
 

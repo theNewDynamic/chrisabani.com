@@ -1,3 +1,4 @@
+port: 4001
 baseurl: "http://abani.pubspringdev1.com"
 sitename: Chris Abani
 # source: ./content
