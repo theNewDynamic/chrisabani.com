@@ -6,18 +6,13 @@ title: The Virgin of Flames
 name: "the-virgin-of-flames"
 permalink: "/book/the-virgin-of-flames/"
 pub_date: "2007-01-30"
-isbn: 
-  - 9780143038771
-  - "9780143038771"
-isbn_digital: 
-  - 9781440627415
-  - "9781440627415"
+isbn: 9780143038771
+isbn_digital: 9781440627415
 cover_image: "the-virgin-of-flames_300x458.jpg"
 tags: 
   - fiction
 published: true
 asin_kindle: B000SEGMR8
-asin: 014303877X
 ---
 
 **From the author of the award-winning GraceLand comes a searing, dazzlingly written novel of a tarnished City of Angels**
