@@ -15,7 +15,8 @@ The Fund will, through the Series and other projects, promote the writing and pu
 
 ---
 
-### POETRY SERIES
+### Black Goat Poetry Series
+
 Black Goat</span> is an independent poetry series imprint created by Chris Abani. It is affiliated with Akashic Books and is currently an imprint of that press.
 
 The vision behind <span class="redText">Black Goat</span> is simple: a commitment to publishing collections of poetry that might not otherwise find a home. Selected work will represent the finest examples of well-crafted and sometimes challenging poetry, and will also focus on experimental, aesthetically or thematically challenging work. The series also aims to create a proportional representation of African and other non-American as well as female poets on its list.
