@@ -3,6 +3,18 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
+### The African Poetry Book Fund:
+
+The African Poetry Book Fund promotes and advances the development and publication of the poetic arts through its book series, contests, workshops, and seminars and through its collaborations with publishers, festivals, booking agents, colleges, universities, conferences and all other entities that share an interest in the poetic arts of Africa.  The Fund is committed to seeking the resources to support this mission and to ensure that all its efforts are carried out with excellence.
+
+The Fund will, through the Series and other projects, promote the writing and publication of African poetry through an international complex of additional collaborations and partnerships.  The Fund and its partners will offer support for seminars, workshops and other publishing opportunities for African poets.
+
+["*Seven New Generation African Poets: A Chapbook boxed set*"](http://www.amazon.com/Seven-New-Generation-African-Poets/dp/1940646588)
+
+[African Poetry Book Fund](http://africanpoetrybf.unl.edu/?page_id=2)
+
+---
+
 ### POETRY SERIES
 Black Goat</span> is an independent poetry series imprint created by Chris Abani. It is affiliated with Akashic Books and is currently an imprint of that press.
 

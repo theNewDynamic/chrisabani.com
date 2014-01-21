@@ -6,12 +6,21 @@ summary: "&ldquo;Imprisoned three times by the Nigerian government, Chris Abani 
 published: true
 show_in_menu: 'true'
 ---
+![Chris Headshot](/assets/img/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani is a novelist, poet, essayist, screenwriter and playwright. Born in Nigeria to an Igbo father and English mother, he grew up in Afikpo, Nigeria, received a BA in English from Imo State University, Nigeria, an MA in English, Gender and Culture from Birkbeck College, University of London and a PhD in Literature and Creative Writing from the University of Southern California. He has resided in the United States since 2001. 
 
-![Chris Headshot](/assets/img/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani's first novel, published when he was 16, was *[Masters of the Board](/book/masters-of-the-board/)*, a political thriller about a foiled Nigerian coup. The story was convincing enough that the Nigerian government threw him in jail for inciting a coincidentally timed real-life coup. Imprisoned and tortured twice more, he channeled the experience into searing poetry. 
+He is the recipient of the PEN USA Freedom-to-Write Award, the Prince Claus Award, a Lannan Literary Fellowship, a California Book Award, a Hurston/Wright Legacy Award, a PEN Beyond the Margins Award, the PEN Hemingway Book Prize and a Guggenheim Award.
 
-Abani's best-selling 2004 novel [*GraceLand*](/book/graceland/) is a searing and funny tale of a young Nigerian boy, an Elvis impersonator who moves through the wide, wild world of Lagos, slipping between pop and traditional cultures, art and crime. It's a perennial book-club pick, a story that brings the postcolonial African experience to vivid life.
+His fiction includes *The Secret History of Las Vegas* (Penguin 2014), *Song For Night *(Akashic, 2007), *The Virgin of Flames* (Penguin, 2007), *Becoming Abigail* (Akashic, 2006), *GraceLand* (FSG, 2004), and *Masters of the Board* (Delta, 1985).
 
-Now based in Los Angeles, Abani published [*The Virgin of Flames*](/book/the-virgin-of-flames/) in 2007. He is also a publisher, running the poetry imprint [Black Goat Press](/black-goat-poetry-series/)
+His poetry collections are *Sanctificum* (Copper Canyon Press, 2010), *There Are No Names for Red* (Red Hen Press, 2010), *Feed Me The Sun - Collected Long Poems *(Peepal Tree Press, 2010) *Hands Washing Water* (Copper Canyon, 2006), *Dog Woman* (Red Hen, 2004), *Daphne's Lot* (Red Hen, 2003) and *Kalakuta Republic *(Saqi, 2001).
+
+His work has been translated into French, Italian, Spanish, German, Swedish, Romanian, Hebrew, Macedonian, Ukrainian, Portuguese, Dutch, Bosnian and Serbian.
+
+Through his TED Talks, public speaking and essays Abani is known as an international voice on humanitarianism, art, ethics, and our shared political responsibility. His critical and personal essays have been featured in books on art and photography, as well as *Witness*, *Parkett*, *The New York Times*, *O Magazine*, and *Bomb*.
+
+His many research interests include African Poetics, World Literature, 20th Century Anglophone Literature, African Presences in Medieval and Renaissance Culture, The Living Architecture of Cities, West African Music, Postcolonial and Transnational Theory, Robotics and Consciousness, Yoruba and Igbo Philosophy and Religion. 
+
+He is Board of Trustees Professor of English at Northwestern University. 
 
 Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html)
 
