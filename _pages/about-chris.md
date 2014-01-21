@@ -2,7 +2,7 @@
 layout: page
 title: About Chris
 permalink: "/about-chris/"
-summary: "&ldquo;Imprisoned three times by the Nigerian government, Chris Abani turned his experience into poems that Harold Pinter called &lsquo;the most naked, harrowing expression of prison life and political torture imaginable.&rsquo;&rdquo;\n"
+summary: "Poet, Novelist, Essayist, Screenwriter and Humanist."
 published: true
 show_in_menu: 'true'
 ---
