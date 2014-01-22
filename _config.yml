@@ -1,5 +1,5 @@
 port: 4001
-baseurl: "http://abani.pubspringdev1.com"
+baseurl: "http://www.chrisbani.com"
 sitename: Chris Abani
 # source: ./content
 permalink: pretty
@@ -11,7 +11,7 @@ exclude: ['README.md','Gemfile','links.jsonp', 'assets/scss', '/assets/less/', '
 include: ['_pages']
 relative_permalinks: false
 prose:
-  siteurl: 'http://abani.pubspringdev1.com'
+  siteurl: 'http://www.chrisbani.com'
   #rooturl: '_posts'
   site: 
   media: 'assets/img'

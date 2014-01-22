@@ -4,7 +4,7 @@
     	<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -29,6 +29,17 @@
 <![endif]-->
 
 
+
+<meta content="Chris Abani" property="og:title">
+<meta content="Type" property="og:type">
+<meta content="{{site.baseurl}}/assets/img/the-secret-history-of-las-vegas_300x465.jpg" property="og:image">
+<meta content="{{site.baseurl}}" property="og:url">
+<meta content="Official site of Chris Abani" property="og:site_name">
+<meta content="Poet, Novelist, Essayist, Screenwriter and Humanist, author of The Secret History of Las Vegas" property="og:description">
+
+
+
+
         <!-- TODO: add og, twitter card -->
        {% comment %}
         <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7044452/637322/css/fonts.css" />
@@ -42,5 +53,6 @@
     {% include forms-emailvalidation.html %}
 {% endif %}
 
+{% include analytics.html %}
 
     </head>
