@@ -1,5 +1,5 @@
 port: 4001
-baseurl: "http://www.chrisbani.com"
+baseurl: "http://www.chrisabani.com"
 sitename: Chris Abani
 # source: ./content
 permalink: pretty
