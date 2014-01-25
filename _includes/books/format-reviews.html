@@ -1,6 +1,6 @@
 <blockquote class="review" {% if post.link_to_original %}cite='{{ review.link_to_original }}'{% endif %}>
-	“{{ review.quote }}”
-{% if review.source %}<small>{{review.source}}{% if review.link_to_original %} <a href="{{ review.link_to_original }}" class="ss-redirect"></a>{% endif %}{% endif %}
+ <span class="quote">{{ review.quote | markdownify }}</span>
+{% if review.source %}<small>{{review.source | markdownify }}{% if review.link_to_original %} <a href="{{ review.link_to_original }}" class="ss-redirect"> (link)</a>{% endif %}{% endif %}
 {% if page.url == "/reviews/" or page.url == '' %}
   on
   {% for page in site.categories.book %} 
