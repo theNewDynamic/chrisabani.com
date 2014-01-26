@@ -7,6 +7,7 @@ published:
 title: Reviews coming in for The Secret History of Las Vegas
 ---
 
+Getting some nice Review coverage of *The Secret History of Las Vegas*. Here are a couple recent ones from the *LA Times* and *The New York Times Book Review*
 
 > "What lifts the novel is its energy, the audacity of Abani’s imagination, and most of all the breadth of vision that supplies its moral context. *The Secret History of Las Vegas* has a global sweep and – what’s often aspired to, but rarely achieved in a novel – a feeling of thematic unity."
 -- Marcel Theroux, *New York Times Book Review*
