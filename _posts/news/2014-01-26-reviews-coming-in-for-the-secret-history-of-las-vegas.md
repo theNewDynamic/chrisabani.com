@@ -1,11 +1,7 @@
 ---
 category: posts
 layout: page
-published: 
-  - true
-  - "true"
 title: Reviews coming in for The Secret History of Las Vegas
-tags: ""
 ---
 
 Getting some nice Review coverage of *The Secret History of Las Vegas*. Here are a couple recent ones from the *LA Times* and *The New York Times Book Review*
