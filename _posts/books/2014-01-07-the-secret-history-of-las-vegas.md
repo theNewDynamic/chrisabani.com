@@ -23,5 +23,7 @@ asin_kindle: B00DMCPOJK
 
 Before he can retire, **Las Vegas detective** Salazar is determined to solve a recent spate of murders. When he encounters a pair of conjoined twins with a container of blood near _their_ car, he’s sure he has apprehended the killers, and enlists the help of Dr. Sunil Singh, a South African transplant who specializes in the study of psychopaths. As Sunil tries to crack the twins, the implications of his research grow darker. Haunted by his betrayal of loved ones back home during apartheid, he seeks solace in the love of Asia, a prostitute with hopes of escaping that life. But Sunil’s own troubled past is fast on his heels in the form of a would-be assassin.
 
+**New York Times Editor’s Choice**
+
 
 [Read an excerpt](/posts/2013/12/15/excerpt-from-the-secret-history-of-las-vegas/)
