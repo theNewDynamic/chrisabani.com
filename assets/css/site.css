@@ -746,6 +746,7 @@ footer#content-info {
   /* IE6-9 */
   -webkit-filter: grayscale(100%) !important;
   /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  border-radius: 3px;
 }
 .addthis_32x32_style .dummy .at300bs:hover,
 .addthis_32x32_style .at300bs:hover,
