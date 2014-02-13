@@ -1,0 +1,52 @@
+---
+layout: default
+title: 404
+# background_image: bg-clock_op34n13.jpg
+---
+<div class="splash">
+	<h1>Chris Abani</h1>
+	<div class="content">
+		<a href="/book/the-secret-history-of-las-vegas/"><img src="/assets/img/the-secret-history-of-las-vegas_500x760.jpg" class="skew-l-3 image-shadow" style="float:left;margin-right:28px;max-height:350px;">	</a>
+        
+        
+        <p class="quote">Sorry, but this page has moved. Try one of the links to the right.
+
+<br />
+Or maybe watch a video...
+        </p>
+
+
+ 
+ <br />
+ 
+ 
+        
+        
+        
+    
+	</div>
+</div>
+
+<div  class="content">
+	<div class="pure-g-r">
+		<div class="pure-u-1">
+			<div id="section2" class="content-inner">
+				{% for post in site.tags.video limit:1 %}
+					<h2 class="post-titlfe"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+					{{ post.content }}
+				{% endfor %}
+			</div>
+		</div>
+		<div class="pure-u-1">
+			<div class="content-inner">
+				{% for post in site.categories.posts limit:13 %}
+					{% if post.tags contains 'video' %}
+						{% else %}
+							<h2 class="post-titlfe"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+							<p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; <small>(<a href="{{ post.url }}">Read More</a>)</small></p>
+						{% endif %}
+					{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
