@@ -4,7 +4,7 @@ layout: page
 published: 
   - true
   - "true"
-title: "Playlist for "
+title: Playlist for The Secret History of Las Vegas
 ---
 
 "Large Hearted Boy" has published a playlist of songs that I think inspired my new novel, or that work as companions as you read it. Or at the very list would make a great listening experience. 
