@@ -2,7 +2,7 @@
 category: posts
 layout: page
 published: 
-  - true
+  - false
   - "true"
 title: Title of a test post
 ---
