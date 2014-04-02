@@ -1,5 +1,6 @@
 port: 4001
 baseurl: "http://www.chrisabani.com"
+author: Chris Abani
 sitename: Chris Abani
 # source: ./content
 permalink: pretty
