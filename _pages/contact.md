@@ -11,12 +11,11 @@ Lauren Cerand
 <correspondence@laurencerand.com>
 
 ### Booking Agents
+ Alison Granucci, Blue Flower Arts  
+ [www.blueflowerarts.com](http://www.blueflowerarts.com)
+ 
  The Lavin Agency  
  [www.thelavinagency.com](http://www.thelavinagency.com/lavin.php?action=getSpeaker&SID=93)
- 
- Alison Granucci, Blue Flower Arts  
- (Artistic Representation)  
- [www.blueflowerarts.com](http://www.blueflowerarts.com)
  
 
 ### Literary/Film Agent
