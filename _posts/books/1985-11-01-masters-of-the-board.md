@@ -17,7 +17,6 @@ sm_show_books_buy_button:
   - 0
 tags: 
   - fiction
-  - screenplay
 published: true
 ---
 
