@@ -1,13 +1,13 @@
 <ul class="navigation">
 	<!-- <li class="menu-item{% if page.url == '' %} active{% endif %}">
-		<a href="{{site.baseurl}}/">Home</a>
+		<a href="{{site.url}}/">Home</a>
 	</li> -->
 
 {% assign sorted_pages = site.pages | sort:"name" %}
 {% for link in sorted_pages %}
 {% if link.show_in_menu == 'true' or link.show_in_menu == true %}
 	<li class="menu-item{% if page.url == {{link.url}} %} active{% endif %}">
-		<a href="{{site.baseurl}}{{link.url}}">{{link.title}}</a>
+		<a href="{{link.url}}">{{link.title}}</a>
 	</li>
 	{% endif %}
 {% endfor %}
@@ -16,29 +16,29 @@
 
 
 <li class="section-heading menu-item-divided">
-  <a href="{{site.baseurl}}/books/fiction/">Fiction</a>
+  <a href="/books/fiction/">Fiction</a>
 </li>
 
 
 {% for link in site.tags.fiction %}
 	<li class="menu-item{% if page.url == {{link.url}} %} active{% endif %}">
-		<a href="{{site.baseurl}}{{link.url}}">{{link.title}}</a>
+		<a href="{{link.url}}">{{link.title}}</a>
 	</li>
 {% endfor %}
 
 <li class="section-heading menu-item-divided">
-  <a href="{{site.baseurl}}/books/poetry/">Poetry</a>
+  <a href="/books/poetry/">Poetry</a>
 </li>
 
 {% for link in site.tags.poetry %}
 	<li class="menu-item{% if page.url == {{link.url}} %} active{% endif %}">
-		<a href="{{site.baseurl}}{{link.url}}">{{link.title}}</a>
+		<a href="{{link.url}}">{{link.title}}</a>
 	</li>
 {% endfor %}
 
 
 <li class="section-heading menu-item-divided">
-  <a href="{{site.baseurl}}/projects/">Projects</a>
+  <a href="/projects/">Projects</a>
 </li>
 
 

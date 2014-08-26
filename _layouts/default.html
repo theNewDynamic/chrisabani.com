@@ -1,4 +1,4 @@
-{% include head.html %}
+{% include global/head.html %}
 <body class="{% if page.title %}{{page.title | replace: ' ','-' | downcase}}{% endif %}{{page.category | replace: ' ','-' | downcase}}">
 	<div id="layout">  
 		
@@ -8,6 +8,7 @@
 		{% include nav-side.html %}
 		<div class="push"></div>
 	</div><!--  /#layout  -->
-	{% include footer.html %}
+	{% include global/footer.html %}
+	{% include global/scripts.html %}
 </body>
 </html>

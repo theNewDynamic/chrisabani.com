@@ -1,5 +1,3 @@
-
-
 <script>
 // TODO: [X]Times show an extra 0 <-- going to leave this
 // TODO: [ ]reverse ordering for past events (can fix with json file, but rather not)
@@ -16,7 +14,7 @@ var timing = function(start, end) {
 $(document).ready(function() {
 
 
-  $.getJSON('{{site.baseurl}}/api/cal.json', null, function(response) {
+  $.getJSON('{{site.url}}/api/cal.json', null, function(response) {
 
 
 

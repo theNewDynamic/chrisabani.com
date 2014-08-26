@@ -12,16 +12,16 @@
         <link rel="alternate" type="application/rss+xml" href="/feed.rss" title="RSS Feed">
         <title>{% if page.title %} {{page.title}} - {% endif %} {{site.sitename}}</title>
 
-        <link rel="icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
-        <link href='{{site.baseurl}}/assets/css/site.css' rel='stylesheet' />
+        <link rel="icon" href="{{site.url}}/favicon.ico" type="image/x-icon">
+
+        <link href='/assets/css/site.css' rel='stylesheet' />
         
-        <link rel="canonical" href="{{site.baseurl}}{{ page.url }}" />
+        <link rel="canonical" href="{{site.url}}{{ page.url }}" />
 
         <meta name="description" content="{% if page.tagline %}{{page.tagline}}{% endif %}">
         <!--[if lt IE 9]>
-<script src="{{ theme:js src='{{site.baseurl}}/assets/js/html5shiv.js' }}"></script>
-<script src="{{ theme:js src='{{site.baseurl}}/assets/js/respond.js' }}"></script>
+<script src="{{ theme:js src='{{site.url}}/assets/js/html5shiv.js' }}"></script>
+<script src="{{ theme:js src='{{site.url}}/assets/js/respond.js' }}"></script>
 <![endif]-->
 
 <!--[if lte IE 7]>
@@ -32,26 +32,12 @@
 
 <meta content="Chris Abani" property="og:title">
 <meta content="website" property="og:type">
-<meta content="{{site.baseurl}}/assets/img/the-secret-history-of-las-vegas_300x465.jpg" property="og:image">
-<meta content="{{site.baseurl}}" property="og:url">
+<meta content="{{site.url}}/assets/img/the-secret-history-of-las-vegas_300x465.jpg" property="og:image">
+<meta content="{{site.url}}" property="og:url">
 <meta content="Official site of Chris Abani" property="og:site_name">
 <meta content="Poet, Novelist, Essayist, Screenwriter and Humanist, author of The Secret History of Las Vegas" property="og:description">
 
 
-
-
-        <!-- TODO: add og, twitter card -->
-       {% comment %}
-        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7044452/637322/css/fonts.css" />
-
-              <!-- (1) Moot look and feel -->
-      <link rel="stylesheet" href="https://cdn.moot.it/1/moot.css">
-      {% endcomment %}
-
-
-{% if page.url == "/contact/" or page.url == '/book-clubs/' %}
-    {% include forms-emailvalidation.html %}
-{% endif %}
 
 {% include analytics.html %}
 

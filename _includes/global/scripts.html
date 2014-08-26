@@ -1,0 +1,35 @@
+<script type="text/javascript">
+  function downloadJSAtOnload() {
+
+    var element = document.createElement("script");
+    element.src = "/assets/js/concatenated-scripts.js";
+    document.body.appendChild(element);
+
+
+    // var element_addthis = document.createElement("script");
+    // element_addthis.src = "//s7.addthis.com/js/300/addthis_widget.js{% if site.addthis_id %}#pubid={{site.addthis_id}}{% endif %}";
+    // document.body.appendChild(element_addthis);
+  }
+  if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
+
+</script>
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Amatic+SC:400,700:latin', 'Open+Sans+Condensed:300,300italic,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
+{% include sharing/addthis-follow.html %}

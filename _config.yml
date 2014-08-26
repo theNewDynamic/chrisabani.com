@@ -1,16 +1,14 @@
 port: 4001
-baseurl: "http://www.chrisabani.com"
+url: "http://www.chrisabani.com"
 author: Chris Abani
 sitename: Chris Abani
 # source: ./content
 permalink: pretty
 future: true   # This will tell jekyll to not display future posts
-markdown: redcarpet
-redcarpet:
-  extensions: ['autolink', 'smart']
 exclude: ['README.md','Gemfile','links.jsonp', 'assets/scss', '/assets/less/', 'CNAME', 'assets/css/bower_components']
 include: ['_pages']
-relative_permalinks: false
+# relative_permalinks: false
+production: true
 prose:
   siteurl: 'http://www.chrisbani.com'
   #rooturl: '_posts'
