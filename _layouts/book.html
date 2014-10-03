@@ -5,20 +5,20 @@ section: book
 <div class="content">
 <article>
 	<header>
-	  <h1 class="entry-title">    	   
+	  <h1 class="entry-title">
 	   	{{page.title}}
 	  </h1>
 	</header>
 	<div class="pure-g-r" style="margin-bottom:8rem;">
-		
+
 			<div class="pure-u-1">
         {% include books/related-review.html show="1" %}
       </div>
-			<div class="pure-u-3-8">
+			<div class="pure-u-3-8f" style="width:32%;float:left;margin-right:2%;">
 				{% include books/cover.html styles="max-width:300px;" %}
 				{% include books/meta.html %}
 			</div>
-			<div class="pure-u-5-8">
+			<div class="pure-u-5-8f" style="width:66%;float:left;">
 				<div class="content-inner">
 					{{ content }}
 					{% include books/buy_links.html %}
@@ -28,7 +28,7 @@ section: book
 				<div style="width:150px;margin:0 auto 2em auto;">{% include sharing/addthis-share.html %}</div>
 				{% include books/related-reviews.html show="100" offset="1" %}
 			</div>
-		
+
 	</div>
 </article>
 </div>
