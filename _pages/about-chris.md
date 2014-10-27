@@ -6,7 +6,7 @@ summary: "Poet, Novelist, Essayist, Screenwriter and Humanist."
 published: true
 show_in_menu: 'true'
 ---
-![Chris Headshot](/assets/img/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani is a novelist, poet, essayist, screenwriter and playwright. Born in Nigeria to an Igbo father and English mother, he grew up in Afikpo, Nigeria, received a BA in English from Imo State University, Nigeria, an MA in English, Gender and Culture from Birkbeck College, University of London and a PhD in Literature and Creative Writing from the University of Southern California. He has resided in the United States since 2001. 
+![Chris Headshot](/assets/img/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani is a novelist, poet, essayist, screenwriter and playwright. Born in Nigeria to an Igbo father and English mother, he grew up in Afikpo, Nigeria, received a BA in English from Imo State University, Nigeria, an MA in English, Gender and Culture from Birkbeck College, University of London and a PhD in Literature and Creative Writing from the University of Southern California. He has resided in the United States since 2001.
 
 He is the recipient of the PEN USA Freedom-to-Write Award, the Prince Claus Award, a Lannan Literary Fellowship, a California Book Award, a Hurston/Wright Legacy Award, a PEN Beyond the Margins Award, the PEN Hemingway Book Prize and a Guggenheim Award.
 
@@ -18,13 +18,13 @@ His work has been translated into French, Italian, Spanish, German, Swedish, Rom
 
 Through his TED Talks, public speaking and essays Abani is known as an international voice on humanitarianism, art, ethics, and our shared political responsibility. His critical and personal essays have been featured in books on art and photography, as well as *Witness*, *Parkett*, *The New York Times*, *O Magazine*, and *Bomb*.
 
-His many research interests include African Poetics, World Literature, 20th Century Anglophone Literature, African Presences in Medieval and Renaissance Culture, The Living Architecture of Cities, West African Music, Postcolonial and Transnational Theory, Robotics and Consciousness, Yoruba and Igbo Philosophy and Religion. 
+His many research interests include African Poetics, World Literature, 20th Century Anglophone Literature, African Presences in Medieval and Renaissance Culture, The Living Architecture of Cities, West African Music, Postcolonial and Transnational Theory, Robotics and Consciousness, Yoruba and Igbo Philosophy and Religion.
 
-He is Board of Trustees Professor of English at Northwestern University. 
+He is Board of Trustees Professor of English at Northwestern University.
 
 Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html)
 
-[**Click Here to Download Hi-res photos**](/assets/files/ChrisAbani_PrintHiRes.zip)  
+[**Click Here to Download Hi-res photos**](/assets/files/ChrisAbani_PrintHiRes.zip)
 [**Click Here to Download Chris's bio**](/assets/files/bio-chris-abani.docx)
 
 
@@ -32,6 +32,8 @@ Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html
 
 
 ### AWARDS/GRANTS/HONORS
+
+2014 - [Ford United States Artists Fellow](http://www.unitedstatesartists-2014fellows.org/#/chris-abani/)
 
 2009 - Guggenheim Fellow in Fiction.
 
