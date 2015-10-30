@@ -8,8 +8,8 @@ permalink: /book/sanctificum/
 isbn: "9781556593161"
 publisher: Copper Canyon Press
 isbn_digital: "9781619320710"
-cover_image_path: sanctificum_300x449.jpg
-tags: 
+cover_image_path: "assets/img/sanctificum_300x449.jpg"
+tags:
   - poetry
 asin_kindle: B00B6UB6BU
 asin: "1556593163"
