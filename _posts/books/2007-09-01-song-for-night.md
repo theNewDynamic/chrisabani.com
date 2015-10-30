@@ -11,7 +11,7 @@ isbn: "9781933354316"
 isbn_digital: 
   - 9781936070466
   - "9781936070466"
-cover_image: "song-for-night_300x440.jpg"
+cover_image_path: "song-for-night_300x440.jpg"
 tags: 
   - fiction
 published: true

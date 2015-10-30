@@ -1,7 +1,7 @@
 ---
 title: "The Face"
 subtitle: "Cartography of the Void"
-cover_image: "cover-the-face.jpg"
+cover_image_path: "cover-the-face.jpg"
 layout: page
 category: book
 permalink: "/book/the-face-cartography-of-the-void/"
