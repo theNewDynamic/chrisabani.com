@@ -29,6 +29,12 @@ Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html
 
 ### AWARDS/GRANTS/HONORS
 
+2014 -&nbsp;Winner of the Edgar Prize.
+
+2014 -&nbsp;Finalist for the Hurston Wright Legacy Award in Fiction.
+
+2014 - Elected to the American Academy of Arts and Sciences.
+
 2014 - [Ford United States Artists Fellow](http://www.unitedstatesartists-2014fellows.org/#/chris-abani/)
 
 2009 - Guggenheim Fellow in Fiction.
