@@ -5,7 +5,7 @@ published: true
 title: Kalakuta Republic
 isbn: "9780863563225"
 publisher: Saqi Books
-cover_image_path: "kalakuta-republic_300x471.jpg"
+cover_image_path: "/assets/img/kalakuta-republic_300x471.jpg"
 pub_date: "2000-09-01"
 name: "kalakuta-republic"
 permalink: "/book/kalakuta-republic/"

@@ -8,7 +8,7 @@ permalink: "/book/the-virgin-of-flames/"
 pub_date: "2007-01-30"
 isbn: 9780143038771
 isbn_digital: 9781440627415
-cover_image_path: "the-virgin-of-flames_300x458.jpg"
+cover_image_path: "/assets/img/the-virgin-of-flames_300x458.jpg"
 tags: 
   - fiction
 published: true

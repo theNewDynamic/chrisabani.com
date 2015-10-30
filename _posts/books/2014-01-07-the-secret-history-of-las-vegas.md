@@ -7,7 +7,7 @@ name: "the-secret-history-of-las-vegas"
 publisher: 
   - Penguin
 isbn: 9780143124955
-cover_image_path: "SecretHistoryVegas450w.jpg"
+cover_image_path: "/assets/img/SecretHistoryVegas450w.jpg"
 sm_show_books_buy_button: 
   - 0
 isbn_digital: 9780698140189

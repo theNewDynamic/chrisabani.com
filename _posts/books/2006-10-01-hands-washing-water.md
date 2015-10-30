@@ -11,7 +11,7 @@ publisher: Copper Canyon Press
 isbn_digital: "9781619320703"
 tags: 
   - poetry
-cover_image_path: "hands-washing-water_300x455.jpg"
+cover_image_path: "/assets/img/hands-washing-water_300x455.jpg"
 asin_kindle: B00APD9VRU
 asin: "1556592477"
 ---
