@@ -10,8 +10,8 @@ pub_date: "2005-01-26"
 isbn: "9780312425289"
 isbn_digital: "9781429929820"
 meta_data: Available as an audiobook
-cover_image_path: graceland_300x463.jpg
-tags: 
+cover_image_path: "assets/img/graceland_300x463.jpg"
+tags:
   - fiction
 asin_kindle: B0057QT72E
 asin: 0312425287
