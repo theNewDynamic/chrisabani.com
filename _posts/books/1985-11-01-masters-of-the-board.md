@@ -12,7 +12,7 @@ isbn:
 asin:
   - 9782335037
   - "9782335037"
-cover_image_path_path: "masters-of-the-board.gif"
+cover_image_path_path: "/assets/img/masters-of-the-board.gif"
 sm_show_books_buy_button:
   - 0
 tags:
