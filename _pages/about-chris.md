@@ -25,7 +25,9 @@ He is Board of Trustees Professor of English at Northwestern University.
 
 Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html)
 
-[**Click Here to Download Hi-res photos**](/assets/files/ChrisAbani_PrintHiRes.zip)&nbsp;|&nbsp;[**Click Here to Download Chris’s bio**](/assets/files/bio-chris-abani-2015-10.doc)
+[**Click Here to Download Hi-res photos**](/assets/files/ChrisAbani_PrintHiRes.zip)
+
+[**Click Here to Download Chris’s bio**](/assets/files/bio-chris-abani-2015-10.doc)
 
 ### AWARDS/GRANTS/HONORS
 
