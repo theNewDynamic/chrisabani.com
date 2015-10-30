@@ -6,13 +6,14 @@ summary: "Poet, Novelist, Essayist, Screenwriter and Humanist."
 published: true
 show_in_menu: 'true'
 ---
+
 ![Chris Headshot](/assets/img/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani is a novelist, poet, essayist, screenwriter and playwright. Born in Nigeria to an Igbo father and English mother, he grew up in Afikpo, Nigeria, received a BA in English from Imo State University, Nigeria, an MA in English, Gender and Culture from Birkbeck College, University of London and a PhD in Literature and Creative Writing from the University of Southern California. He has resided in the United States since 2001.
 
 He is the recipient of the PEN USA Freedom-to-Write Award, the Prince Claus Award, a Lannan Literary Fellowship, a California Book Award, a Hurston/Wright Legacy Award, a PEN Beyond the Margins Award, the PEN Hemingway Book Prize and a Guggenheim Award.
 
-His fiction includes *The Secret History of Las Vegas* (Penguin 2014), *Song For Night *(Akashic, 2007), *The Virgin of Flames* (Penguin, 2007), *Becoming Abigail* (Akashic, 2006), *GraceLand* (FSG, 2004), and *Masters of the Board* (Delta, 1985).
+His fiction includes *The Secret History of Las Vegas* (Penguin 2014), *Song For Night \*(Akashic, 2007), \*The Virgin of Flames* (Penguin, 2007), *Becoming Abigail* (Akashic, 2006), *GraceLand* (FSG, 2004), and *Masters of the Board* (Delta, 1985).
 
-His poetry collections are *Sanctificum* (Copper Canyon Press, 2010), *There Are No Names for Red* (Red Hen Press, 2010), *Feed Me The Sun - Collected Long Poems *(Peepal Tree Press, 2010) *Hands Washing Water* (Copper Canyon, 2006), *Dog Woman* (Red Hen, 2004), *Daphne's Lot* (Red Hen, 2003) and *Kalakuta Republic *(Saqi, 2001).
+His poetry collections are *Sanctificum* (Copper Canyon Press, 2010), *There Are No Names for Red* (Red Hen Press, 2010), *Feed Me The Sun - Collected Long Poems \*(Peepal Tree Press, 2010) \*Hands Washing Water* (Copper Canyon, 2006), *Dog Woman* (Red Hen, 2004), *Daphne’s Lot* (Red Hen, 2003) and \*Kalakuta Republic \*(Saqi, 2001).
 
 His work has been translated into French, Italian, Spanish, German, Swedish, Romanian, Hebrew, Macedonian, Ukrainian, Portuguese, Dutch, Bosnian and Serbian.
 
@@ -24,12 +25,7 @@ He is Board of Trustees Professor of English at Northwestern University.
 
 Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html)
 
-[**Click Here to Download Hi-res photos**](/assets/files/ChrisAbani_PrintHiRes.zip)
-[**Click Here to Download Chris's bio**](/assets/files/bio-chris-abani.docx)
-
-
-
-
+[**Click Here to Download Hi-res photos**](/assets/files/ChrisAbani_PrintHiRes.zip) [**Click Here to Download Chris’s bio**](/assets/files/bio-chris-abani-2015-10.doc)
 
 ### AWARDS/GRANTS/HONORS
 
@@ -47,25 +43,25 @@ Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html
 
 2007 - Pushcart Nomination for Sanctificum. (poetry)
 
-2007 - New York Times Editor's Choice (Song for Night)
+2007 - New York Times Editor’s Choice (Song for Night)
 
 2007 - Finalist, PEN Beyond the Margins Award (Becoming Abigail)
 
 2007 - A Barnes and Noble Discovery Selection (The Virgin of Flames)
 
-2007 - A New York Times Editor's Choice (The Virgin of Flames)
+2007 - A New York Times Editor’s Choice (The Virgin of Flames)
 
 2007 - A New York Libraries Books For Teens Selection (Becoming Abigail)
 
-2006 - A New York Times Editor's Choice (Becoming Abigail)
+2006 - A New York Times Editor’s Choice (Becoming Abigail)
 
-2006 - A Chicago Reader Critic's Choice (Becoming Abigail)
+2006 - A Chicago Reader Critic’s Choice (Becoming Abigail)
 
 2006 - A selection of the Essence Magazine Book Club (Becoming Abigail)
 
 2006 - A selection of the Black Expressions Book Club (Becoming Abigail)
 
-2006 - Pushcart Nomination (poetry) for "A Way To Turn This To Light."
+2006 - Pushcart Nomination (poetry) for “A Way To Turn This To Light.”
 
 2006 - Finalist for IMPAC Dublin Prize (GraceLand)
 
@@ -79,11 +75,11 @@ Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html
 
 2005 - Finalist, Commonwealth Writers Prize, Best Books (Africa Region). (GraceLand)
 
-2005 - Pushcart Nomination for "Blooding." StoryQuarterly.
+2005 - Pushcart Nomination for “Blooding.” StoryQuarterly.
 
 2004 - Barnes and Noble Discover New Writers. (GraceLand)
 
-2004 - New York Times Editor's Choice (GraceLand)
+2004 - New York Times Editor’s Choice (GraceLand)
 
 2004 - Nominated for The Kingsley Tufts Prize for Poetry (Dog Woman)
 
@@ -103,5 +99,4 @@ Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html
 
 1983 - Delta Fiction Award, Nigeria. (Masters of the Board).
 
-EDUCATION:
-BA - English (Nigeria), MA - Gender and Culture (London), MA - English (USA), PhD - Literature and Creative Writing (USA).
+EDUCATION: BA - English (Nigeria), MA - Gender and Culture (London), MA - English (USA), PhD - Literature and Creative Writing (USA).
