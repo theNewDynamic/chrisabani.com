@@ -1,0 +1,23 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Sidebar from "../components/Sidebar.astro";
+//import site from "../data/site";
+const { content } = Astro.props;
+const { title, description, publishDate, author, heroImage, permalink, alt } =
+  content;
+
+---
+<!DOCTYPE html>
+<html lang={content.lang || "en"}>
+  <head>
+    <BaseHead {title} {description} {permalink} />
+  </head>
+  <body>
+    <div class="md:pr-64 h-full min-h-full flex flex-col justify-between bg-cover bg-fixed bg-no-repeat" style="background-image: url('./uploads/bg-clock_op34n13.jpg');">
+      <div id="content" class="min-h-screen text-white" >                    
+        <slot />
+      </div>
+      <Sidebar />
+    </div>          
+  </body>
+</html>

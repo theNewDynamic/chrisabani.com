@@ -1,0 +1,9 @@
+---
+- link: ""
+  name: Home
+- link: "article"
+  name: Articles
+- link: "about"
+  name: About
+- link: "quotes"
+  name: Quotes

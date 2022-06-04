@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await Astro.glob('../news/*.md');
+
+  const sortedPosts = allPosts.sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
+
+  return paginate(sortedPosts, { pageSize: 5 });
+}
+const { page } = Astro.props;
+---  
+<BaseLayout content={{ page }}>
+  <h1 class="text-5xl mb-8">Written things</h1>
+  <ul class="grid gap-4 grid-cols-4 my-12">
+    {page.data.slice(0, 30).map((post) => (  
+      <li class="col-span-1  min-h-fit border mb-4 p-4 shadow">
+         <a href={post.frontmatter.url} class="hover:text-blue-500 hover:underline">
+          {post.frontmatter.title}
+          </a>
+          <small class="block my-2">
+            {post.frontmatter.description}
+          </small>
+      </li>     
+    ))}
+  </ul>
+
+
+<div>
+Page {page.currentPage} of {page.lastPage}
+{page.url.next ? <a href={page.url.next}>next</a> : false }<br />
+{page.url.prev ? <a href={page.url.prev}>Previous</a> : false }
+
+</div>
+
+
+
+
+
+</BaseLayout>
