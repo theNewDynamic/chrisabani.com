@@ -1,1 +1,0 @@
-(function(e,t){function s(e,t){var n=e.className.split(/\s+/),r=n.length,i=0;for(;i<r;i++)if(n[i]===t){n.splice(i,1);break}r===n.length&&n.push(t);e.className=n.join(" ")}var n=t.getElementById("layout"),r=t.getElementById("menu"),i=t.getElementById("menuLink");i.onclick=function(e){var t="active";e.preventDefault();s(n,t);s(r,t);s(i,t)}})(this,this.document);
