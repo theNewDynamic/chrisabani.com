@@ -1,0 +1,12 @@
+---
+import site from "../data/site";
+---
+
+<a href={site.repo ? `https://www.thenewdynamic.com/?utm_source=${site.repo}` : `https://www.thenewdynamic.com/`}>
+    site by The New Dynamic
+</a>
+&bull;
+<a href={site.repo ? `https://www.thenewdynamic.com/support/?utm_source=${site.repo}` :
+    `https://www.thenewdynamic.com/support`}>
+    report an issue
+</a>

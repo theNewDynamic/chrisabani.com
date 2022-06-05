@@ -1,0 +1,17 @@
+---
+import Siteby from "../components/Siteby.astro";
+import site from "../data/site";
+const year = new Date(Date.now()).getFullYear()
+
+---
+
+<footer class="px-8 py-4 text-gray-400 text-xs">
+	<div class="flex justify-between">
+		<div>
+			&copy; {year} {site.name}
+		</div>
+		<div>
+			<Siteby />
+		</div>
+	</div>
+</footer>
