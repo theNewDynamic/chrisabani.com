@@ -4,6 +4,7 @@ export default {
     url: `https://www.chrisabani.com`, // No trailing slash!
     // JSON LD
     name: `Chris Abani`,
+    repo: `chrisabani.com`,
     // Twitter URL
     twitterURL: `https://twitter.com`,
 }
