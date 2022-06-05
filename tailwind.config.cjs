@@ -13,7 +13,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'brand':
-          ['Amatic\\ SC', 'Helvetica']
+          ['Amatic\\ SC', 'Helvetica', 'sans-serif'],
+          'condensed':
+          ['IBM\\ Plex\\ Sans\\ Condensed', 'Helvetica', 'sans-serif']
       },
     },
   },
