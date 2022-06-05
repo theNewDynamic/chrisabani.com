@@ -4,10 +4,10 @@ title: About Chris
 url: "/about-chris/"
 summary: "Poet, Novelist, Essayist, Screenwriter and Humanist."
 draft: false
-show_in_menu: 'true'
+layout: "../layouts/Page.astro"
 ---
 
-![Chris Headshot](/assets/img/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani is a novelist, poet, essayist, screenwriter and playwright. Born in Nigeria to an Igbo father and English mother, he grew up in Afikpo, Nigeria, received a BA in English from Imo State University, Nigeria, an MA in English, Gender and Culture from Birkbeck College, University of London and a PhD in Literature and Creative Writing from the University of Southern California. He has resided in the United States since 2001.
+![Chris Headshot]("/uploads/author-photo_chris-abani-c-chris-abani.jpg") Chris Abani is a novelist, poet, essayist, screenwriter and playwright. Born in Nigeria to an Igbo father and English mother, he grew up in Afikpo, Nigeria, received a BA in English from Imo State University, Nigeria, an MA in English, Gender and Culture from Birkbeck College, University of London and a PhD in Literature and Creative Writing from the University of Southern California. He has resided in the United States since 2001.
 
 He is the recipient of the PEN USA Freedom-to-Write Award, the Prince Claus Award, a Lannan Literary Fellowship, a California Book Award, a Hurston/Wright Legacy Award, a PEN Beyond the Margins Award, the PEN Hemingway Book Prize and a Guggenheim Award.
 
