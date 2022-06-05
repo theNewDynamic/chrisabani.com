@@ -1,0 +1,22 @@
+---
+import { Markdown } from "astro/components";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+
+const { content } = Astro.props;
+const { title, description, publishDate, author, heroImage, permalink, alt } =
+  content;
+
+
+---
+<BaseLayout content={{ title, description }}>
+	
+	<div class="p-4 lg:p-24 w-1/2 mx-auto text-gray-300">
+		<h1 class="font-brand leading-tight  text-center text-7xl md:text-[7rem]" style="text-shadow:2px 1px 1px #000;">{title}</h1>
+        <p class="font-2xl">{description}</p>
+		
+
+		<div class="prose lg:prose-xl text-gray-100 mx-auto">
+            <slot />
+        </div>
+</BaseLayout>
