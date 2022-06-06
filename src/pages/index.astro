@@ -14,15 +14,15 @@ const FeaturedReview = reviews.filter(review => review.featured === true).slice(
 // let allPosts = await Astro.glob('./books/*.md');
 // const posts = allPosts.filter(allPosts => allPosts.frontmatter.draft === !true);
 
-// const books = (await Astro.glob('./book/*.md'))
-// 	.filter(({ frontmatter }) => frontmatter.draft === !true)
-// 	.filter(({ frontmatter }) => !!frontmatter.publishDate)
-// 	.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+const books = (await Astro.glob('./book/*.md'))
+	.filter(({ frontmatter }) => frontmatter.draft === !true)
+	.filter(({ frontmatter }) => !!frontmatter.publishDate)
+	.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
 
 
 
 
-// console.log(books.length)
+console.log(books.length)
 
 ---
 
