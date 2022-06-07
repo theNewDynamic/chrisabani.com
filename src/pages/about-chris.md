@@ -7,13 +7,13 @@ draft: false
 layout: "../layouts/Page.astro"
 ---
 
-![Chris Headshot]("/uploads/author-photo_chris-abani-c-chris-abani.jpg") Chris Abani is a novelist, poet, essayist, screenwriter and playwright. Born in Nigeria to an Igbo father and English mother, he grew up in Afikpo, Nigeria, received a BA in English from Imo State University, Nigeria, an MA in English, Gender and Culture from Birkbeck College, University of London and a PhD in Literature and Creative Writing from the University of Southern California. He has resided in the United States since 2001.
+![Chris Headshot](../uploads/author-photo_chris-abani-c-chris-abani.jpg) Chris Abani is a novelist, poet, essayist, screenwriter and playwright. Born in Nigeria to an Igbo father and English mother, he grew up in Afikpo, Nigeria, received a BA in English from Imo State University, Nigeria, an MA in English, Gender and Culture from Birkbeck College, University of London and a PhD in Literature and Creative Writing from the University of Southern California. He has resided in the United States since 2001.
 
 He is the recipient of the PEN USA Freedom-to-Write Award, the Prince Claus Award, a Lannan Literary Fellowship, a California Book Award, a Hurston/Wright Legacy Award, a PEN Beyond the Margins Award, the PEN Hemingway Book Prize and a Guggenheim Award.
 
-His fiction includes *The Secret History of Las Vegas* (Penguin 2014), *Song For Night \*(Akashic, 2007), \*The Virgin of Flames* (Penguin, 2007), *Becoming Abigail* (Akashic, 2006), *GraceLand* (FSG, 2004), and *Masters of the Board* (Delta, 1985).
+His fiction includes *The Secret History of Las Vegas* (Penguin 2014), *Song For Night* (Akashic, 2007), *The Virgin of Flames* (Penguin, 2007), *Becoming Abigail* (Akashic, 2006), *GraceLand* (FSG, 2004), and *Masters of the Board* (Delta, 1985).
 
-His poetry collections are *Sanctificum* (Copper Canyon Press, 2010), *There Are No Names for Red* (Red Hen Press, 2010), *Feed Me The Sun - Collected Long Poems \*(Peepal Tree Press, 2010) \*Hands Washing Water* (Copper Canyon, 2006), *Dog Woman* (Red Hen, 2004), *Daphne’s Lot* (Red Hen, 2003) and \*Kalakuta Republic \*(Saqi, 2001).
+His poetry collections are *Sanctificum* (Copper Canyon Press, 2010), *There Are No Names for Red* (Red Hen Press, 2010), *Feed Me The Sun - Collected Long Poems* (Peepal Tree Press, 2010) *Hands Washing Water* (Copper Canyon, 2006), *Dog Woman* (Red Hen, 2004), *Daphne’s Lot* (Red Hen, 2003) and *Kalakuta Republic* (Saqi, 2001).
 
 His work has been translated into French, Italian, Spanish, German, Swedish, Romanian, Hebrew, Macedonian, Ukrainian, Portuguese, Dutch, Bosnian and Serbian.
 
@@ -31,9 +31,9 @@ Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html
 
 ### AWARDS/GRANTS/HONORS
 
-2014 -&nbsp;Winner of the Edgar Prize
+2014 - Winner of the Edgar Prize
 
-2014 -&nbsp;Finalist for the Hurston Wright Legacy Award in Fiction
+2014 -Finalist for the Hurston Wright Legacy Award in Fiction
 
 2014 - Elected to the American Academy of Arts and Sciences
 
