@@ -1,8 +1,7 @@
 ---
-layout: page
 title: Contact
 permalink: /contact/
-show_in_menu: "true"
+layout: "../layouts/Page.astro"
 draft: false
 ---
 
