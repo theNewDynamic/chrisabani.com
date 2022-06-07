@@ -1,13 +1,9 @@
 ---
-import { Markdown } from "astro/components";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-
 export interface Props {
   bgImage?: string;  
 }
-const { bgImage = "bg-cartographer_darker.jpg" } = Astro.props as Props;	
-
+const { bgImage = "url(../uploads/bg-cartographer_darker.jpg)" } = Astro.props as Props;	
 
 const { content } = Astro.props;
 const { title, description, publishDate, author, heroImage, permalink, alt } =

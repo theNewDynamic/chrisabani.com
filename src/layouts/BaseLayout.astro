@@ -2,18 +2,18 @@
 import BaseHead from "../components/BaseHead.astro";
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
-//import site from "../data/site";
 const { content } = Astro.props;
-const { title, description, publishDate, author, permalink, alt } =
+const { title, description, publishDate, author, permalink, bgImage } =
   content;
-const bgImage = "../uploads/bg-clock_op34n13.jpg"
-
 ---
+
 <style define:vars={{ bgImage }}>
-  #wrapper {
-    background-image: url(var(--bgImage));
+  #wrapper {  
+    background-image: var(--bgImage);
+
   }
-</style>  
+</style>
+
 <!DOCTYPE html>
 <html lang={content.lang || "en"}>
   <head>
@@ -21,7 +21,7 @@ const bgImage = "../uploads/bg-clock_op34n13.jpg"
   </head>
   <body>
     <div id="wrapper" class="md:pr-64 h-full min-h-full flex flex-col justify-between bg-cover bg-fixed bg-no-repeat">
-      <div id="content" class="min-h-screen text-white" >                    
+      <div id="content" class="min-h-screen text-white">         
         <slot />
       </div>
       <Sidebar />
