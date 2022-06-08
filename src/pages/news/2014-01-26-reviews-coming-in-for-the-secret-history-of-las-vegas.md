@@ -1,6 +1,6 @@
 ---
 #category: posts
-layout: page
+#layout: page
 title: Reviews coming in for The Secret History of Las Vegas
 ---
 

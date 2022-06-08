@@ -1,9 +1,4 @@
 ---
-#category: posts
-layout: page
-published: 
-  - true
-  - "true"
 title: "Daphne's Lot Book Launch Video"
 category: video
 ---

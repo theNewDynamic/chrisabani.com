@@ -1,6 +1,6 @@
 ---
 #category: posts
-layout: page
+#layout: page
 published: 
   - true
   - "true"

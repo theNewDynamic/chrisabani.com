@@ -1,6 +1,6 @@
 ---
 title: Excerpt from <em>The Secret History of Las Vegas</em>
-layout: page
+#layout: page
 #category: posts
 ---
 

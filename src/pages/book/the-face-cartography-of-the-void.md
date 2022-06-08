@@ -3,7 +3,7 @@ title: "The Face"
 publishDate: 2014-09-23 00:00:00 +0000
 subtitle: "Cartography of the Void"
 cover_image_path: "/assets/img/cover-the-face.jpg"
-#layout: page
+##layout: page
 #category: book
 permalink: "/book/the-face-cartography-of-the-void/"
 name: "the-face-cartography-of-the-void"
