@@ -6,14 +6,14 @@
   display: none !important;
 }
 
-.prose,
+/* .prose,
 .prose h3,
 .prose strong,
 .prose a:link,
 .prose a:active,
 .prose a:visited {
   @apply text-gray-100;
-}
+} */
 .prose img:nth-of-type(1) {
   @apply float-left mr-4 mt-2;
 }

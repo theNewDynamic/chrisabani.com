@@ -16,10 +16,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout content={{ title, description, bgImage }}>
   <div class="min-h-screen">
     <article class="p-4 lg:p-24 w-3/4 mx-auto text-white">
-      <h1 class="font-brand leading-tight  text-center text-7xl md:text-[7rem]" style="text-shadow:2px 1px 1px #000;">
+      <h1 class="font-brand leading-tight text-yellow-700 text-center text-7xl" style="text-shadow:2px 1px 1px #000;">
         {title}</h1>
       <p class="font-2xl">{description}</p>
-      <div class="prose lg:prose-lg  mx-auto mt-8">        
+      <div class="prose lg:prose-lg prose-invert mx-auto mt-8">        
         <slot />        
       </div>
     </article>
