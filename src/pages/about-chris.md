@@ -1,8 +1,7 @@
 ---
 # layout: page
 title: About Chris
-url: "/about-chris/"
-summary: "Poet, Novelist, Essayist, Screenwriter and Humanist."
+description: "Poet, Novelist, Essayist, Screenwriter and Humanist."
 draft: false
 layout: "../layouts/Page.astro"
 ---
