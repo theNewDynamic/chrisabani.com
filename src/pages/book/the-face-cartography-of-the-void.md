@@ -18,6 +18,7 @@ editions:
     description: ""
     date: 2014-09-23 00:00:00 +0000
     cover_image: ""
+layout: "../../layouts/Book.astro"
 ---
 
 In The Face: Cartography of the Void, acclaimed poet, novelist, and screenwriter Chris Abani has given us a brief memoir that is, in the best tradition of the genre, also an exploration of the very nature of identity. Abani meditates on his own face, beginning with his early childhood that was immersed in the Igbo culture of West Africa. The Face is a lush work of art that teems with original and profound insights into the role of race, culture, and language in fashioning our sense of self. Abani’s writing is poetic, filled with stories, jokes, and reflections that draw readers into his fold; he invites them to explore their own “faces” and the experiences that have shaped them.

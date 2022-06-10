@@ -18,6 +18,7 @@ editions:
     description: ""
     date: 2006-10-01 00:00:00 +0000
     cover_image: ""    
+layout: "../../layouts/Book.astro"
 ---
 
 Hands Washing Water is Chris Abani's fourth poetry collection—a mischievous book of displacement, exile, ancestry, and subversive humor. The central section, “Buffalo Women,” is a Civil War correspondence between lovers that plays on our assumptions about war, gender, morality, and politics.

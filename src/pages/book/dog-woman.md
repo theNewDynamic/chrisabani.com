@@ -13,6 +13,7 @@ editions:
     description: ""
     date: 2004-09-01 00:00:00 +0000
     cover_image: "/assets/img/dog-woman_300x363.jpg"
+layout: "../../layouts/Book.astro"
 ---
 
 **Nominated for The Kingsley Tuft Award**

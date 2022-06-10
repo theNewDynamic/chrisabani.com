@@ -17,6 +17,7 @@ editions:
     description: ""
     date: 2007-01-30 00:00:00 +0000
     cover_image: ""
+layout: "../../layouts/Book.astro"
 ---
 
 **Nominated for The Lambda Prize**

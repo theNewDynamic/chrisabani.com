@@ -18,7 +18,7 @@ asin:
   - "9782335037"
 
 category: fiction
-layout: "../../layouts/Page.astro"
+layout: "../../layouts/Book.astro"
 ---
 
 _2nd Prize Winner of the 1983 Delta Fiction Award._
