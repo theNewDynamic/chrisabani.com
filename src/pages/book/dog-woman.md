@@ -4,13 +4,15 @@
 draft: false
 title: Dog Woman
 publishDate: 2004-09-01 00:00:00 +0000
-publisher: Red Hen Press
-isbn: "9781888996821"
-name: "dog-woman"
-permalink: "/book/dog-woman/"
-cover_image_path: "/assets/img/dog-woman_300x363.jpg"
 category: poetry
 asin: 188899682X
+editions:
+  - isbn: 9781888996821
+    binding: paperback
+    publisher: "Red Hen Press"
+    description: ""
+    date: 2004-09-01 00:00:00 +0000
+    cover_image: "/assets/img/dog-woman_300x363.jpg"
 ---
 
 **Nominated for The Kingsley Tuft Award**
