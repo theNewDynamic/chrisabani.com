@@ -11,7 +11,7 @@ editions:
     publisher: "Peepal Tree Press Ltd."
     description: ""
     date: 2010-04-01 00:00:00 +0000
-    cover_image: "/assets/img/feed-me-the-sun_300x471.jpg"
+    cover_image: "/uploads/feed-me-the-sun_300x471.jpg"
 layout: "../../layouts/Book.astro"
 ---
 

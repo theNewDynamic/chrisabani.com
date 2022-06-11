@@ -11,7 +11,7 @@ editions:
     publisher: "Copper Canyon Press"
     description: ""
     date: 2010-04-01 00:00:00 +0000
-    cover_image: "/assets/img/sanctificum_300x449.jpg"
+    cover_image: "/uploads/sanctificum_300x449.jpg"
   - isbn: 9781619320710
     binding: e-book
     publisher: "Copper Canyon Press"

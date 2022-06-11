@@ -11,7 +11,7 @@ editions:
     publisher: "Copper Canyon Press"
     description: ""
     date: 2006-10-01 00:00:00 +0000
-    cover_image: "/assets/img/hands-washing-water_300x455.jpg"
+    cover_image: "/uploads/hands-washing-water_300x455.jpg"
   - isbn: 9781619320703
     binding: e-book
     publisher: ""

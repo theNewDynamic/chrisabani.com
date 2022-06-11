@@ -10,7 +10,7 @@ editions:
     publisher: "Penguin"
     description: ""
     date: 2007-01-30 00:00:00 +0000
-    cover_image: "/assets/img/the-virgin-of-flames_300x458.jpg"
+    cover_image: "/uploads/the-virgin-of-flames_300x458.jpg"
   - isbn: 9781440627415
     binding: e-book
     publisher: ""

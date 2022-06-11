@@ -12,7 +12,7 @@ editions:
     publisher: "Akashic Books"
     description: ""
     date: 2006-03-15 00:00:00 +0000
-    cover_image: "/assets/img/becoming-abigail_300x440.jpg"
+    cover_image: "/uploads/becoming-abigail_300x440.jpg"
 layout: "../../layouts/Book.astro"
 ---
 

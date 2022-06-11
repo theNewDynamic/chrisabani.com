@@ -2,6 +2,7 @@
 title: The Secret History of Las Vegas
 subtitle: "A Novel"
 publishDate: 2014-01-07 00:00:00 +0000
+published: false
 draft: false
 description: "Suspenseful through the last page, *The Secret History of Las Vegas* is Chris Abani’s most accomplished work to date, with his trademark visionary prose and a striking compassion for the inner lives of outsiders."
 category: fiction
@@ -12,7 +13,7 @@ editions:
     publisher: "Penguin"
     description: ""
     date: 2014-01-07 00:00:00 +0000
-    cover_image: "/assets/img/secrethistory_070915_cover.jpg"
+    cover_image: "/uploads/secrethistory_070915_cover.jpg"
   - isbn: 9780698140189
     binding: e-book
     publisher: ""

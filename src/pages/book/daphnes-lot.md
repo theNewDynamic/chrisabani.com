@@ -10,7 +10,7 @@ editions:
     publisher: "Red Hen Press"
     description: ""
     date: 2003-01-01 00:00:00 +0000
-    cover_image: "/assets/img/daphnes-lot_300x452.jpg"
+    cover_image: "/uploads/daphnes-lot_300x452.jpg"
 layout: "../../layouts/Book.astro"
 ---
 

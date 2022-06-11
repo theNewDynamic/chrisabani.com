@@ -10,7 +10,7 @@ editions:
     publisher: "Saqi Books"
     description: ""
     date: 2000-09-01 00:00:00 +0000
-    cover_image: "/assets/img/kalakuta-republic_300x471.jpg"
+    cover_image: "/uploads/kalakuta-republic_300x471.jpg"
 layout: "../../layouts/Book.astro"
 ---
 

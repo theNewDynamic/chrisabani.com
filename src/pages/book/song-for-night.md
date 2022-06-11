@@ -13,7 +13,7 @@ editions:
     publisher: ""
     description: ""
     date: 2007-09-01 00:00:00 +0000
-    cover_image: "/assets/img/song-for-night_300x440.jpg"
+    cover_image: "/uploads/song-for-night_300x440.jpg"
   - isbn: 9781936070466
     binding: e-book
 layout: "../../layouts/Book.astro"

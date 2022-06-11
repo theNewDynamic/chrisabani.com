@@ -10,7 +10,7 @@ editions:
     publisher: "Red Hen Press"
     description: ""
     date: 2010-04-01 00:00:00 +0000
-    cover_image: "/assets/img/there-are-no-names-for-red_300x398.jpg"
+    cover_image: "/uploads/there-are-no-names-for-red_300x398.jpg"
 layout: "../../layouts/Book.astro"
 ---
 

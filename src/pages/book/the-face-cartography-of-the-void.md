@@ -11,7 +11,7 @@ editions:
     publisher: "Restless Books"
     description: ""
     date: 2014-09-23 00:00:00 +0000
-    cover_image: "/assets/img/cover-the-face.jpg"
+    cover_image: "/uploads/cover-the-face.jpg"
   - isbn: 9781632060143
     binding: e-book
     publisher: "Restless Books"
