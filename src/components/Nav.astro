@@ -8,13 +8,17 @@ export interface Props {
 }  
 
 const { name, link } = Astro.props;
-// console.log(menu)
+
+
+
+const activeURL = new URL(Astro.request.url).pathname;
+
 ---
 <nav>          
   <ul class="text-sm list-outside font-condensed">
     {menu.slice().map((item) => (  
       <li class={item.heading  ? `font-brand text-2xl text-gray-50 mt-2` : `mb-1 text-gray-400`}>      
-        <a href={item.link ? `/${item.link}/` : `/`} class="hover:underline p-1 rounded  hover:bg-amber-700 hover:text-white">{item.name}</a>      
+        <a href={item.link ? `/${item.link}/` : `/`} class="hover:underline p-1 rounded  hover:bg-amber-700 hover:text-white ${activeURL === `/${item.link}/` ? 'text-yellow-600' : ''}">{item.name}</a>              
       </li>     
     ))}
   </ul>
