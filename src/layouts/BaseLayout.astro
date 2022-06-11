@@ -3,8 +3,8 @@ import BaseHead from "../components/BaseHead.astro";
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
 const { content } = Astro.props;
-const { title, description, publishDate, author, permalink, bgImage } =
-  content;
+const { title, description, permalink, bgImage } = content;
+
 ---
 
 <style define:vars={{ bgImage }}>
@@ -21,7 +21,7 @@ const { title, description, publishDate, author, permalink, bgImage } =
   </head>
   <body>
     <div id="wrapper" class="md:pr-64 h-full min-h-full flex flex-col justify-between bg-cover bg-fixed bg-no-repeat">
-      <div id="content" class="min-h-screen text-white">         
+      <div id="content" class="min-h-screen text-white">
         <slot />
       </div>
       <Sidebar />

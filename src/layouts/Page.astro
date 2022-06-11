@@ -1,10 +1,10 @@
 ---
-import { Markdown } from 'astro/components';
+import PageTitle from "../components/PageTitle.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
   export interface Props {
     bgImage?: string;
   }
-  const { bgImage = "url(../uploads/bg-cartographer_darker.jpg)" } = Astro.props as Props;
+  const { bgImage = "url(/uploads/bg-cartographer_darker.jpg)" } = Astro.props as Props;
 
   const { content } = Astro.props;
   const { title, description, publishDate, author, heroImage, permalink, alt } =
@@ -16,9 +16,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout content={{ title, description, bgImage }}>
   <div class="min-h-screen">
     <article class="p-4 lg:p-24 w-3/4 mx-auto text-white">
-      <h1 class="font-brand leading-tight text-yellow-700 text-center text-7xl" style="text-shadow:2px 1px 1px #000;">
-        {title}</h1>
-      <p class="font-2xl">{description}</p>
+      <PageTitle content={{ title, description }} />
       <div class="prose lg:prose-lg prose-invert mx-auto mt-8">        
         <slot />        
       </div>

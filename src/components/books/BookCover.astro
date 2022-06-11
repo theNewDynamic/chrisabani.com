@@ -1,0 +1,12 @@
+---
+export interface Props {    
+	title: string;
+  editions: any;
+}
+const { content } = Astro.props;
+const { editions, title } = content;
+
+---		
+{editions[0].cover_image &&
+	<img src={editions[0].cover_image} class="max-w-full w-96 pl-2 md:pl-0 pr-2" alt="cover image for ${title}">
+}

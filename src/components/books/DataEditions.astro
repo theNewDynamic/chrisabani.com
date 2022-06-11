@@ -1,0 +1,22 @@
+---
+export interface Props {    
+	title: string;
+  editions: any;
+}
+const { content } = Astro.props;
+const { editions, title } = content;
+// console.log("log: ", editions)
+---		
+{editions &&
+	
+  
+    
+    editions.map(edition => <li>{edition.isbn}</li>)
+
+
+    
+
+
+
+  
+}

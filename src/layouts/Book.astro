@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BookCover from "../components/books/BookCover.astro";
+import DataEditions from "../components/books/DataEditions.astro";
+import PageTitle from "../components/PageTitle.astro";
+export interface Props {
+  bgImage?: string;
+  description?: string;
+  content: any;
+  title: string;
+}
+const { content, bgImage = "url(/uploads/bg-cartographer_darker.jpg)" } = Astro.props;
+const { title, description, editions } = content;
+// console.log("editions", editions)
+---
+
+<BaseLayout content={{ bgImage }}>
+  <div class="min-h-screen">
+    <article class="p-4 lg:p-24 w-3/4 mx-auto text-white">
+      <PageTitle content={{ title, description }} />
+      <div class="prose lg:prose-lg prose-invert mx-auto mt-8">
+        <!-- [<BookCover content={{ title, description }} />] -->
+
+<BookCover content={{ editions, title }}/>
+<DataEditions content={{ editions, title }}/>
+        
+        
+        <slot />
+      </div>
+    </article>
+  </div>
+</BaseLayout>
