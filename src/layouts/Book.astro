@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BookCover from "../components/books/BookCover.astro";
 import DataEditions from "../components/books/DataEditions.astro";
+import BuyLinks from "../components/books/BuyLinks.astro";
 import PageTitle from "../components/PageTitle.astro";
 export interface Props {
   bgImage?: string;
@@ -11,7 +12,6 @@ export interface Props {
 }
 const { content, bgImage = "url(/uploads/bg-cartographer_darker.jpg)" } = Astro.props;
 const { title, description, editions } = content;
-// console.log("editions", editions)
 ---
 
 <BaseLayout content={{ bgImage }}>
@@ -21,6 +21,7 @@ const { title, description, editions } = content;
       <div class="prose lg:prose-lg prose-invert mx-auto mt-8">
         <BookCover content={{ editions, title }} />
         <slot />        
+        <BuyLinks content={{ editions, title }}/>
       </div>
       <DataEditions content={{ editions, title }} />
     </article>
