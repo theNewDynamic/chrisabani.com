@@ -19,14 +19,10 @@ const { title, description, editions } = content;
     <article class="p-4 lg:p-24 w-3/4 mx-auto text-white">
       <PageTitle content={{ title, description }} />
       <div class="prose lg:prose-lg prose-invert mx-auto mt-8">
-        <!-- [<BookCover content={{ title, description }} />] -->
-
-<BookCover content={{ editions, title }}/>
-<DataEditions content={{ editions, title }}/>
-        
-        
-        <slot />
+        <BookCover content={{ editions, title }} />
+        <slot />        
       </div>
+      <DataEditions content={{ editions, title }} />
     </article>
   </div>
 </BaseLayout>

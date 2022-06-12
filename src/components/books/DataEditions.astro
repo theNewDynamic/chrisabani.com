@@ -1,22 +1,36 @@
 ---
-export interface Props {    
-	title: string;
-  editions: any;
+export interface Props {
+  title: string;
+  editions: Array<{
+    binding: string;
+    isbn: string;
+    publisher: string;
+    description: string;
+  }>;
+
 }
 const { content } = Astro.props;
 const { editions, title } = content;
-// console.log("log: ", editions)
 ---		
-{editions &&
-	
-  
-    
-    editions.map(edition => <li>{edition.isbn}</li>)
 
+<div class="text-sm border-b inline-block mt-12">Editions:</div>
 
-    
+{editions.map(edition =>
+<ul class="text-sm mb-4">
+  <li class="">
+    {edition.binding} <br />
+    {edition.isbn && "ISBN: "} {edition.isbn}<br />
+    {edition.publisher && "Publisher: "}{edition.publisher} <br />
+    {edition.description}
+  </li>
+</ul>
+)}
 
+<!-- 
+  {editions.map(edition => <li>{edition.isbn}</li>)}
+  {edition.description ? `${edition.description} + <br />`  : ""}
+  {edition.binding ? `${edition.binding} <br />`  : ""}
+  {edition.isbn ? `${edition.isbn} <br />`  : ""}
 
-
-  
-}
+      {page.data.map((post) => <Li item={post} />)}
+       -->
