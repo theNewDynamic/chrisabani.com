@@ -1,6 +1,7 @@
 ---
 title: Publishers Weekly Starred Review on "The Secret History of Las Vegas"
-#layout: page
+draft: false
+layout: "../../layouts/Page.astro"
 #category: posts
 ---
 Publishers Weekly gave *The Secret History of Las Vegas* a starred review:

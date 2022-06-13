@@ -1,6 +1,8 @@
 ---
 title: "Daphne's Lot Book Launch Video"
 category: video
+draft: false
+layout: "../../layouts/Page.astro"
 ---
 
 ## A musical segment featuring Bassist Henry Grimes.

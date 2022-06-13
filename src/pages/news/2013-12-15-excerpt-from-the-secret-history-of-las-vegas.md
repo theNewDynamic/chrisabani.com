@@ -1,18 +1,18 @@
 ---
-title: Excerpt from <em>The Secret History of Las Vegas</em>
-#layout: page
+title: Excerpt from *The Secret History of Las Vegas*
+description: This excerpt is from an advance uncorrected proof.
 #category: posts
+draft: false
+layout: "../../layouts/Page.astro"
 ---
 
-**This excerpt is from an advance uncorrected proof.**
-
-###Four
+### Four
 
 The dying sun burnished the copper ingot of the Mandalay Bay. Next to it was the pyramid of the Luxor and, reclining in front, the light catching the gold paint of its headdress, the Sphinx. Farther to Sunil’s left, the Bellagio and the tip of the Eiffel Tower rose above Paris Las Vegas. The Venetian, his favorite, was obscured.
 
 He loved this moment when the sun was on a slow decline, just before the abruptness of night that seemed exclusive to deserts and plains. It reminded him of the light on the South African veld. One moment bright and full, the next, gone. The veld was just like its name, a stubby felt of grass and trees and small hills that seemed to break only when the green and brown rim of it touched the sky.
 
-[![cover The Secret History of Las Vegas](/assets/img/9780143124955_SecretHistor_CVF-300x459.jpg)](/book/the-secret-history-of-las-vegas/)
+[![cover The Secret History of Las Vegas](/uploads/9780143124955_SecretHistor_CVF-300x459.jpg)](/book/the-secret-history-of-las-vegas/)
 
 For one magical summer as a seven-year-old, he’d left Soweto behind on a summer trip to see his grandmother, Marie. She lived in KwaZulu, a homeland—one of those odd geographies created arbitrarily by the apartheid state as all black enclaves within South Africa. Not unlike Native American reservations, homelands were corrals, ways to contain and further impoverish native populations: entire settlements made up of shanties leaning unevenly into the wind.
 
@@ -62,5 +62,4 @@ What he’d come for would be easier than he thought, but no less fun. He was he
 
 He leaned back to wait. He was good at that.
 
-
-*Copyright &copy; 2014 &nbsp;by Chris Abani*
+_Copyright &copy; 2014 &nbsp;by Chris Abani_

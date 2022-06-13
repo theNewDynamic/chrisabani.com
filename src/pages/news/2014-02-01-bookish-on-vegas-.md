@@ -1,6 +1,7 @@
 ---
 #category: posts
-#layout: page
+draft: false
+layout: "../../layouts/Page.astro"
 title: Writing about Vegas at Bookish
 ---
 I wrote a short piece on Las Vegas for the website "[Bookish](http://www.bookish.com/articles/sin-city-on-screen-sexy-and-shocking-scenes-set-in-las-vegas)." Here's the first paragraph:

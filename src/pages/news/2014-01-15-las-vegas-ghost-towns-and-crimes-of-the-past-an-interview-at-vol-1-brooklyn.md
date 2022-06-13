@@ -1,9 +1,7 @@
 ---
 #category: posts
-#layout: page
-published: 
-  - true
-  - "true"
+draft: false
+layout: "../../layouts/Page.astro"
 title: "Las Vegas, Ghost Towns, and Crimes of the Past: An Interview at Vol.1 Brooklyn"
 category: news
 ---

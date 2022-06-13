@@ -1,6 +1,6 @@
 ---
-#category: posts
-#layout: page
+draft: false
+layout: "../../layouts/Page.astro"
 published: 
   - true
   - "true"

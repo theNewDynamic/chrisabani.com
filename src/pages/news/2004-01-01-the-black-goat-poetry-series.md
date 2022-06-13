@@ -3,6 +3,7 @@ draft: false
 title: Black Goat Poetry Series
 url: "/black-goat-poetry-series/"
 category: projects
+layout: "../../layouts/Page.astro"
 ---
 
 ### POETRY SERIES

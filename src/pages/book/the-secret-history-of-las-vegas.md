@@ -22,6 +22,12 @@ editions:
     cover_image: ""
   - asin: B00HNVHR1E
     binding: audiobook
+  - isbn: 9780143124955
+    binding: hardcover
+    publisher: "poopy"
+    description: ""
+    date: 2014-01-07 00:00:00 +0000
+    cover_image: "/uploads/secrethistory_070915_cover.jpg"    
 layout: "../../layouts/Book.astro"
 ---
 
@@ -29,4 +35,5 @@ Before he can retire, **Las Vegas detective** Salazar is determined to solve a r
 
 **New York Times Editor’s Choice**
 
-[Read an excerpt](/posts/2013/12/15/excerpt-from-the-secret-history-of-las-vegas/)
+<!-- [Read an excerpt](/news/2013/12/15/excerpt-from-the-secret-history-of-las-vegas/) -->
+[Read an excerpt](/news/2013-12-15-excerpt-from-the-secret-history-of-las-vegas/)

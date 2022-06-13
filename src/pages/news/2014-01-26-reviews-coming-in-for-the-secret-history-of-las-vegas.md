@@ -1,6 +1,7 @@
 ---
 #category: posts
-#layout: page
+draft: false
+layout: "../../layouts/Page.astro"
 title: Reviews coming in for The Secret History of Las Vegas
 ---
 

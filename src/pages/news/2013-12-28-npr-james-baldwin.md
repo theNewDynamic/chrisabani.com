@@ -1,6 +1,7 @@
 ---
 title: At NPR - A Young Seminarian Found Comfort In 'Giovanni's' Melancholy
-#layout: page
+draft: false
+layout: "../../layouts/Page.astro"
 #category: posts
 ---
 I have an appreciation of James Baldwin's *Giovanni's Room* at NPR. Here's the first paragraph:
