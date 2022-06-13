@@ -14,7 +14,7 @@ const { content, bgImage = "url(/uploads/bg-cartographer_darker.jpg)" } = Astro.
 const { title, description, editions } = content;
 ---
 
-<BaseLayout content={{ bgImage }}>
+<BaseLayout content={{ title, description, bgImage }}>
   <div class="min-h-screen">
     <article class="p-4 lg:p-24 w-3/4 mx-auto text-white">
       <PageTitle content={{ title, description }} />
