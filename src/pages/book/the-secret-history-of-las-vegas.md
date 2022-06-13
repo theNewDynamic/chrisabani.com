@@ -5,7 +5,7 @@ publishDate: 2014-01-07 00:00:00 +0000
 draft: false
 description: "Suspenseful through the last page, *The Secret History of Las Vegas* is Chris Abani’s most accomplished work to date, with his trademark visionary prose and a striking compassion for the inner lives of outsiders."
 category: fiction
-asin_kindle: B00DMCPOJK
+
 editions:
   - isbn: 9780143124955
     binding: paperback
@@ -14,11 +14,14 @@ editions:
     date: 2014-01-07 00:00:00 +0000
     cover_image: "/uploads/secrethistory_070915_cover.jpg"
   - isbn: 9780698140189
+    asin: B00DMCPOJK    
     binding: e-book
     publisher: ""
     description: ""
     date: 2014-01-07 00:00:00 +0000
     cover_image: ""
+  - asin: B00HNVHR1E
+    binding: audiobook
 layout: "../../layouts/Book.astro"
 ---
 

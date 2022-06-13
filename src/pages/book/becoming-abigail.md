@@ -5,7 +5,7 @@ publishDate: 2006-03-15 00:00:00 +0000
 draft: false
 category: fiction
 asin: "1888451947"
-asin_kindle: B008SBHGXC
+asin: B008SBHGXC
 editions:
   - isbn: 9781888451948
     binding: paperback
@@ -13,6 +13,8 @@ editions:
     description: ""
     date: 2006-03-15 00:00:00 +0000
     cover_image: "/uploads/becoming-abigail_300x440.jpg"
+  - asin: B008SBHGXC
+    binding: kindle  
 layout: "../../layouts/Book.astro"
 ---
 

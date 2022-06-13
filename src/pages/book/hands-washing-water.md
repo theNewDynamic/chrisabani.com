@@ -3,8 +3,6 @@ title: Hands Washing Water
 publishDate: 2006-10-01 00:00:00 +0000
 draft: false
 category: poetry
-asin_kindle: B00APD9VRU
-asin: "1556592477"
 editions:
   - isbn: 9781556592478
     binding: paperback
@@ -13,6 +11,7 @@ editions:
     date: 2006-10-01 00:00:00 +0000
     cover_image: "/uploads/hands-washing-water_300x455.jpg"
   - isbn: 9781619320703
+    asin: B00APD9VRU
     binding: e-book
     publisher: ""
     description: ""

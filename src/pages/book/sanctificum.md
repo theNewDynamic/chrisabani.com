@@ -3,8 +3,6 @@ title: Sanctificum
 publishDate: 2010-04-01 00:00:00 +0000
 draft: false
 category: poetry
-asin_kindle: B00B6UB6BU
-asin: "1556593163"
 editions:
   - isbn: 9781556593161
     binding: paperback
@@ -13,6 +11,7 @@ editions:
     date: 2010-04-01 00:00:00 +0000
     cover_image: "/uploads/sanctificum_300x449.jpg"
   - isbn: 9781619320710
+    asin: B00B6UB6BU
     binding: e-book
     publisher: "Copper Canyon Press"
     description: ""

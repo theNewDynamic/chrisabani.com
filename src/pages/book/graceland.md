@@ -1,23 +1,22 @@
 ---
-asin: 0312425287
-asin_kindle: B0057QT72E
 category: fiction
 draft: false
-editions: 
-  - 
-    binding: paperback
+editions:
+  - binding: paperback
     cover_image: /assets/img/graceland_300x463.jpg
     date: 2005-01-26 00:00:00 +00:00
     description: ""
     isbn: 9780312425289
     publisher: Picador
-  - 
-    binding: e-book
+  - binding: e-book
+    asin: B0057QT72E
     cover_image: ""
     date: 2005-01-26 00:00:00 +00:00
     description: ""
     isbn: 9781429929820
     publisher: ""
+  - asin: B0007OB5IU
+    binding: audiobook
 meta_data: "Available as an audiobook"
 publishDate: 2005-01-26 00:00:00 +00:00
 title: Graceland

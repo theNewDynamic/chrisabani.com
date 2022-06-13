@@ -5,8 +5,6 @@ subtitle: A Novella
 publishDate: 2007-09-01 00:00:00 +0000
 draft: false
 category: fiction
-asin_kindle: B008G3H1LY
-asin: "1933354313"
 editions:
   - isbn: 9781933354316
     binding: paperback
@@ -15,6 +13,7 @@ editions:
     date: 2007-09-01 00:00:00 +0000
     cover_image: "/uploads/song-for-night_300x440.jpg"
   - isbn: 9781936070466
+    asin: B008G3H1LY
     binding: e-book
 layout: "../../layouts/Book.astro"
 ---

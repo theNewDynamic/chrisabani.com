@@ -11,6 +11,8 @@ editions:
     description: ""
     date: 2000-09-01 00:00:00 +0000
     cover_image: "/uploads/kalakuta-republic_300x471.jpg"
+  - asin: B00XGX91F8
+    binding: e-book
 layout: "../../layouts/Book.astro"
 ---
 

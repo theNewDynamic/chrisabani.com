@@ -3,7 +3,6 @@ title: The Virgin of Flames
 publishDate: 2007-01-30 00:00:00 +0000
 draft: false
 category: fiction
-asin_kindle: B000SEGMR8
 editions:
   - isbn: 9780143038771
     binding: paperback
@@ -13,6 +12,7 @@ editions:
     cover_image: "/uploads/the-virgin-of-flames_300x458.jpg"
   - isbn: 9781440627415
     binding: e-book
+    asin: B000SEGMR8
     publisher: ""
     description: ""
     date: 2007-01-30 00:00:00 +0000

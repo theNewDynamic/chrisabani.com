@@ -4,7 +4,6 @@ subtitle: Collected Long Poems
 publishDate: 2010-04-01 00:00:00 +0000
 draft: false
 category: poetry
-asin: "1845231562"
 editions:
   - isbn: 9781845231569
     binding: paperback
