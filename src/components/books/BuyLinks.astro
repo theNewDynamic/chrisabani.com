@@ -17,10 +17,7 @@ const { editions, title } = content;
 {editions.map(edition =>
 <ul class="text-sm mb-4">
 	<li class="">
-		{edition.binding} <br />
-		{edition.isbn && "ISBN: "} {edition.isbn}<br />
-		{edition.publisher && "Publisher: "}{edition.publisher} <br />
-		{edition.description}
+		
 		<ConvertISBN isbn={edition.isbn} />
 		
 	</li>
