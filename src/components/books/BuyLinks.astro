@@ -1,83 +1,28 @@
 ---
+import ConvertISBN from "./ConvertISBN.astro";
 export interface Props {
-  title: string;
-  editions: Array<{
-    binding: string;
-    isbn: string;
-  }>;
+	title: string;
+	editions: Array<{
+		binding: string;
+		isbn: number;
+	}>;
 
 }
 const { content } = Astro.props;
 const { editions, title } = content;
-
-let isbn13 = editions[0].isbn.toString().substring(3, 12)
-
-
-var start = isbn13;
-var sum = 0;
-var mul = 10;
-
-
-var squareNumbers = start.map(number => number*number);
-
-
-
-
-for (let i = 0; i < 9; i++) {
-  sum = sum + (
-    mul * parseInt(start[i])
-  );
-  mul -= 1;
-}
-
-var checkDig = 11 - (sum % 11);
-
-{ checkDig == 10 ? "X" : "0" }
-
-
-let result = start + checkDig;
-
-
-console.log("log: ", result)
-
-
-
 ---		
-
-<!-- https://www.amazon.com/dp/0143124951 -->
 
 <div class="text-sm border-b inline-block mt-12">Buy {title}:</div>
 
 {editions.map(edition =>
 <ul class="text-sm mb-4">
-  <li class="">
-    {edition.binding} <br />
-    {edition.isbn && "ISBN: "} {edition.isbn}<br />
-    {edition.publisher && "Publisher: "}{edition.publisher} <br />
-    {edition.description}
-  </li>
+	<li class="">
+		{edition.binding} <br />
+		{edition.isbn && "ISBN: "} {edition.isbn}<br />
+		{edition.publisher && "Publisher: "}{edition.publisher} <br />
+		{edition.description}
+		<ConvertISBN isbn={edition.isbn} />
+		
+	</li>
 </ul>
 )}
-
-
-
-
-<script type="text/javascript">
-  function ISBN13toISBN10(isbn13) {
-    var start = isbn13.substring(3, 12);
-    var sum = 0;
-    var mul = 10;
-    var i;
-    for (i = 0; i < 9; i++) {
-      sum = sum + (mul * parseInt(start[i])); mul -= 1;
-    }
-
-    var checkDig = 11 - (sum % 11);
-
-    if (checkDig == 10) { checkDig = "X"; }
-
-    else if (checkDig == 11) { checkDig = "0"; }
-    return start + checkDig;
-  }
-  document.getElementById("isbn10_{{ isbn }}").innerHTML = '<a href="http://www.amazon.com/dp/' + ISBN13toISBN10("{{ isbn }}") + '" title="Amazon" target="_blank" >Amazon</a>';
-</script>
