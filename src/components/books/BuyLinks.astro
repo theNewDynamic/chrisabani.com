@@ -10,11 +10,18 @@ export interface Props {
 }
 const { content } = Astro.props;
 const { editions, title } = content;
+
+
+let print = editions.filter(edition => (edition.binding === "paperback" || edition.binding === "hardcover")).slice(0, 1);
+let ebooks = editions.filter(edition => edition.binding === "e-book").slice(0, 1);
+let audiobook = editions.filter(edition => edition.binding === "audiobook").slice(0, 1);
+
+console.log("print: ", print, "ebooks: ", ebooks, "audiobook: ", audiobook)
 ---		
 
 <div class="text-sm border-b inline-block mt-12">Buy {title}:</div>
 
-{editions.map(edition =>
+{print.map(edition =>
 <ul class="text-sm mb-4">
 	<li class="">
 		
@@ -23,3 +30,21 @@ const { editions, title } = content;
 	</li>
 </ul>
 )}
+
+
+
+
+<!-- 
+RULES
+- [ ] Top-most edition is the current. 
+- [ ] If e-book, separate kindle from others 
+
+
+NOTES
+		let reviews = reviewQuotes.slice(0, 30);
+	const FeaturedReview = reviews.filter(review => review.featured === true).slice(0, 1);
+
+
+
+
+-->
