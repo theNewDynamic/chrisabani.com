@@ -4,8 +4,6 @@ subtitle: A Novella
 publishDate: 2006-03-15 00:00:00 +0000
 draft: false
 category: fiction
-asin: "1888451947"
-asin: B008SBHGXC
 editions:
   - isbn: 9781888451948
     binding: paperback
