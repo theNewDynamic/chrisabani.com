@@ -28,8 +28,5 @@ const { isbn } = Astro.props;
 var isbn10 = isbn10(isbn);
 ---
 
-
-
-
-<a href='https://www.amazon.com/dp/${isbn10}' >amazonyo: {isbn10}</a>
+{isbn10}
 
