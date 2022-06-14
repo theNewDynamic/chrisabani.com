@@ -11,26 +11,61 @@ export interface Props {
 const { content } = Astro.props;
 const { editions, title } = content;
 
+const default_services = [
+	{ id: "bookshop", label: "Your Independent Bookstore", show: true, url: "https://www.bookshop.org/a/287/%s" },
+	{ id: "barnesandnoble", label: "Barnes & Noble", show: true, url: "https://www.barnesandnoble.com/w/?ean=%s" },
+	{ id: "amazon", label: "Amazon", show: true, url: "https://amazon.com/dp/%s" },
 
-let print = editions.filter(edition => (edition.binding === "paperback" || edition.binding === "hardcover")).slice(0, 1);
-let ebooks = editions.filter(edition => edition.binding === "e-book").slice(0, 1);
-let audiobook = editions.filter(edition => edition.binding === "audiobook").slice(0, 1);
+]
+const Services = default_services.filter(service => service.show === true);
 
-console.log("print: ", print, "ebooks: ", ebooks, "audiobook: ", audiobook)
+const audiobook_services = [
+	{ id: "audible", label: "Audible.com", show: true, url: "" },
+	{ id: "apple_books", label: "Apple Books", show: true, url: "" },
+	{ id: "libro", label: "Libro.fm", show: false, url: "https://libro.fm/audiobooks/%s" },
+
+]
+// const asbn = "0143124951";
+// console.log("log: ", services[0].url.replace(/\%s/, asbn))
+
+
+
+let EditionPrint = editions.filter(edition => (edition.binding === "paperback" || edition.binding === "hardcover")).slice(0, 1);
+let EditionEbooks = editions.filter(edition => edition.binding === "e-book").slice(0, 1);
+let EditionAudiobook = editions.filter(edition => edition.binding === "audiobook").slice(0, 1);
+
+// console.log("print: ", <ConvertISBN isbn={EditionPrint[0].isbn} /> )
 ---		
 
 <div class="text-sm border-b inline-block mt-12">Buy {title}:</div>
 
-{print.map(edition =>
-<ul class="text-sm mb-4">
-	<li class="">
-		
-		<ConvertISBN isbn={edition.isbn} />
-		
-	</li>
-</ul>
-)}
 
+<!-- {service.map(service =><a href={service.url.replace('%s', 'blah')}>{service.label }</a><br />)} -->
+
+<!-- <ConvertISBN isbn={EditionPrint[0].isbn} /> 
+
+<a href={service.url.replace(/\%s/, "tk" )}>{service.label}</a>
+-->
+<div class="text-white">
+
+	
+
+	{Services.map(service => 
+	
+	<a href={service.url.replace(/\%s/, 
+		service.id == "amazon" ? 
+			<ConvertISBN isbn={EditionPrint[0].isbn} /> 
+		: 
+			EditionPrint[0].isbn
+		)}>
+		{service.label}
+	</a>
+	<br />
+	
+
+	)}
+
+</div>
 
 
 
@@ -38,6 +73,7 @@ console.log("print: ", print, "ebooks: ", ebooks, "audiobook: ", audiobook)
 RULES
 - [ ] Top-most edition is the current. 
 - [ ] If e-book, separate kindle from others 
+- [ ] Consider if we want to move services to a data file
 
 
 NOTES
