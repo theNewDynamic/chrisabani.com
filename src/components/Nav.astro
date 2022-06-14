@@ -8,11 +8,7 @@ export interface Props {
 }  
 
 const { name, link } = Astro.props;
-
-
-
 const activeURL = new URL(Astro.request.url).pathname;
-
 ---
 <nav>          
   <ul class="text-sm list-outside font-condensed">
