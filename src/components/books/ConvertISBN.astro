@@ -1,11 +1,10 @@
 ---
-var isbn10 = (isbn13) => {
+var GeneratedISBN = (isbn13) => {
 
 	var isbn = String(isbn13).substring(3, 12)
 
 	let sum = 0;
 	let mul = 10;
-	// let checkChar = "0"
 
 	for (let i = 0; i < 9; i++) {
 		sum = sum + (
@@ -18,15 +17,14 @@ var isbn10 = (isbn13) => {
 
 	if (checkDig == 10) { checkDig = "X"; }
 	else if (checkDig == 11) { checkDig = "0"; }
-	
+
 	let isbn10 = isbn + checkDig;
 
 	return isbn10;
 
 }
 const { isbn } = Astro.props;
-var isbn10 = isbn10(isbn);
+var isbn10 = GeneratedISBN(isbn);
 ---
-
 {isbn10}
 

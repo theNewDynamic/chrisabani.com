@@ -17,7 +17,6 @@ const default_services = [
 	{ id: "amazon", label: "Amazon", show: true, url: "https://amazon.com/dp/%s" },
 
 ]
-const Services = default_services.filter(service => service.show === true);
 
 const audiobook_services = [
 	{ id: "audible", label: "Audible.com", show: true, url: "" },
@@ -25,62 +24,46 @@ const audiobook_services = [
 	{ id: "libro", label: "Libro.fm", show: false, url: "https://libro.fm/audiobooks/%s" },
 
 ]
-// const asbn = "0143124951";
-// console.log("log: ", services[0].url.replace(/\%s/, asbn))
 
-
+const Services = default_services.filter(service => service.show === true && service.id != "amazon");
+const ServicesAmazon = default_services.filter(service => service.show === true && service.id == "amazon");
 
 let EditionPrint = editions.filter(edition => (edition.binding === "paperback" || edition.binding === "hardcover")).slice(0, 1);
 let EditionEbooks = editions.filter(edition => edition.binding === "e-book").slice(0, 1);
 let EditionAudiobook = editions.filter(edition => edition.binding === "audiobook").slice(0, 1);
 
-// console.log("print: ", <ConvertISBN isbn={EditionPrint[0].isbn} /> )
+
 ---		
 
 <div class="text-sm border-b inline-block mt-12">Buy {title}:</div>
 
 
-<!-- {service.map(service =><a href={service.url.replace('%s', 'blah')}>{service.label }</a><br />)} -->
 
-<!-- <ConvertISBN isbn={EditionPrint[0].isbn} /> 
-
-<a href={service.url.replace(/\%s/, "tk" )}>{service.label}</a>
--->
 <div class="text-white">
 
+	{Services.map(service =>
 	
-
-	{Services.map(service => 
-	
-	<a href={service.url.replace(/\%s/, 
-		service.id == "amazon" ? 
-			<ConvertISBN isbn={EditionPrint[0].isbn} /> 
-		: 
-			EditionPrint[0].isbn
-		)}>
+	(
+	<a href={service.url.replace(/\%s/, service.id=="amazon" ? EditionPrint[0].isbn : EditionPrint[0].isbn )}
+		target="_blank" class="block">
 		{service.label}
 	</a>
-	<br />
+	)
+	
+	
+	)}
+
+	{ServicesAmazon.map(service =>
+	
+	(	<ConvertISBN isbn={EditionPrint[0].isbn} />
+		<a target="_blank" href={service.url.replace(/\%s/, "foo" )}>
+			{service.label}
+		</a>
+	)	
 	
 
 	)}
 
+
+
 </div>
-
-
-
-<!-- 
-RULES
-- [ ] Top-most edition is the current. 
-- [ ] If e-book, separate kindle from others 
-- [ ] Consider if we want to move services to a data file
-
-
-NOTES
-		let reviews = reviewQuotes.slice(0, 30);
-	const FeaturedReview = reviews.filter(review => review.featured === true).slice(0, 1);
-
-
-
-
--->
