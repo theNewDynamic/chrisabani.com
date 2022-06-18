@@ -1,5 +1,4 @@
 ---
-import ConvertISBN from "./ConvertISBN.astro";
 export interface Props {
 	title: string;
 	editions: Array<{
@@ -11,11 +10,16 @@ export interface Props {
 const { content } = Astro.props;
 const { editions, title } = content;
 
-const default_services = [
+
+const print_services = [
 	{ id: "bookshop", label: "Your Independent Bookstore", show: true, url: "https://www.bookshop.org/a/287/%s" },
 	{ id: "barnesandnoble", label: "Barnes & Noble", show: true, url: "https://www.barnesandnoble.com/w/?ean=%s" },
-	{ id: "amazon", label: "Amazon", show: true, url: "https://amazon.com/dp/%s" },
-
+	{
+		id: "amazon",
+		label: "Amazon",
+		show: true,
+		url: "https://amazon.com/dp/%s"
+	}
 ]
 
 const audiobook_services = [
@@ -25,45 +29,44 @@ const audiobook_services = [
 
 ]
 
-const Services = default_services.filter(service => service.show === true && service.id != "amazon");
-const ServicesAmazon = default_services.filter(service => service.show === true && service.id == "amazon");
-
 let EditionPrint = editions.filter(edition => (edition.binding === "paperback" || edition.binding === "hardcover")).slice(0, 1);
 let EditionEbooks = editions.filter(edition => edition.binding === "e-book").slice(0, 1);
 let EditionAudiobook = editions.filter(edition => edition.binding === "audiobook").slice(0, 1);
 
+let isbn13 = EditionPrint[0].isbn;
 
----		
+var GeneratedISBN = (isbn13) => {
 
-<div class="text-sm border-b inline-block mt-12">Buy {title}:</div>
+	var isbn = String(isbn13).substring(3, 12)
 
+	let sum = 0;
+	let mul = 10;
 
+	for (let i = 0; i < 9; i++) {
+		sum = sum + (
+			mul * parseInt(isbn[i])
+		);
+		mul -= 1;
+	}
 
-<div class="text-white">
+	let checkDig = 11 - (sum % 11);
 
-	{Services.map(service =>
-	
-	(
-	<a href={service.url.replace(/\%s/, service.id=="amazon" ? EditionPrint[0].isbn : EditionPrint[0].isbn )}
+	if (checkDig == 10) { checkDig = "X"; }
+	else if (checkDig == 11) { checkDig = 0; }
+
+	let isbn10 = isbn + checkDig;
+
+	return isbn10;
+
+}
+var isbn10 = GeneratedISBN(isbn13);
+---
+
+<div class="">Buy <em>{title}</em></div>
+	{print_services.map(service => (
+	<a href={service.url.replace(/\%s/, service.id=="amazon" ? isbn10 : EditionPrint[0].isbn )}
 		target="_blank" class="block">
 		{service.label}
 	</a>
-	)
-	
-	
-	)}
+	))}
 
-	{ServicesAmazon.map(service =>
-	
-	(	<ConvertISBN isbn={EditionPrint[0].isbn} />
-		<a target="_blank" href={service.url.replace(/\%s/, "foo" )}>
-			{service.label}
-		</a>
-	)	
-	
-
-	)}
-
-
-
-</div>
