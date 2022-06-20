@@ -14,7 +14,8 @@ editions:
     date: 2014-01-07 00:00:00 +0000
     cover_image: "/uploads/secrethistory_070915_cover.jpg"
   - isbn: 9780698140189
-    asin: B00DMCPOJK    
+    asin: B00DMCPOJK
+    apple_id: 666418906    
     binding: e-book
     publisher: ""
     description: ""

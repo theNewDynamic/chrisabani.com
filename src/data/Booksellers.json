@@ -1,0 +1,44 @@
+[
+	{
+		"id": "amazon",
+		"type": ["print", "ebook"],
+		"label": "Amazon",
+		"show": true,
+		"url": "https://amazon.com/dp/%s"
+	},
+	{
+		"id": "apple_books",
+		"type": "ebook",
+		"label": "Apple Books",
+		"show": true,
+		"url": "https://books.apple.com/us/book/id%s"
+	},
+	{
+		"id": "audible",
+		"type": "audiobook",
+		"label": "Audible.com",
+		"show": true,
+		"url": ""
+	},
+	{
+		"id": "barnesandnoble",
+		"type": ["print", "ebook"],
+		"label": "Barnes & Noble",
+		"show": true,
+		"url": "https://www.barnesandnoble.com/w/?ean=%s"
+	},
+	{
+		"id": "bookshop",
+		"type": "print",
+		"label": "Your Independent Bookstore",
+		"show": true,
+		"url": "https://www.bookshop.org/a/287/%s"
+	},
+	{
+		"id": "libro",
+		"type": "audiobook",
+		"label": "Libro.fm",
+		"show": false,
+		"url": "https://libro.fm/audiobooks/%s"
+	}
+]
