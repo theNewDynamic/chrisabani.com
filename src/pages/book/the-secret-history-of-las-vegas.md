@@ -15,20 +15,21 @@ editions:
     cover_image: "/uploads/secrethistory_070915_cover.jpg"
   - isbn: 9780698140189
     asin: B00DMCPOJK
-    apple_id: 666418906    
+    apple_id: 666418906
     binding: e-book
     publisher: ""
     description: ""
     date: 2014-01-07 00:00:00 +0000
     cover_image: ""
-  - asin: B00HNVHR1E
+  - asin: B00HK146OS
     binding: audiobook
+    isbn: 9781470392338
   - isbn: 9780143124955
     binding: hardcover
-    publisher: "poopy"
+    publisher:
     description: ""
     date: 2014-01-07 00:00:00 +0000
-    cover_image: "/uploads/secrethistory_070915_cover.jpg"    
+    cover_image: "/uploads/secrethistory_070915_cover.jpg"
 layout: "../../layouts/Book.astro"
 ---
 
@@ -37,4 +38,5 @@ Before he can retire, **Las Vegas detective** Salazar is determined to solve a r
 **New York Times Editor’s Choice**
 
 <!-- [Read an excerpt](/news/2013/12/15/excerpt-from-the-secret-history-of-las-vegas/) -->
+
 [Read an excerpt](/news/2013-12-15-excerpt-from-the-secret-history-of-las-vegas/)
