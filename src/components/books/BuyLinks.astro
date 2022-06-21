@@ -14,15 +14,28 @@ const { content } = Astro.props;
 const { editions, title } = content;
 const services = Booksellers;
 
+// Services
 // ADD FILTER THAT SHOW == TRUE
+// Filter Binding (e.g. print)
+// 
+// Editions
+// binding
+// ISBN/ASIN/Apple ID
+
 
 let ServicesPrint = services.filter(service => (typeof service.type == "string") ? (service.type == "print") : (service.type.includes("print")) )
+
 let ServicesEbook = services.filter(service => (typeof service.type == "string") ? (service.type == "ebook") : (service.type.includes("ebook")) )
+
+let ServicesAudiobook = services.filter(service => (typeof service.type == "string") ? (service.type == "audiobook") : (service.type.includes("audiobook")) )
+
 
 console.log("ServicesEbook: ", ServicesEbook)
 
-let EditionPrint = editions.filter(edition => (edition.binding === "paperback" || edition.binding === "hardcover")).slice(0, 1);
+let EditionPrint = editions.filter(edition => (edition.isbn != "") && (edition.binding === "paperback" || edition.binding === "hardcover")).slice(0, 1);
+
 let EditionEbooks = editions.filter(edition => edition.binding === "e-book").slice(0, 1);
+
 let EditionAudiobook = editions.filter(edition => edition.binding === "audiobook").slice(0, 1);
 
 let isbn13 = EditionPrint[0].isbn;
@@ -56,7 +69,7 @@ var isbn10 = GeneratedISBN(isbn13);
 
 <!-- https://books.apple.com/us/book/the-secret-history-of-las-vegas/id666418906 -->
 
-
+{EditionPrint && 
 <div class="">Buy <em>{title}</em></div>
 	{ServicesPrint.map(service => (
 	<a href={service.url.replace(/\%s/, service.id=="amazon" ? isbn10 : EditionPrint[0].isbn )}
@@ -64,7 +77,9 @@ var isbn10 = GeneratedISBN(isbn13);
 		{service.label}
 	</a>
 	))}
+}
 
+{EditionEbooks && 
 <div class="">Ebook</div>
 	{ServicesEbook.map(service => (
 		// check if service ID exists (apple, amazon), check if 
@@ -73,4 +88,15 @@ var isbn10 = GeneratedISBN(isbn13);
 		{service.label}
 	</a>
 	))}
+}
 
+{EditionAudiobook && 
+<div class="">Audiobook</div>
+	{ServicesAudiobook.map(service => (
+		// check if service ID exists (apple, amazon), check if 
+	<a href={service.url.replace(/\%s/, service.id=="audible" ? EditionAudiobook[0].asin : EditionAudiobook[0].isbn )}
+		target="_blank" class="block">
+		{service.label}
+	</a>
+	))}
+}
