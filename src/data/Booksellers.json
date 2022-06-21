@@ -18,7 +18,7 @@
 		"type": "audiobook",
 		"label": "Audible.com",
 		"show": true,
-		"url": ""
+		"url": "https://audible.com/pd/%s"
 	},
 	{
 		"id": "barnesandnoble",
@@ -38,7 +38,7 @@
 		"id": "libro",
 		"type": "audiobook",
 		"label": "Libro.fm",
-		"show": false,
+		"show": true,
 		"url": "https://libro.fm/audiobooks/%s"
 	}
 ]
