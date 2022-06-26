@@ -4,14 +4,17 @@ import Booksellers from "../../data/Booksellers.json";
 
 export interface Props {
 	title: string;
+	ButtonClasses: string;
 	editions: Array<{
 		binding: string;
-		isbn: number;
+		isbn: string;
+		asin: string;
+		apple_id: string;
 	}>;
 
 }
 const { content } = Astro.props;
-const { editions, title } = content;
+const { editions, title, binding, isbn, apple_id, asin } = content;
 const services = Booksellers;
 
 // Services
@@ -22,21 +25,25 @@ const services = Booksellers;
 // binding
 // ISBN/ASIN/Apple ID
 
+// SERVICES
+let ServicesPrint = services.filter(service => (typeof service.type == "string") ? (service.type == "print") : (service.type.includes("print")))
 
-let ServicesPrint = services.filter(service => (typeof service.type == "string") ? (service.type == "print") : (service.type.includes("print")) )
+let ServicesEbook = services.filter(service => (typeof service.type == "string") ? (service.type == "ebook") : (service.type.includes("ebook")))
 
-let ServicesEbook = services.filter(service => (typeof service.type == "string") ? (service.type == "ebook") : (service.type.includes("ebook")) )
-
-let ServicesAudiobook = services.filter(service => (typeof service.type == "string") ? (service.type == "audiobook") : (service.type.includes("audiobook")) )
+let ServicesAudiobook = services.filter(service => (typeof service.type == "string") ? (service.type == "audiobook") : (service.type.includes("audiobook")))
 
 
-console.log("ServicesEbook: ", ServicesEbook)
-
+// EDITIONS
 let EditionPrint = editions.filter(edition => (edition.isbn != "") && (edition.binding === "paperback" || edition.binding === "hardcover")).slice(0, 1);
 
 let EditionEbooks = editions.filter(edition => edition.binding === "e-book").slice(0, 1);
 
-let EditionAudiobook = editions.filter(edition => edition.binding === "audiobook").slice(0, 1);
+let EditionAudiobook = editions.filter(edition => (edition.binding === "audiobook")).slice(0, 1);
+
+// console.log("log: ", EditionAudiobook[0].asin)
+
+
+//  GENERATE ISBN10 from ISBN13
 
 let isbn13 = EditionPrint[0].isbn;
 
@@ -65,38 +72,48 @@ var GeneratedISBN = (isbn13) => {
 
 }
 var isbn10 = GeneratedISBN(isbn13);
+
+const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3 text-black no-underline hover:bg-amber-700 hover:text-white transition"
 ---
+
+
 
 <!-- https://books.apple.com/us/book/the-secret-history-of-las-vegas/id666418906 -->
 
-{EditionPrint && 
+{EditionPrint?.length > 0 && 
 <div class="">Buy <em>{title}</em></div>
 	{ServicesPrint.map(service => (
-	<a href={service.url.replace(/\%s/, service.id=="amazon" ? isbn10 : EditionPrint[0].isbn )}
+	<a class={ButtonClasses} href={service.url.replace(/\%s/, service.id=="amazon" ? isbn10 : EditionPrint[0].isbn )}
 		target="_blank" class="block">
 		{service.label}
 	</a>
 	))}
 }
 
-{EditionEbooks && 
-<div class="">Ebook</div>
+{EditionEbooks?.length > 0 && 
+<div class="mt-1">Ebook</div>
 	{ServicesEbook.map(service => (
 		// check if service ID exists (apple, amazon), check if 
-	<a href={service.url.replace(/\%s/, service.id=="amazon" ? EditionEbooks[0].asin : EditionEbooks[0].apple_id )}
+	<a class={ButtonClasses} href={service.url.replace(/\%s/, service.id=="amazon" ? EditionEbooks[0].asin : EditionEbooks[0].apple_id )}
 		target="_blank" class="block">
 		{service.label}
 	</a>
 	))}
 }
 
-{EditionAudiobook && 
-<div class="">Audiobook</div>
-	{ServicesAudiobook.map(service => (
-		// check if service ID exists (apple, amazon), check if 
-	<a href={service.url.replace(/\%s/, service.id=="audible" ? EditionAudiobook[0].asin : EditionAudiobook[0].isbn )}
-		target="_blank" class="block">
-		{service.label}
-	</a>
-	))}
+
+
+{EditionAudiobook?.length > 0 &&
+	<div class="mt-1">Audiobook</div>
+	{(EditionAudiobook[0].asin || EditionAudiobook[0].isbn) && 
+		<Fragment>
+		{ServicesAudiobook.map(service => (					
+			<a class={ButtonClasses} href={service.url.replace(/\%s/, (service.id=="audible") ? EditionAudiobook[0].asin : EditionAudiobook[0].isbn )}
+				target="_blank" class="block">
+				{service.label}
+			</a>
+			))
+		}
+		</Fragment>
+	}
 }
