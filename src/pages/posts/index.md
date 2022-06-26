@@ -1,6 +1,6 @@
 ---
-setup: |
-  import Layout from '../../layouts/BlogPost.astro'
+# setup: |
+#   import Layout from '../../layouts/BlogPost.astro'
   
 title: Hello world!
 # import Cool from '../../components/Author.astro'
@@ -10,7 +10,7 @@ value: 128
 description: Just a Hello World Post!
 ---
 
-<Cool name={frontmatter.name} href="https://twitter.com/n_moore" client:load />
+
 
 This is so cool!
 
