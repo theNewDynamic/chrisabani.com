@@ -91,7 +91,7 @@ const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3
 }
 
 {EditionEbooks?.length > 0 && 
-<div class="mt-1">Ebook</div>
+<div class="mt-2">Ebook</div>
 	{ServicesEbook.map(service => (
 		// check if service ID exists (apple, amazon), check if 
 	<a class={ButtonClasses} href={service.url.replace(/\%s/, service.id=="amazon" ? EditionEbooks[0].asin : EditionEbooks[0].apple_id )}
