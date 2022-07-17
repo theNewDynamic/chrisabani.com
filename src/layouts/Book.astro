@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BookCover from "../components/books/BookCover.astro";
-import DataEditions from "../components/books/DataEditions.astro";
+// import DataEditions from "../components/books/DataEditions.astro";
 import BuyLinks from "../components/books/BuyLinks.astro";
 import PageTitle from "../components/PageTitle.astro";
 export interface Props {
@@ -23,7 +23,7 @@ const { title, description, editions } = content;
         <slot />        
         <BuyLinks content={{ editions, title }}/>
       </div>
-      <DataEditions content={{ editions, title }} />
+      <!-- <DataEditions content={{ editions, title }} /> -->
     </article>
   </div>
 </BaseLayout>
