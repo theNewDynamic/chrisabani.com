@@ -73,78 +73,82 @@ var isbn10 = GeneratedISBN(isbn13);
 const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3 text-black no-underline hover:bg-amber-700 hover:text-white transition"
 ---
 
-{EditionPrint?.length > 0 && 
+
+ <!-- // PRINT  -->
+
+{(EditionPrint?.length > 0 && EditionPrint[0].isbn) && 
 	<div>Buy <em>{title}</em></div>
-	{EditionPrint[0].isbn && 
-		<Fragment>
-			{Print.map(service => (
-				<a class={ButtonClasses} href={service.url.replace(/\%s/, service.id=="amazon" ? isbn10 : EditionPrint[0].isbn )} target="_blank" class="block">
-					{service.label}
-				</a>					
-			))}
-		</Fragment>
-	}
+}
+<Fragment>
+	{Print.map(service => (
+		<a class={ButtonClasses} href={service.url.replace(/\%s/, service.id=="amazon" ? isbn10 : EditionPrint[0].isbn )} target="_blank" class="block">
+			{service.label}
+		</a>					
+	))}
+</Fragment>
+	
+<!-- // EBOOK -->
+
+{(EditionEbooks?.length > 0) &&
+	<div class="mt-1">Ebook</div>	
+}
+{(Kindle[0] && EditionEbooks[0].asin) && 
+	<Fragment>					
+		{
+			<a class={ButtonClasses} href={Kindle[0].url.replace(/\%s/, EditionEbooks[0].asin)} target="_blank" class="block">
+				{Kindle[0].label}
+			</a>																		
+		}				
+	</Fragment>
 }
 
+{(AppleBooks[0] && EditionEbooks[0].apple_id) && 
+	<Fragment>					
+		{
+			<a class={ButtonClasses} href={AppleBooks[0].url.replace(/\%s/, EditionEbooks[0].apple_id)} target="_blank" class="block">
+				{AppleBooks[0].label}
+			</a>																		
+		}				
+	</Fragment>
+}
 
-{EditionEbooks?.length > 0 &&
-	<div class="mt-1">Ebook</div>	
-	{(Kindle[0] && EditionEbooks[0].asin) && 
-		<Fragment>					
-			{
-				<a class={ButtonClasses} href={Kindle[0].url.replace(/\%s/, EditionEbooks[0].asin)} target="_blank" class="block">
-					{Kindle[0].label}
+{EditionEbooks[0].isbn && 
+	<Fragment>		
+		{Ebook.map(service => (					
+			((service.id != "amazon" && service.id != "apple_books" ) &&
+				<a class={ButtonClasses} href={service.url.replace(/\%s/, EditionEbooks[0].isbn)} target="_blank" class="block">
+					{service.label}
 				</a>																		
-			}				
-		</Fragment>
+			)				
+		))}
+	</Fragment>
 	}
-
-	{(AppleBooks[0] && EditionEbooks[0].apple_id) && 
-		<Fragment>					
-			{
-				<a class={ButtonClasses} href={AppleBooks[0].url.replace(/\%s/, EditionEbooks[0].apple_id)} target="_blank" class="block">
-					{AppleBooks[0].label}
-				</a>																		
-			}				
-		</Fragment>
-	}
-
-	{EditionEbooks[0].isbn && 
-		<Fragment>		
-			{Ebook.map(service => (					
-				((service.id != "amazon" && service.id != "apple_books" ) &&
-					<a class={ButtonClasses} href={service.url.replace(/\%s/, EditionEbooks[0].isbn)} target="_blank" class="block">
-						{service.label}
-					</a>																		
-				)				
-			))}
-		</Fragment>
-		}
-	}
-
-
+	
+<!-- // AUDIBOOK -->
 {EditionAudiobook?.length > 0 &&
 	<div class="mt-1">Audiobook</div>	
-	{( Audible[0] && EditionAudiobook[0].asin) && 
-		<Fragment>					
-			{
-				<a class={ButtonClasses} href={Audible[0].url.replace(/\%s/, EditionAudiobook[0].asin)} target="_blank" class="block">
-					{Audible[0].label}
-				</a>																		
-			}				
-		</Fragment>
-	}
-
-	{EditionAudiobook[0].isbn && 
-		<Fragment>		
-			{Audiobook.map(service => (					
-				(service.id != "audible" &&
-					<a class={ButtonClasses} href={service.url.replace(/\%s/, EditionAudiobook[0].isbn)} target="_blank" class="block">
-						{service.label}
-					</a>																		
-					)				
-				))}
-		</Fragment>
-	}
 }
+{( Audible[0] && EditionAudiobook[0].asin) && 
+	<Fragment>					
+		{
+			<a class={ButtonClasses} href={Audible[0].url.replace(/\%s/, EditionAudiobook[0].asin)} target="_blank" class="block">
+				{Audible[0].label}
+			</a>																		
+		}				
+	</Fragment>
+}
+
+{EditionAudiobook[0].isbn && 
+	<Fragment>		
+		{Audiobook.map(service => (					
+			(service.id != "audible" &&
+				<a class={ButtonClasses} href={service.url.replace(/\%s/, EditionAudiobook[0].isbn)} target="_blank" class="block">
+					{service.label}
+				</a>																		
+				)				
+			))}
+	</Fragment>
+}
+
+
 
