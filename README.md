@@ -1,54 +1,35 @@
-# Astro Starter Kit: Blog
 
+
+
+Books
+
+
+Example Front matter
 ```
-npm init astro -- --template blog
+editions:
+  - binding: paperback
+    isbn: 9780143124955
+    publisher: "Penguin"
+    description: ""
+    date: 2014-01-07 00:00:00 +0000
+    cover_image: "/uploads/secrethistory_070915_cover.jpg"
+  - binding: e-book
+    isbn: 9780698140189
+    asin: B00DMCPOJK
+    apple_id: 666418906    
+    publisher: ""
+    description: ""
+    date: 2014-01-07 00:00:00 +0000
+    cover_image: ""
+  - binding: audiobook
+    asin: B00HK146OS
+    isbn: 9781470392338
+  - binding: hardcover
+    isbn: 9780143124955
+    publisher:
+    description: ""
+    date: 2014-01-07 00:00:00 +0000
+    cover_image: "/uploads/secrethistory_070915_cover.jpg"
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-Features:
-
-- ✅ SEO-friendly setup with canonical URLs and OpenGraph data
-- ✅ Full Markdown support
-- ✅ RSS 2.0 generation
-- ✅ Sitemap.xml generation
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Bookseller data: src/data/Booksellers.json
