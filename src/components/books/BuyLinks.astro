@@ -1,5 +1,6 @@
 ---
 import Booksellers from "../../data/Booksellers.json";
+import {GeneratedISBN} from "./ConvertISBN.js";
 export interface Props {
 	title: string;
 	description: string;
@@ -48,39 +49,9 @@ let EditionAudiobook = editions?.filter(edition => (edition.binding === "audiobo
 const AudiobookAsin = EditionAudiobook ? EditionAudiobook[0]?.asin : null;
 const AudiobookISBN = EditionAudiobook ? EditionAudiobook[0]?.isbn : null;
 
-
-
-
-
-//  GENERATE ISBN10 from ISBN13
-
-let isbn13 = PrintISBN;
-
-var GeneratedISBN = (isbn13) => {
-
-	var isbn = String(isbn13).substring(3, 12)
-
-	let sum = 0;
-	let mul = 10;
-
-	for (let i = 0; i < 9; i++) {
-		sum = sum + (
-			mul * parseInt(isbn[i])
-		);
-		mul -= 1;
-	}
-
-	let checkDig = 11 - (sum % 11);
-
-	if (checkDig == 10) { checkDig = "X"; }
-	else if (checkDig == 11) { checkDig = 0; }
-
-	let isbn10 = isbn + checkDig;
-
-	return isbn10;
-
-}
-var isbn10 = GeneratedISBN(isbn13);
+//---- Convert ISBN13 to ISBN10 for Amazon ----\\
+const isbn13 = PrintISBN
+const isbn10 = GeneratedISBN(isbn13);
 
 
 const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3 text-black no-underline hover:bg-amber-700 hover:text-white transition"
