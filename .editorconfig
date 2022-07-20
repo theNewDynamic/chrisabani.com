@@ -1,0 +1,8 @@
+[*.{js,css,scss}]
+charset = utf-8
+indent_style = tab
+
+# YAML sucks and requires Spaces.
+[*.yml]
+indent_style = space
+indent_size = 2
