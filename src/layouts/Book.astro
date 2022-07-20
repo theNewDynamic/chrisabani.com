@@ -7,7 +7,12 @@ import PageTitle from "../components/PageTitle.astro";
 export interface Props {
   bgImage?: string;
   description?: string;
-  content: any;
+  editions: Array<{
+		binding: string;
+		isbn: string;
+		asin: string;
+		apple_id: string;
+	}>;
   title: string;
 }
 const { content, bgImage = "url(/uploads/bg-cartographer_darker.jpg)" } = Astro.props;
