@@ -3,10 +3,9 @@ title: "Daphne's Lot"
 publishDate: 2003-01-01 00:00:00 +0000
 draft: false
 category: poetry
-# asin: "1888996625"
 editions:
-  - isbn: 9781888996623
-    binding: paperback
+  - binding: paperback
+    isbn: 9781888996623
     publisher: "Red Hen Press"
     description: ""
     date: 2003-01-01 00:00:00 +0000
