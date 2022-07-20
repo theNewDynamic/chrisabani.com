@@ -6,7 +6,9 @@ export interface Props {
 const { content } = Astro.props;
 const { editions, title } = content;
 
+let EditionCoverImage = editions?.filter(edition => (edition.cover_image)).slice(0, 1)[0].cover_image ?? null;
+
 ---		
-{editions[0].cover_image &&
-	<img src={editions[0].cover_image} class="max-w-full w-96 pl-2 md:pl-0 pr-2" alt="cover image for ${title}">
+{EditionCoverImage &&
+	<img src={EditionCoverImage} class="max-w-full w-96 pl-2 md:pl-0 pr-2" alt="cover image for ${title}">
 }
