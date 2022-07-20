@@ -55,13 +55,12 @@ const isbn10 = GeneratedISBN(isbn13);
 
 
 const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3 text-black no-underline hover:bg-amber-700 hover:text-white transition"
-
 ---
 
  
 {((Print.length > 0) && PrintISBN) && 
 	<div>Buy <em>{title}</em></div>
-}
+
 <Fragment>
 	{Print.map(service => (
 		<a class={ButtonClasses} href={service.url.replace(/\%s/, service.id=="amazon" ? isbn10 : PrintISBN )} target="_blank" class="block">
@@ -69,7 +68,7 @@ const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3
 		</a>					
 	))}
 </Fragment>
-
+}
 
 {(Ebook.length > 0) && (EbookISBN || EbookAsin || EbookAppleID) &&
 	<div class="mt-1">Ebook</div>	
