@@ -15,42 +15,37 @@ export interface Props {
 
 const { content } = Astro.props;
 const { editions, title } = content;
-// console.log("editions: ", editions)
 
-// Booksellers
+//---- BOOKSELLERS  ----//
 
 // PRINT
 let Print = Booksellers.filter(service => (typeof service.type == "string") ? (service.type == "print") : (service.type.includes("print"))).filter(service => service.show != false)
 
 // Ebook
-let Ebook = Booksellers.filter(service => (typeof service.type == "string") ? (service.type == "ebook") : (service.type.includes("ebook"))).filter(service => service.show != false)
+let Ebook = Booksellers!.filter(service => (typeof service.type == "string") ? (service.type == "ebook") : (service.type.includes("ebook"))).filter(service => service.show != false) ?? null;
 
-let Kindle = Ebook.filter(service => (service.id == "amazon"))
+const Kindle = Ebook.filter(service => (service.id == "amazon"))
+const AppleBooks = Ebook.filter(service => (service.id == "apple_books"))
 
+// AudioBook
+let Audiobook = Booksellers.filter(service => (typeof service.type == "string") ? (service.type == "audiobook") : (service.type.includes("audiobook"))).filter(service => service.show != false) ?? null;
 
-let AppleBooks = Ebook.filter(service => (service.id == "apple_books"))
+let Audible = Audiobook!.filter(service => (service.id == "audible"));
 
-//AudioBook
-let Audiobook = Booksellers.filter(service => (typeof service.type == "string") ? (service.type == "audiobook") : (service.type.includes("audiobook"))).filter(service => service.show != false)
-
-let Audible = Audiobook.filter(service => (service.id == "audible"))
-// console.log("audible: ", Audible)
-
-// EDITIONS
-let EditionPrint = editions?.filter(edition => (edition.isbn) && (edition.binding === "paperback" || edition.binding === "hardcover")).slice(0, 1) ?? null;
+//---- EDITIONS  ----//
+let EditionPrint = editions?.filter(edition => (edition.isbn) && (edition.binding === "paperback" || edition.binding === "hardcover")) ?? null;
 
 const PrintISBN = EditionPrint ? EditionPrint[0]?.isbn : null;
 
-let EditionEbooks = editions?.filter(edition => edition.binding === "e-book").slice(0, 1) ?? null;
+let EditionEbooks = editions?.filter(edition => edition.binding === "e-book") ?? null;
 
 const EbookISBN = EditionEbooks ? EditionEbooks[0]?.isbn : null;
 const EbookAsin = EditionEbooks ? EditionEbooks[0]?.asin : null;
 const EbookAppleID = EditionEbooks ? EditionEbooks[0]?.apple_id : null;
 
-let EditionAudiobook = editions?.filter(edition => (edition.binding === "audiobook")).slice(0, 1) ?? null;
+let EditionAudiobook = editions?.filter(edition => (edition.binding === "audiobook")) ?? null;
 
 const AudiobookAsin = EditionAudiobook ? EditionAudiobook[0]?.asin : null;
-
 const AudiobookISBN = EditionAudiobook ? EditionAudiobook[0]?.isbn : null;
 
 
@@ -93,9 +88,9 @@ const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3
 ---
 
  
-{(Print && PrintISBN) && 
+{((Print.length > 0) && PrintISBN) && 
 	<div>Buy <em>{title}</em></div>
-
+}
 <Fragment>
 	{Print.map(service => (
 		<a class={ButtonClasses} href={service.url.replace(/\%s/, service.id=="amazon" ? isbn10 : PrintISBN )} target="_blank" class="block">
@@ -103,13 +98,13 @@ const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3
 		</a>					
 	))}
 </Fragment>
-}
 
-{(Ebook && EbookISBN || EbookAsin || EbookAppleID) &&
+
+{(Ebook.length > 0) && (EbookISBN || EbookAsin || EbookAppleID) &&
 	<div class="mt-1">Ebook</div>	
 }
 
-{(Kindle[0] && EbookAsin) && 
+{(Kindle.length > 0 && EbookAsin) && 
 	<Fragment>					
 		{
 			<a class={ButtonClasses} href={Kindle[0].url.replace(/\%s/, EbookAsin)} target="_blank" class="block">
@@ -119,7 +114,7 @@ const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3
 	</Fragment>
 }
 
-{(AppleBooks[0] && EbookAppleID) && 
+{((AppleBooks.length > 0)  && EbookAppleID) && 
 	<Fragment>					
 		{
 			<a class={ButtonClasses} href={AppleBooks[0].url.replace(/\%s/, EbookAppleID)} target="_blank" class="block">
@@ -128,7 +123,7 @@ const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3
 		}				
 	</Fragment>
 }
-{(Ebook && EbookISBN) &&
+{((Ebook.length > 0) && EbookISBN) &&
 	<Fragment>		
 		{Ebook.map(service => (					
 			((service.id != "amazon" && service.id != "apple_books" ) &&
@@ -141,12 +136,12 @@ const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3
 	}
 
 	<!-- // AUDIBOOK -->
-	{((Audiobook || Audible) && (AudiobookAsin || AudiobookISBN) ) &&
+	{((Audiobook.length > 0 || Audible.length > 0) && (AudiobookAsin || AudiobookISBN) ) &&
 		<div class="mt-1">Audiobook</div>	
 	}
 	
 	
-	{(Audible && AudiobookAsin) && 
+	{(Audible.length > 0 && AudiobookAsin) && 
 		<Fragment>					
 			{
 				<a class={ButtonClasses} href={Audible[0].url.replace(/\%s/, AudiobookAsin)} target="_blank" class="block">
@@ -156,7 +151,7 @@ const ButtonClasses = "px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3
 		</Fragment>
 	}
 	
-	{Audiobook && AudiobookISBN && 
+	{Audiobook.length > 0 && AudiobookISBN && 
 		<Fragment>		
 			{Audiobook.map(service => (					
 				(service.id != "audible" &&
