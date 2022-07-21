@@ -4,7 +4,7 @@ title: Song for Night
 subtitle: A Novella
 publishDate: 2007-09-01 00:00:00 +0000
 draft: false
-category: fiction
+genre: fiction
 editions:
   - isbn: 9781933354316
     binding: paperback

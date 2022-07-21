@@ -2,7 +2,7 @@
 title: Kalakuta Republic
 publishDate: 2000-09-01 00:00:00 +0000
 draft: false
-category: poetry
+genre: poetry
 asin: 0863563228
 editions:
   - isbn: 9780863563225

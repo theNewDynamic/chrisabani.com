@@ -3,7 +3,7 @@ title: Feed Me the Sun
 subtitle: Collected Long Poems
 publishDate: 2010-04-01 00:00:00 +0000
 draft: false
-category: poetry
+genre: poetry
 editions:
   - isbn: 9781845231569
     binding: paperback

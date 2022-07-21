@@ -2,7 +2,7 @@
 title: The Virgin of Flames
 publishDate: 2007-01-30 00:00:00 +0000
 draft: false
-category: fiction
+genre: fiction
 editions:
   - isbn: 9780143038771
     binding: paperback

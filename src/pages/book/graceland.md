@@ -1,5 +1,5 @@
 ---
-category: fiction
+genre: fiction
 draft: false
 editions:
   - binding: paperback

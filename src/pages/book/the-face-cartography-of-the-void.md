@@ -4,7 +4,7 @@ subtitle: "Cartography of the Void"
 publishDate: 2014-09-23 00:00:00 +0000
 draft: true
 asin_kindle: B00M7EEYCC
-category: Memoir
+genre: Memoir
 editions:
   - isbn: 9789782335036
     binding: paperback

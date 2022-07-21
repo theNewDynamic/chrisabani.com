@@ -2,7 +2,7 @@
 title: Hands Washing Water
 publishDate: 2006-10-01 00:00:00 +0000
 draft: false
-category: poetry
+genre: poetry
 editions:
   - isbn: 9781556592478
     binding: paperback

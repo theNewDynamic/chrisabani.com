@@ -1,10 +1,10 @@
 ---
 #layout: book
-#category: book
+#genre: book
 draft: false
 title: Dog Woman
 publishDate: 2004-09-01 00:00:00 +0000
-category: poetry
+genre: poetry
 # asin: 188899682X
 editions:
   - isbn: 9781888996821
