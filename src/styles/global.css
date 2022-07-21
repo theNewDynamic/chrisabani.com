@@ -17,3 +17,8 @@
 .prose img:nth-of-type(1) {
   @apply float-left mr-4 mt-2;
 }
+
+
+.button-buy {
+	@apply px-2 py-1 mb-4 inline-block text-sm bg-white rounded mr-3 text-black no-underline hover:bg-amber-700 hover:text-white transition;
+}
