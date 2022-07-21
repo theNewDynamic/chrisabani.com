@@ -1,0 +1,49 @@
+---
+// Imports
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {generateCategoryData} from '../../utils/helpers.js'
+export interface Props {
+  bgImage?: string;
+  description?: string;
+  editions: Array<{
+		binding: string;
+		isbn: string;
+		asin: string;
+		apple_id: string;
+	}>;
+  title: string;
+}
+const { content, bgImage = "url(/uploads/bg-cartographer_darker.jpg)" } = Astro.props;
+// const { title, description } = content;
+
+
+const allBooks = await Astro.glob('../book/*.md');
+
+const Books = allBooks.filter(service => (typeof service.frontmatter.genre == "string")).filter(service => (service.frontmatter.genre != ""))
+
+const allCategoriesUnique = new Set();
+
+// Loop through all books and fetch all unique genre categories
+Books.map(post => {
+    allCategoriesUnique.add(post.frontmatter.genre);    
+})
+const allCategoriesData = generateCategoryData(allCategoriesUnique);
+
+const title = "Books:";
+let description = 'Listing of all post categories.';
+---
+<BaseLayout content={{ title, description, bgImage }}>
+    
+    <article class="post">
+        <header class="post__header">
+            
+        </header>    
+        <section class="post__content">
+            <ul>
+            {allCategoriesData.map(category => (
+                <li><a href={`/books/${category.slug}`}>{category.name}</a></li>
+            ))}
+            </ul>
+        </section>
+    </article>
+</BaseLayout>
