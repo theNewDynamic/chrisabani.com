@@ -1,7 +1,7 @@
 ---
 title: "The Face"
 subtitle: "Cartography of the Void"
-publishDate: 2014-09-23 00:00:00 +0000
+date: 2014-09-23 00:00:00 +0000
 draft: true
 asin_kindle: B00M7EEYCC
 genre: Memoir

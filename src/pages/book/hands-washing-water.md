@@ -1,6 +1,6 @@
 ---
 title: Hands Washing Water
-publishDate: 2006-10-01 00:00:00 +0000
+date: 2006-10-01 00:00:00 +0000
 draft: false
 genre: poetry
 editions:

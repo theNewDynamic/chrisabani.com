@@ -1,6 +1,6 @@
 ---
 title: Kalakuta Republic
-publishDate: 2000-09-01 00:00:00 +0000
+date: 2000-09-01 00:00:00 +0000
 draft: false
 genre: poetry
 asin: 0863563228

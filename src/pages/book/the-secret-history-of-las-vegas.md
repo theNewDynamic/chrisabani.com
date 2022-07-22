@@ -1,7 +1,7 @@
 ---
 title: The Secret History of Las Vegas
 subtitle: "A Novel"
-publishDate: 2014-01-07 00:00:00 +0000
+date: 2014-01-07 00:00:00 +0000
 draft: false
 description: "Suspenseful through the last page, *The Secret History of Las Vegas* is Chris Abani’s most accomplished work to date, with his trademark visionary prose and a striking compassion for the inner lives of outsiders."
 genre: fiction

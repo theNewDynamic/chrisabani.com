@@ -1,7 +1,7 @@
 ---
 title: Becoming Abigail
 subtitle: A Novella
-publishDate: 2006-03-15 00:00:00 +0000
+date: 2006-03-15 00:00:00 +0000
 draft: false
 genre: fiction
 editions:

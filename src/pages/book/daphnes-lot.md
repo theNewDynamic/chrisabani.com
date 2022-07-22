@@ -1,6 +1,6 @@
 ---
 title: "Daphne's Lot"
-publishDate: 2003-01-01 00:00:00 +0000
+date: 2003-01-01 00:00:00 +0000
 draft: false
 genre: poetry
 editions:

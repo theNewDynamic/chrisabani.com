@@ -3,7 +3,7 @@
 #genre: book
 draft: false
 title: Dog Woman
-publishDate: 2004-09-01 00:00:00 +0000
+date: 2004-09-01 00:00:00 +0000
 genre: poetry
 # asin: 188899682X
 editions:

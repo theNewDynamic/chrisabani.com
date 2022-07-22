@@ -1,6 +1,6 @@
 ---
 title: The Virgin of Flames
-publishDate: 2007-01-30 00:00:00 +0000
+date: 2007-01-30 00:00:00 +0000
 draft: false
 genre: fiction
 editions:

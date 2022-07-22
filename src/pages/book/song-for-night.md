@@ -2,7 +2,7 @@
 publisher: Akashic Books
 title: Song for Night
 subtitle: A Novella
-publishDate: 2007-09-01 00:00:00 +0000
+date: 2007-09-01 00:00:00 +0000
 draft: false
 genre: fiction
 editions:

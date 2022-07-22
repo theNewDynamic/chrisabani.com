@@ -1,6 +1,6 @@
 ---
 title: There Are No Names for Red
-publishDate: 2010-04-01 00:00:00 +0000
+date: 2010-04-01 00:00:00 +0000
 draft: false
 genre: poetry
 editions:

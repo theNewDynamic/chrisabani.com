@@ -1,6 +1,6 @@
 ---
 title: Masters of the Board
-publishDate: 1985-01-01 00:00:00 +0000
+date: 1985-01-01 00:00:00 +0000
 draft: false
 editions:
   - isbn: 9789782335036

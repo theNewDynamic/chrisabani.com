@@ -3,7 +3,7 @@ genre: fiction
 draft: false
 editions:
   - binding: paperback
-    cover_image: /assets/img/graceland_300x463.jpg
+    cover_image: /uploads/graceland_300x463.jpg
     date: 2005-01-26 00:00:00 +00:00
     description: ""
     isbn: 9780312425289
@@ -18,7 +18,7 @@ editions:
   - asin: B0007OB5IU
     binding: audiobook
 meta_data: "Available as an audiobook"
-publishDate: 2005-01-26 00:00:00 +00:00
+date: 2005-01-26 00:00:00 +00:00
 title: Graceland
 layout: "../../layouts/Book.astro"
 ---
