@@ -3,6 +3,9 @@
   name: About Chris 
 - link: "contact"
   name: Contact 
+- link: "news"
+  name: News
+  heading: true    
 - link: "video"
   name: Video
 - link: "books/memoir"
