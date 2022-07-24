@@ -4,30 +4,71 @@ import BookCover from "../components/books/BookCover.astro";
 // import DataEditions from "../components/books/DataEditions.astro";
 import BuyLinks from "../components/books/BuyLinks.astro";
 import PageTitle from "../components/PageTitle.astro";
+import reviews from "../data/reviews.json";
+import { Markdown } from 'astro/components';
 export interface Props {
   bgImage?: string;
   description?: string;
   editions: Array<{
-		binding: string;
-		isbn: string;
-		asin: string;
-		apple_id: string;
-	}>;
+    binding: string;
+    isbn: string;
+    asin: string;
+    apple_id: string;
+  }>;
   title: string;
 }
 const { content, bgImage = "url(/uploads/bg-cartographer_darker.jpg)" } = Astro.props;
 const { title, description, editions } = content;
+
+const relatedReviews = reviews.filter((review) => review.book == content.url)
+
+
 ---
 
 <BaseLayout content={{ title, description, bgImage }}>
   <div class="min-h-screen">
     <article class="p-4 lg:p-24 w-3/4 mx-auto text-white">
       <PageTitle content={{ title, description }} />
+
+      {relatedReviews.length > 0  &&
+        <Fragment>
+          {relatedReviews.map(item => (
+            <div class="text-3xl font-brand my-8 text-center">
+              <Markdown>
+              <span class="font-serif text-3xl inline-block -ml-4">&ldquo;</span> {item.quote}<span class="text-2xl font-serif inline-block  -mt-4">&rdquo;</span><br />
+              {item.source &&
+                <span class="text-sm block mt-2 mb-4">                  
+                  — {item.source}                  
+                </span>
+              }
+            </Markdown>
+            </div>
+          )).slice(0,1)}
+        </Fragment>                  
+      }
+
       <div class="prose lg:prose-lg prose-invert mx-auto mt-8">
         <BookCover content={{ editions, title }} />
-        <slot />        
-        <BuyLinks content={{ editions, title }}/>
+        <slot />
+        <BuyLinks content={{ editions, title }} />
       </div>
+      {relatedReviews.length > 0  &&
+        <Fragment>
+          {relatedReviews.map(item => (
+            <div class="text-3xl font-brand my-16 text-center">
+              <Markdown>
+              <span class="font-serif text-3xl inline-block -ml-4">&ldquo;</span> {item.quote}<span class="text-2xl font-serif inline-block">&rdquo;</span><br />
+              {item.source &&
+                <span class="text-sm block mb-4 font-sans">                  
+                  — {item.source}                  
+                </span>
+              }
+            </Markdown>
+            </div>
+          )).slice(1,30)}
+        </Fragment>                  
+      }
+
       <!-- <DataEditions content={{ editions, title }} /> -->
     </article>
   </div>
