@@ -9,8 +9,7 @@ const { name } = Astro.props;
 
 let siteName = site.name;
 ---
-
-<div class="md:w-72 text-gray-300 md:fixed md:right-0 md:top-0 md:bottom-0 md:h-full p-8 bg-black/50">
+<div x-transition :class="open ? 'block' : 'hidden md:block'" aria-labelledby="nav-heading" :aria-expanded="open" class="z-50 w-72 text-gray-300 bg-black md:translate-x-0 fixed right-0 top-0 bottom-0 h-full p-8  md:bg-black/50">  
   <h2 class="mb-4 font-brand text-4xl">
     <a href="/" class="hover:underline">{site.name}</a>
   </h2>

@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
+import NavButton from "../components/NavButton.astro";
 const { content } = Astro.props;
 const { title, description, permalink, bgImage } = content;
 
@@ -19,12 +20,14 @@ const { title, description, permalink, bgImage } = content;
   <head>
     <BaseHead {title} {description} {permalink} />
   </head>
-  <body>
-    <div id="wrapper" class="md:pr-64 h-full min-h-full flex flex-col justify-between bg-cover bg-fixed bg-no-repeat">
+  <body x-data="{ open: false }">
+    <div id="wrapper" class="relative md:pr-64 h-full min-h-full flex flex-col justify-between bg-cover bg-fixed bg-no-repeat">
+      <NavButton /> 
+      <Sidebar />    
       <div id="content" class="min-h-screen text-white">
         <slot />
       </div>
-      <Sidebar />
+      
       <Footer />       
     </div>      
   </body>
