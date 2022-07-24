@@ -1,0 +1,70 @@
+---
+import Page from "../../layouts/Page.astro";
+export interface Props {
+	bgImage?: string;
+	title: string;
+}
+
+export async function getStaticPaths() {
+	const allBooks = await Astro.glob('./../book/*.md');
+	const filterKeys = ['genre'];
+
+	const filters = [
+		...new Set(
+			allBooks.reduce((curr, book) => {
+				filterKeys.forEach((key) => {
+					let filteredKey = [book.frontmatter[key]];
+					if (!filteredKey) return;
+					curr.push(filteredKey);
+				});
+				return curr;
+			},
+				[]))
+	];
+
+	const slugify = (url => (url.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-')));
+
+	return filters.map((filter) => {
+		const filteredPosts = allBooks.filter((book) => (
+			filterKeys.some(key => (
+				book.frontmatter[key] === filter
+			))
+		));
+
+		return ({
+			params: { genre: slugify(JSON.stringify(filter)) },
+			props: { filter }
+		});
+
+	})
+
+};
+
+const { page, curr, filter, bgImage = "url(/uploads/bg-cartographer_darker.jpg)" } = Astro.props;
+
+// This is not the correct way to call the page content
+const books = await Astro.glob('../book/*.md');
+const publishedBooks = books.filter(book => (book.frontmatter.draft != true)).filter(book => (book.frontmatter.editions != null)).filter(book => (book.frontmatter.genre == filter))
+const sortedBooks = publishedBooks.sort(
+	(a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+);
+
+const title = filter;
+const description = `All ${filter} books`;
+---
+
+<Page content={{ title, description, bgImage }}>
+	<!-- {sortedBooks.length} -->
+	<div class="sm:grid grid-cols-2 lg:grid-cols-3 gap-8 not-prose">
+		{sortedBooks.map(book => (
+		<a href={book.url} class="no-underline w-3xl m-0">
+			{book.frontmatter.editions &&
+			<img src={book.frontmatter.editions.map(edition=> (edition.cover_image)).slice(0,1)} class="inline-block w-full
+			p-0 " />
+			}
+			<span class="text-xs"> {new Date(book.frontmatter.date).getFullYear()}</span>
+		</a>
+		)
+		)}
+	</div>
+</Page>
