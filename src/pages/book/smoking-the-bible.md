@@ -1,6 +1,7 @@
 ---
 genre: poetry
 draft: false
+featured: true
 editions:
   - binding: paperback
     cover_image: /uploads/9781556596285.jpg
