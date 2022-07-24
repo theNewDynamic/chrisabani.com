@@ -2,9 +2,9 @@
 title: "The Face"
 subtitle: "Cartography of the Void"
 date: 2014-09-23 00:00:00 +0000
-draft: true
+draft: false
 asin_kindle: B00M7EEYCC
-genre: Memoir
+genre: memoir
 editions:
   - isbn: 9789782335036
     binding: paperback
