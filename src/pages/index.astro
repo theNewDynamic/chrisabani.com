@@ -4,8 +4,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import reviewQuotes from "../data/reviews.json";
 import site from "../data/site";
 const bgImage = "url(../uploads/bg-clock_op34n13.jpg)"
-let title = "Quotes I like";
-let description = "Saving Quotes like baseball cards";
+let title = "";
+let description = "";
 
 let reviews = reviewQuotes.slice(0, 30);
 const FeaturedReview = reviews.filter(review => review.featured === true).slice(0, 1);
@@ -24,8 +24,8 @@ const featuredBook = books
 	<div class="p-4 lg:p-24 w-11/12 mx-auto text-gray-300">
 		<h1 class="font-brand leading-tight  text-center text-7xl md:text-[7rem]" style="text-shadow:2px 1px 1px #000;">
 			{site.name}
-		</h1>	
-		<div class="lg:grid gap-8 grid-cols-4">
+		</h1>			
+		<div class="xl:grid gap-8 grid-cols-4">
 			{featuredBook[0].frontmatter.editions[0].cover_image &&
 				<a href={featuredBook[0].url} class="col-span-1">
 					<img src={featuredBook[0].frontmatter.editions[0].cover_image}
