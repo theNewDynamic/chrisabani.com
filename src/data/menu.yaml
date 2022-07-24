@@ -31,6 +31,8 @@
 - link: "books/poetry"
   name: Poetry
   heading: true
+- link: "book/smoking-the-bible"
+  name: Smoking the Bible
 - link: "book/sanctificum"
   name: Sanctificum
 - link: "book/there-are-no-names-for-red"
