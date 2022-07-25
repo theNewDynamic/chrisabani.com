@@ -50,6 +50,6 @@
 - link: "projects"
   name: Projects
   heading: true
-- link: "books"
-  name: All Books
-  heading: true
+# - link: "books"
+#   name: All Books
+#   heading: true
