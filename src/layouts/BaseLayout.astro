@@ -8,27 +8,32 @@ const { title, description, permalink, bgImage } = content;
 
 ---
 
-<style define:vars={{ bgImage }}>
-  #wrapper {  
-    background-image: var(--bgImage);
-
-  }
-</style>
-
 <!DOCTYPE html>
-<html lang={content.lang || "en"}>
-  <head>
-    <BaseHead {title} {description} {permalink} />
-  </head>
-  <body x-data="{ open: false }">
-    <div id="wrapper" class="relative md:pr-64 h-full min-h-full flex flex-col justify-between bg-cover bg-fixed bg-no-repeat">
-      <NavButton /> 
-      <Sidebar />    
-      <div id="content" class="min-h-screen text-white">
-        <slot />
-      </div>
-      
-      <Footer />       
-    </div>      
-  </body>
-</html> 
+<html lang={content.lang || "en" }>
+
+<head>
+
+  <style define:vars={{ bgImage }}>
+    #wrapper {
+      background-image: var(--bgImage);
+
+    }
+  </style>
+  <BaseHead {title} {description} {permalink} />
+
+</head>
+
+<body x-data="{ open: false }">
+  <div id="wrapper"
+    class="relative md:pr-64 h-full min-h-full flex flex-col justify-between bg-cover bg-fixed bg-no-repeat">
+    <NavButton />
+    <Sidebar />
+    <div id="content" class="min-h-screen text-white">
+      <slot />
+    </div>
+
+    <Footer />
+  </div>
+</body>
+
+</html>
