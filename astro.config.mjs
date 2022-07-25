@@ -4,7 +4,7 @@ import yaml from '@rollup/plugin-yaml';
 export default defineConfig({
 
     siteName: "Chris Abani",
-    site: 'https://www.budparr.com',
+    site: 'https://www.chrisabani.com',
     build: {
         compact: true
     },
