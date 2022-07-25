@@ -7,4 +7,5 @@ export default {
     repo: `chrisabani.com`,
     // Twitter URL
     twitterURL: `https://twitter.com`,
+	socialImage: "/uploads/9781556596285.jpg"
 }

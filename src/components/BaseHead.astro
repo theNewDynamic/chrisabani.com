@@ -13,6 +13,7 @@ import "../styles/global.css";
 
 const { title, description, permalink, publishDate, ogImageUrl, canonicalURL } =
   Astro.props;
+
 let fullTitle = title + " | " + site.title;
 let fullDesc = description + " | " + site.description;
 
@@ -58,15 +59,16 @@ if (description === "") {
 <meta property="og:url" content={canonicalURL || site.url} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={fullDesc} />
-<meta property="og:image" content={ogImageUrl ? `${site.url}${ogImageUrl}` : `${site.url}/assets/img/social.jpg`} />
+<meta property="og:image" content={ogImageUrl ? `${site.url}${ogImageUrl}` : `${site.url}${site.socialImage}`} />
+
+
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL || site.url} />
 <meta property="twitter:title" content={fullTitle} />
 <meta property="twitter:description" content={fullDesc} />
-<meta property="twitter:image" content={ogImageUrl ? `${site.url}${ogImageUrl}` :
-  `${site.url}/assets/img/social.jpg`} />
+<meta property="twitter:image" content={ogImageUrl ? `${site.url}${ogImageUrl}` : `${site.url}${site.socialImage}`} />
 
 <!-- RSS -->
 <link rel="alternate" type="application/rss+xml" title={`${site.name} Blog`} href={`${site.url}/feed/blog.xml`} />
