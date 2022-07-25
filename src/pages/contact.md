@@ -1,9 +1,13 @@
 ---
-title: Contact
+title: Contact/Follow
 permalink: /contact/
 layout: "../layouts/Page.astro"
 draft: false
 ---
+
+### Social
+
+[_twitter.com/chrisabani_](https://twitter.com/chrisabani)
 
 ### Publicist
 
