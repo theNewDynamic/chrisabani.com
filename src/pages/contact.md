@@ -17,15 +17,15 @@ Lauren Cerand
 ### Booking Agent
 
 Alison Granucci, Blue Flower Arts
-[www.blueflowerarts.com](http://www.blueflowerarts.com)
+[www.blueflowerarts.com](https://www.blueflowerarts.com)
 
 ### Literary/Film Agent
 
 Ellen Levine
-[www.tridentmedia.com](http://www.tridentmediagroup.com/ellen_levine.html)
+[www.tridentmedia.com](https://www.tridentmediagroup.com/ellen_levine.html)
 
 Lucy Stille, Paradigm Agency
-[www.paradigmagency.com](http://www.paradigmagency.com)
+[www.paradigmagency.com](https://www.paradigmagency.com)
 
 ### Chris Abani Personal:
 

@@ -11,7 +11,7 @@ layout: "../layouts/Page.astro"
 
 The box set is an annual project of the African Poetry Book Fund, in collaboration with Akashic Books, which seeks to identify the best poetry written by African authors working today, with a special focus on those who have not yet published their first full-length book of poetry.
 
-More at [Akashic Books](http://www.akashicbooks.com/catalog/eight-new-generation-african-poets-a-chapbook-box-set/)
+More at [Akashic Books](https://www.akashicbooks.com/catalog/eight-new-generation-african-poets-a-chapbook-box-set/)
 
 
 ---
@@ -22,9 +22,9 @@ The African Poetry Book Fund promotes and advances the development and publicati
 
 The Fund will, through the Series and other projects, promote the writing and publication of African poetry through an international complex of additional collaborations and partnerships. The Fund and its partners will offer support for seminars, workshops and other publishing opportunities for African poets.
 
-["_Seven New Generation African Poets: A Chapbook boxed set_"](http://www.amazon.com/Seven-New-Generation-African-Poets/dp/1940646588)
+["_Seven New Generation African Poets: A Chapbook boxed set_"](https://www.amazon.com/Seven-New-Generation-African-Poets/dp/1940646588)
 
-[African Poetry Book Fund](http://africanpoetrybf.unl.edu/?page_id=2)
+[African Poetry Book Fund](https://africanpoetrybf.unl.edu/?page_id=2)
 
 ---
 
@@ -38,4 +38,4 @@ The series, established in 2004, will begin by publishing two to four books of p
 
 The press is interested both in encouraging emerging talent and in helping to maintain poets in mid-career internationally, and as such, collected or selected Bilingual Poems will also be considered. Each new poet will be introduced by a more established American writer.
 
-[![Akashic Books](/assets/img/akbooks.gif)](http://www.akashicbooks.com/author/chris-abani/)
+[![Akashic Books](/assets/img/akbooks.gif)](https://www.akashicbooks.com/author/chris-abani/)

@@ -22,7 +22,7 @@ His many research interests include African Poetics, World Literature, 20th Cent
 
 He is Board of Trustees Professor of English at Northwestern University.
 
-Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html)
+Also see [The Chris Abani Bibliography](https://www.l3.ulg.ac.be/abani/index.html)
 
 [**Click Here to Download Hi-res photos**](/assets/files/ChrisAbani_PrintHiRes.zip)
 
@@ -36,7 +36,7 @@ Also see [The Chris Abani Bibliography](http://www.l3.ulg.ac.be/abani/index.html
 
 2014 - Elected to the American Academy of Arts and Sciences
 
-2014 - [Ford United States Artists Fellow](http://www.unitedstatesartists-2014fellows.org/#/chris-abani/)
+2014 - [Ford United States Artists Fellow](https://www.unitedstatesartists-2014fellows.org/#/chris-abani/)
 
 2009 - Guggenheim Fellow in Fiction.
 
