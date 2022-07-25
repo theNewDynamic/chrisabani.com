@@ -4,6 +4,18 @@ title: Projects
 layout: "../layouts/Page.astro"
 ---
 
+
+### Eight New-Generation African Poets
+
+![](/uploads/EightNewGeneration-BoxSetCVR-350x525.jpg) This elegant, limited-edition box set features nine chapbooks: eight volumes of poetry, plus an introduction chapbook by editors Kwame Dawes and Chris Abani. The eight African poets included are Peter Akinlabi, Viola Allo, Inua Ellams, Janet Kofi-Tsekpo, Liyou Mesfin Libsekal, Amy Lukau, Vuyelwa Maluleke, and Blessing Musariri.
+
+The box set is an annual project of the African Poetry Book Fund, in collaboration with Akashic Books, which seeks to identify the best poetry written by African authors working today, with a special focus on those who have not yet published their first full-length book of poetry.
+
+More at [Akashic Books](http://www.akashicbooks.com/catalog/eight-new-generation-african-poets-a-chapbook-box-set/)
+
+
+---
+
 ### The African Poetry Book Fund:
 
 The African Poetry Book Fund promotes and advances the development and publication of the poetic arts through its book series, contests, workshops, and seminars and through its collaborations with publishers, festivals, booking agents, colleges, universities, conferences and all other entities that share an interest in the poetic arts of Africa. The Fund is committed to seeking the resources to support this mission and to ensure that all its efforts are carried out with excellence.
