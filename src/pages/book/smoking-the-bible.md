@@ -2,6 +2,7 @@
 genre: poetry
 draft: false
 featured: true
+description: "Smoking the Bible is an arresting collection of poems thick with feeling, shaped by Chris Abani’s astounding command of form and metaphor."
 editions:
   - binding: paperback
     cover_image: /uploads/9781556596285.jpg
