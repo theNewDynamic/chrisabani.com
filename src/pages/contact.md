@@ -6,7 +6,7 @@ draft: false
 ---
 
 ### Social
-[instagram.com/chrisabani](https://www.instagram.com/chrisabani/)
+[instagram.com/chrisabani](https://www.instagram.com/chrisabani/)  
 [twitter.com/chrisabani](https://twitter.com/chrisabani)
 
 ### Publicist
