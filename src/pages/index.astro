@@ -1,5 +1,6 @@
 ---
-import { Markdown } from "astro/components";
+import { Markdown } from "@astrojs/markdown-component";
+
 import BaseLayout from "../layouts/BaseLayout.astro";
 import reviewQuotes from "../data/reviews.json";
 import site from "../data/site";
@@ -35,10 +36,20 @@ const featuredBook = books
 			<div class="col-span-3">
 				{FeaturedReview.map((item) => (
 				<section class="p-8 font-brand text-3xl lg:text-5xl ">
-					<Markdown content={item.quote ? `<span class="-ml-4 lg:-ml-8 font-serif">“</span>${item.quote}<span
-							class="font-serif">”</span>` : ``} />
-						<Markdown content={item.source ? `<span class="block font-sans mt-8 font-bold text-base">—
-							${item.source}</span>` : ``} />
+					{item.quote && 
+						<Fragment>
+							<span class="-ml-4 lg:-ml-8 font-serif">“</span>
+								{item.quote}
+							<span class="font-serif">”</span>
+						</Fragment>
+						}		
+					{item.source &&
+						<Fragment>
+							<span class="block font-sans mt-8 font-bold text-base">— 
+								{item.source}
+							</span>
+						</Fragment>
+					}
 				</section>
 				))}
 			</div>
