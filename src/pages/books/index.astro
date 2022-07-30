@@ -29,10 +29,10 @@ const sortedBooks = publishedBooks.sort(
 		{sortedBooks.map(book => (
 		<a href={book.url} class="no-underline w-3xl m-0">
 			{book.frontmatter.editions &&
-				<img src={book.frontmatter.editions.map(editions => (editions.cover_image)).slice(0,1)} class="inline-block w-full p-0 " />
+			<img src={book.frontmatter.editions[0].cover_image} class="inline-block w-full p-0 " />
 			}
 				<span class="text-xs">
-					({new Date(book.frontmatter.date).getFullYear()})
+					{new Date(book.frontmatter.date).getFullYear()}
 				</span>
 		</a>
 		)
