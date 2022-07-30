@@ -1,11 +1,11 @@
 ---
+import Markdown from '@astrojs/markdown-component';
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BookCover from "../components/books/BookCover.astro";
 // import DataEditions from "../components/books/DataEditions.astro";
 import BuyLinks from "../components/books/BuyLinks.astro";
 import PageTitle from "../components/PageTitle.astro";
 import reviews from "../data/reviews.json";
-import { Markdown } from 'astro/components';
 export interface Props {
   bgImage?: string;
   description?: string;
@@ -33,15 +33,15 @@ const relatedReviews = reviews.filter((review) => review.book == content.url)
       {relatedReviews.length > 0  &&
         <Fragment>
           {relatedReviews.map(item => (
-            <div class="text-3xl font-brand my-8 text-center">
+            <div class="text-3xl font-brand my-8 text-center">              
               <Markdown>
-              <span class="font-serif text-3xl inline-block -ml-4">&ldquo;</span> {item.quote}<span class="text-2xl font-serif inline-block  -mt-4">&rdquo;</span><br />
-              {item.source &&
-                <span class="text-sm block mt-2 mb-4">                  
-                  — {item.source}                  
-                </span>
-              }
-            </Markdown>
+                <span class="font-serif text-3xl inline-block -ml-4">&ldquo;</span> {item.quote}<span class="text-2xl font-serif inline-block  -mt-4">&rdquo;</span><br />
+                  {item.source &&
+                    <span class="text-sm block mt-2 mb-4">                  
+                      — {item.source}                  
+                    </span>
+                  }
+              </Markdown>  
             </div>
           )).slice(0,1)}
         </Fragment>                  
@@ -57,14 +57,14 @@ const relatedReviews = reviews.filter((review) => review.book == content.url)
           {relatedReviews.map(item => (
             <div class="text-3xl font-brand my-16 text-center">
               <Markdown>
-              <span class="font-serif text-3xl inline-block -ml-4">&ldquo;</span> {item.quote}<span class="text-2xl font-serif inline-block">&rdquo;</span><br />
-              {item.source &&
-                <span class="text-sm block mb-4 font-sans">                  
-                  — {item.source}                  
-                </span>
-              }
-            </Markdown>
-            </div>
+                <span class="font-serif text-3xl inline-block -ml-4">&ldquo;</span> {item.quote}<span class="text-2xl font-serif inline-block">&rdquo;</span><br />
+                  {item.source &&
+                    <span class="text-sm block mb-4 font-sans">                  
+                      — {item.source}                  
+                    </span>
+                  }            
+                </Markdown>
+              </div>
           )).slice(1,30)}
         </Fragment>                  
       }

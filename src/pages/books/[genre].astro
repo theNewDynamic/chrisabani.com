@@ -6,7 +6,7 @@ export interface Props {
 }
 
 export async function getStaticPaths() {
-	const allBooks = await Astro.glob('./../book/*.md');
+	const allBooks = await (await Astro.glob('./../book/*.md')).filter(book => (book.frontmatter.genre != null));
 	const filterKeys = ['genre'];
 
 	const filters = [
