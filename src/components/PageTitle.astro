@@ -1,5 +1,5 @@
 ---
-// import { Markdown } from "@astrojs/markdown-component";
+import Markdown from '@astrojs/markdown-component';
 import site from "../data/site";
 interface Props {  
   description?: string;
@@ -10,19 +10,21 @@ const { content } = Astro.props as Props;
 const { title, description } = content;
 ---		
 {site.name &&
-<h1 class="font-brand leading-tight mt-8 text-center text-7xl block md:hidden text-3xl" style="text-shadow:2px 1px 1px #000;">
-	{site.name}
-</h1>		
+	<h1 class="font-brand leading-tight mt-8 text-center text-7xl block md:hidden text-3xl" style="text-shadow:2px 1px 1px #000;">
+		{site.name}
+	</h1>		
 }	
-{title &&
+{content.title &&
 	<h1 class="font-brand leading-tight text-yellow-700 text-center text-7xl" style="text-shadow:2px 1px 1px #000;">
-		{content.title}
+		<Markdown>
+			{content.title}
+		</Markdown>
 	</h1>
 }
-{description &&
-
+{content.description &&
 	<h2 class='text-3xl text-center font-brand'>
-		{content.description}
+		<Markdown>
+			{content.description}
+		</Markdown>
 	</h2>
-
 }
